@@ -1,3 +1,5 @@
+//Wahyu Agung
+
 ////1.1 ----- DESTRUKTURISASI ARRAY
 // let hewan = ["singa", "harimau", "kerbau", "sapi"];
 
