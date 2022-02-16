@@ -1,3 +1,4 @@
+//JEREMIA ANDREAS WAANI
 //1.1 Melakukan Import Variabel
 //import { name } from "./export.js";
 console.log(name);
@@ -19,7 +20,7 @@ bernyanyi();
 
 //2.1 Asynchronous menggunakan set TimeOut
 setTimeout(() => {
-  console.log("Cuci Baju"); //proses asynchronous
+    console.log("Cuci Baju"); //proses asynchronous
 }, 1000);
 console.log("Menyapu");
 console.log("Mengepel");
@@ -28,41 +29,41 @@ console.log("Mengepel");
 
 //2.2 Penggunaan Promise
 let newPromise = new Promise((resolve, reject) => {
-  if (true) {
-    //apa yang dilakukan jike promise fulffiled
-    resolve("Berhasil");
-  } else {
-    //apa yang dilakukan jika promise rejected
-    reject("Gagal");
-  }
+    if (true) {
+        //apa yang dilakukan jike promise fulffiled
+        resolve("Berhasil");
+    } else {
+        //apa yang dilakukan jika promise rejected
+        reject("Gagal");
+    }
 });
 
 //2.3 Penggunaan Promise Then
 newPromise.then((result) => {
-  console.log(result);
+    console.log(result);
 });
 
 //2.4 Penggunaan Promise (Asyn & Await)
 //Penggunaan Asyn
 
 async function tesAsyncAwait() {
-  return "Fulfilled";
+    return "Fulfilled";
 }
 
 console.log(tesAsyncAwait());
 
 //Penggunaan Await
 async function tes() {
-  await "Fulfilled";
+    await "Fulfilled";
 }
 console.log(tes());
 
 //3. Class in JS
 class Car {
-  constructor(name, year) {
-    this.name = name;
-    this.year = year;
-  }
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
 }
 
 let myCar = new Car("Toyota", "2015");
