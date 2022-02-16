@@ -1,3 +1,4 @@
+//Gerald Wuysang
 /*
  Nama: Erick
  Exercise #4
