@@ -1,3 +1,4 @@
+// Kelompok 3
 //Nomor 1
 
 let people = ["Greg", "Mary", "Devon", "James"];
