@@ -1,6 +1,17 @@
 import React, {Component} from 'react';
 import {Text, View, StatusBar, StyleSheet, TextInput, Button} from 'react-native';
 
+// Declaring function with props
+const User = (props) => {
+  return (
+    //Di dalam ini terdapat beberapa argumen yang telah di passing menggunakan props
+    <View style={styles.functionUser}>
+      <Text style={{}}>
+        Name = {props.name}, Age = {props.age}, Desc = {props.desc}
+      </Text>
+    </View>
+  );
+};
 class App extends Component {
   constructor(props) {
     super(props);
@@ -40,6 +51,14 @@ class App extends Component {
             // onPress={() => console.log('hello')}
           />
         </View> 
+
+         {/* Props */}
+        <User name="Wahyu Agung" age={20} desc="Tincep" />
+        <User name="Erick" age={21} desc="Pateten" />
+        <User name="Salomo Mandagi" age={20} desc="Aertembaga" />
+        <User name="Jeremia Waani" age={20} desc="Girian" />
+        <User name="Gerald Wuysang" age={20} desc="Rap-rap" />
+
         <Footer/>       
       </View>
     );
@@ -58,6 +77,13 @@ const Footer = () => {
   };
 
 const styles = StyleSheet.create({
+  functionUser: {
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 10,
+    fontWeight: "bold",
+  },
+  
   header: {
     backgroundColor: '#00BCD4',
     alignItems: 'center',
