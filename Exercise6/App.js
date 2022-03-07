@@ -1,8 +1,16 @@
 import React, {Component} from 'react';
-import {Text, View, StatusBar, StyleSheet, TextInput, Button} from 'react-native';
+import {
+  Text,
+  View,
+  StatusBar,
+  StyleSheet,
+  TextInput,
+  Button,
+  Image,
+} from 'react-native';
 
 // Declaring function with props
-const User = (props) => {
+const User = props => {
   return (
     //Di dalam ini terdapat beberapa argumen yang telah di passing menggunakan props
     <View style={styles.functionUser}>
@@ -34,56 +42,73 @@ class App extends Component {
           </Text>
         </View>
 
-         {/* TextInput */}
+        {/* Content */}
+        <Content />
+
+        {/* TextInput */}
         <TextInput
           value={this.state.header}
           style={styles.textInput}
           placeholder="Write something here to pass to header"
-          placeholderTextColor={"#FFFFFF"}
+          placeholderTextColor={'#FFFFFF'}
           //Ketika user memberikan input, maka state akan disimpan di property 'header'
-          onChangeText={(value) => this.setState({ header: value })}
+          onChangeText={value => this.setState({header: value})}
         />
 
-        <View style={{ marginLeft: 150, marginRight: 150 }}>
+        <View style={{marginLeft: 150, marginRight: 150}}>
           <Button
             title="Click Me!"
-            color={"#00BCD4"}
+            color={'#00BCD4'}
             // onPress={() => console.log('hello')}
           />
-        </View> 
+        </View>
 
-         {/* Props */}
+        {/* Props */}
         <User name="Wahyu Agung" age={20} desc="Tincep" />
         <User name="Erick" age={21} desc="Pateten" />
         <User name="Salomo Mandagi" age={20} desc="Aertembaga" />
         <User name="Jeremia Waani" age={20} desc="Girian" />
         <User name="Gerald Wuysang" age={20} desc="Rap-rap" />
 
-        <Footer/>       
+        <Footer />
       </View>
     );
   }
 }
 
+//Function ini digunakan untuk menampilkan gambar secara online
+const Content = () => {
+  return (
+    <View style={{justifyContent: 'center', alignItems: 'center'}}>
+      <Image
+        style={{height: 210, width: 415, resizeMode: 'cover'}}
+        source={{
+          uri: 'https://images.unsplash.com/photo-1640622841908-3a691b7b7ac9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1188&q=80',
+        }}
+      />
+    </View>
+  );
+};
+
 //Function ini digunakan untuk menampilkan footer
 const Footer = () => {
-    return (
-      <View style={styles.footer}>
-        <Text style={{ color: "#FFFFFF", fontSize: 18, fontWeight: "bold" }}>
-          Footer
-        </Text>
-      </View>
-    );
-  };
+  return (
+    <View style={styles.footer}>
+      <Text style={{color: '#FFFFFF', fontSize: 18, fontWeight: 'bold'}}>
+        Footer
+      </Text>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   functionUser: {
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
     marginTop: 10,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
-  
+
   header: {
     backgroundColor: '#00BCD4',
     alignItems: 'center',
@@ -107,14 +132,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     borderRadius: 10,
     paddingVertical: 10,
-    borderColor: "#00BCD4",
-    backgroundColor: "#00BCD4",
-    color: "#FFFFFF",
+    borderColor: '#00BCD4',
+    backgroundColor: '#00BCD4',
+    color: '#FFFFFF',
   },
   footer: {
-    backgroundColor: "#00BCD4",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#00BCD4',
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: 20,
     marginTop: 8,
   },
