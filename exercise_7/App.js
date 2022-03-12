@@ -68,6 +68,23 @@ const App = () => {
         />
       </View>
 
+      {/* TEXTINPUT PHONE */}
+      <View style={{margin: 3}}>
+        <TextInput
+          style={{
+            borderColor: '#00BCD4',
+            borderWidth: 1,
+            width: 150,
+            height: 40,
+            fontSize: 16,
+            color: '#000',
+          }}
+          placeholderTextColor={'grey'}
+          placeholder="Phone"
+          onChangeText={value => setPhone(value)}
+        />
+      </View>
+
       <Text style={{fontSize: 16, color: '#000'}}>
         Name : {name}
         {'\n'}
