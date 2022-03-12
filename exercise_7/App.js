@@ -35,7 +35,21 @@ const App = () => {
         />
       </View>
 
-
+      <View style={{margin: 3}}>
+        <TextInput
+          style={{
+            borderColor: '#00BCD4',
+            borderWidth: 1,
+            width: 150,
+            height: 40,
+            fontSize: 16,
+            color: '#000',
+          }}
+          placeholderTextColor={'grey'}
+          placeholder="Email"
+          onChangeText={value => setEmail(value)}
+        />
+      </View>
 
       {/* TEXTINPUT PASSWORD */}
       <View style={{margin: 3}}>
