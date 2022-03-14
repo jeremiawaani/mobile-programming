@@ -2,7 +2,7 @@ import React, {Component, useState} from 'react';
 import {StyleSheet, Text, View, TextInput, Button} from 'react-native';
 
 const App = () => {
-  const [name, setName] = useState('E');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [city, setCity] = useState('');
@@ -16,19 +16,10 @@ const App = () => {
     console.log(`Phone: ${phone}`);
   };
   return (
-    <View
-      style={{justifyContent: 'center', alignItems: 'center', marginTop: 60}}>
+    <View style={styles.container}>
       {/* TEXTINPUT NAME */}
       <View style={{margin: 3}}>
-        <TextInput
-          style={{
-            borderColor: '#00BCD4',
-            borderWidth: 1,
-            width: 150,
-            height: 40,
-            fontSize: 16,
-            color: '#000',
-          }}
+        <TextInput style={styles.textInputColor}
           placeholderTextColor={'grey'}
           placeholder="Name"
           onChangeText={value => setName(value)}
@@ -36,15 +27,7 @@ const App = () => {
       </View>
 
       <View style={{margin: 3}}>
-        <TextInput
-          style={{
-            borderColor: '#00BCD4',
-            borderWidth: 1,
-            width: 150,
-            height: 40,
-            fontSize: 16,
-            color: '#000',
-          }}
+        <TextInput style={styles.textInputColor}
           placeholderTextColor={'grey'}
           placeholder="Email"
           onChangeText={value => setEmail(value)}
@@ -53,15 +36,7 @@ const App = () => {
 
       {/* TEXTINPUT PASSWORD */}
       <View style={{margin: 3}}>
-        <TextInput
-          style={{
-            borderColor: '#00BCD4',
-            borderWidth: 1,
-            width: 150,
-            height: 40,
-            fontSize: 16,
-            color: '#000',
-          }}
+        <TextInput style={styles.textInputColor}
           placeholderTextColor={'grey'}
           placeholder="Password"
           onChangeText={value => setPassword(value)}
@@ -70,15 +45,7 @@ const App = () => {
 
       {/* TEXTINPUT CITY */}
       <View style={{margin: 3}}>
-        <TextInput
-          style={{
-            borderColor: '#00BCD4',
-            borderWidth: 1,
-            width: 150,
-            height: 40,
-            fontSize: 16,
-            color: '#000',
-          }}
+        <TextInput style={styles.textInputColor}
           placeholderTextColor={'grey'}
           placeholder="City"
           onChangeText={value => setCity(value)}
@@ -87,22 +54,14 @@ const App = () => {
 
       {/* TEXTINPUT PHONE */}
       <View style={{margin: 3}}>
-        <TextInput
-          style={{
-            borderColor: '#00BCD4',
-            borderWidth: 1,
-            width: 150,
-            height: 40,
-            fontSize: 16,
-            color: '#000',
-          }}
+        <TextInput style={styles.textInputColor}
           placeholderTextColor={'grey'}
           placeholder="Phone"
           onChangeText={value => setPhone(value)}
         />
       </View>
 
-      <Text style={{fontSize: 16, color: '#000'}}>
+      <Text style={styles.textOutput}>
         Name : {name}
         {'\n'}
         Email : {email}
@@ -115,7 +74,7 @@ const App = () => {
         {'\n'}
       </Text>
 
-      <View style={{marginTop: 25}}>
+      <View>
         <Button title="Press Me!" onPress={handleClick} />
       </View>
     </View>
@@ -124,5 +83,24 @@ const App = () => {
 
 export default App;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container:{
+    justifyContent: 'center',
+    alignItems: 'center', 
+    marginTop: 60
+  },
+  textInputColor: {
+    borderColor: '#00BCD4',
+    borderWidth: 1,
+    width: 150,
+    height: 40,
+    fontSize: 16,
+    color: '#000',
+  },
+  textOutput: {
+    fontSize: 16, 
+    color: '#000',
+    marginTop: 15
+  }
+});
  
