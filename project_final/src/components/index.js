@@ -1,10 +1,3 @@
-import {Label, Gap} from './atoms';
-import {
-  BorderSelectUser,
-  TextInput,
-  Button,
-  Footer,
-  HeaderSignUp,
-} from './molecules';
+import Footer from './Footer';
 
-export {Label, Gap, BorderSelectUser, TextInput, Button, Footer, HeaderSignUp};
+export {Footer};
