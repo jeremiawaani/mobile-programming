@@ -1,11 +1,11 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {Footer, HeaderUser} from './src/components';
+import {DetailsU_Header, Footer, HeaderUser} from './src/components';
 
 const App = () => {
   return (
     <View>
-      <HeaderUser title={'My Profile'} />
+      <DetailsU_Header />
     </View>
   );
 };

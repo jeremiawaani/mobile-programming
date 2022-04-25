@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     height: 94,
     alignItems: 'center',
     flexDirection: 'row',
-    justifyContent: 'center',
   },
   txt: {
     fontSize: 15,
