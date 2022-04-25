@@ -1,0 +1,10 @@
+import Logo from './Logo.svg';
+import People from './People.svg';
+import User from './User.svg';
+import Chat from './Chat.svg';
+import Home from './Home.svg';
+import IconBack from './IconBack.svg';
+import Profile from './Profile.svg';
+import Search from './Search.svg';
+import LogoKecil from './LogoKecil.svg';
+export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil};
