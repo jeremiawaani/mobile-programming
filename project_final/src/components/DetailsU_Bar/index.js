@@ -1,20 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {
-  DetailsU_Bar,
-  DetailsU_Header,
-  Footer,
-  HeaderUser,
-} from './src/components';
 
-const App = () => {
+const DetailsU_Bar = () => {
   return (
     <View>
-      <DetailsU_Bar />
+      <Text>DetailsU_Bar</Text>
     </View>
   );
 };
 
-export default App;
+export default DetailsU_Bar;
 
 const styles = StyleSheet.create({});

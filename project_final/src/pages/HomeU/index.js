@@ -1,20 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {
-  DetailsU_Bar,
-  DetailsU_Header,
-  Footer,
-  HeaderUser,
-} from './src/components';
 
-const App = () => {
+const HomeU = () => {
   return (
     <View>
-      <DetailsU_Bar />
+      <Text>HomeU</Text>
     </View>
   );
 };
 
-export default App;
+export default HomeU;
 
 const styles = StyleSheet.create({});
