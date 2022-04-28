@@ -6,11 +6,12 @@ import {
   Footer,
   HeaderUser,
 } from './src/components';
-
+import SelectUser from './src/pages/SelectUser';
+import HomeF from './src/pages/HomeF';
+import BorderUser from './src/components/SelectUser_border';
 const App = () => {
   return (
     <View>
-      {/* <DetailsU_Bar /> */}
       <HeaderUser/>
     </View>
   );
