@@ -12,7 +12,8 @@ import BorderUser from './src/components/SelectUser_border';
 const App = () => {
   return (
     <View>
-      <HeaderUser/>
+      {/* <HeaderUser/> */}
+      <BorderUser/>
     </View>
   );
 };
