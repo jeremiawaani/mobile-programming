@@ -6,15 +6,13 @@ import Gap from '../Gap';
 const Footer = () => {
   return (
     <View style={styles.container}>
-      <Gap width={59} />
       <Home />
-      <Gap width={44} />
+      <Gap width={60} />
       <Search />
-      <Gap width={44} />
+      <Gap width={60} />
       <Chat />
-      <Gap width={44} />
+      <Gap width={60} />
       <User />
-      <Gap width={69} />
     </View>
   );
 };
@@ -26,7 +24,9 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderColor: '#C0C0C0',
     height: 51,
-    flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    textAlign: 'center',
   },
 });
