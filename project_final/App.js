@@ -10,7 +10,8 @@ import {
 const App = () => {
   return (
     <View>
-      <DetailsU_Bar />
+      {/* <DetailsU_Bar /> */}
+      <HeaderUser/>
     </View>
   );
 };
