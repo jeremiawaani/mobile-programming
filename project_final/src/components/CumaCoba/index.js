@@ -1,14 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const DetailsU_Bar = () => {
+const CumaCoba = () => {
   return (
-    <View style={{backgroundColor: 'red', width: 393}}>
-      <Text>DetailsU_Bar</Text>
+    <View>
+      <Text>CumaCoba</Text>
     </View>
   );
 };
 
-export default DetailsU_Bar;
+export default CumaCoba;
 
 const styles = StyleSheet.create({});
