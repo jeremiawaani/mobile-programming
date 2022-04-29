@@ -3,7 +3,7 @@ import React from 'react';
 import {IconBack, Profile} from '../../../assets';
 import Gap from '../Gap';
 
-const DetailsU_Header = () => {
+const DetailsF_Header = () => {
   return (
     <View style={styles.container}>
       <View style={styles.border}>
@@ -15,7 +15,7 @@ const DetailsU_Header = () => {
   );
 };
 
-export default DetailsU_Header;
+export default DetailsF_Header;
 
 const styles = StyleSheet.create({
   container: {

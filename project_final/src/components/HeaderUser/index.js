@@ -5,14 +5,18 @@ import Gap from '../Gap';
 
 const HeaderUser = ({title}) => {
   return (
-    <View style={styles.container}>
-      <Gap width={29} />
-      <IconBack style={styles.iconBack} />
-      <Gap width={91} />
-      <Text style={styles.txt}>{title}</Text>
-      <Gap width={78} />
-      <Profile />
-      <Gap width={38} />
+    <View>
+      <View style={styles.container}>
+        <View style={{ flex: 1}}>
+          <IconBack style={styles.iconBack} />
+        </View>
+        <View style={{flex:5, alignItems: 'center'}}>
+          <Text style={styles.txt}>{title="Search Job"}</Text>
+        </View>
+        <View style={{alignItems:'flex-end', flex:1}}>
+          <Profile />
+        </View>
+      </View>
     </View>
   );
 };
@@ -22,12 +26,17 @@ export default HeaderUser;
 const styles = StyleSheet.create({
   container: {
     height: 94,
+    marginLeft: 28,
+    marginRight: 28,
     alignItems: 'center',
     flexDirection: 'row',
+    alignSelf: 'center',
+    backgroundColor: 'white',
   },
   txt: {
     fontSize: 15,
     color: '#000000',
     fontFamily: 'Segoe UI Bold',
+    alignSelf: 'center'
   },
 });
