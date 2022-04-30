@@ -4,7 +4,7 @@ import {LogoKecil} from '../../../assets';
 import splitLayoutProps from 'react-native/Libraries/StyleSheet/splitLayoutProps';
 import Gap from '../Gap';
 
-const SignUpFHeader = () => {
+const SignUpF_Header = () => {
   return (
     <View style={styles.container}>
       <Gap width={62} />
@@ -15,7 +15,7 @@ const SignUpFHeader = () => {
   );
 };
 
-export default SignUpFHeader;
+export default SignUpF_Header;
 
 const styles = StyleSheet.create({
   container: {

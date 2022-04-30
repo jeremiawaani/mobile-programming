@@ -5,7 +5,8 @@ import DetailsF_Bar from './DetailsF_Bar';
 import DetailsF_Header from './DetailsF_Bar';
 import ProfileF_Top from './ProfileF_Top';
 import ProfileF_Bottom from './ProfileF_Bottom';
-import SignUpFHeader from './SignUpF_Header';
+import SignUpF_Header from './SignUpF_Header';
+import SignUpF_TextInput from './SignUpF_TextInput';
 
 export {
   Footer,
@@ -15,5 +16,6 @@ export {
   DetailsF_Bar,
   ProfileF_Top,
   ProfileF_Bottom,
-  SignUpFHeader,
+  SignUpF_Header,
+  SignUpF_TextInput,
 };

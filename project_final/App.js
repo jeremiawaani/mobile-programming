@@ -5,15 +5,16 @@ import {
   DetailsU_Header,
   Footer,
   HeaderUser,
+  SignUpF_Header,
+  SignUpF_TextInput,
 } from './src/components';
 import SelectUser from './src/pages/SelectUser';
 import HomeF from './src/pages/HomeF';
 import BorderUser from './src/components/SelectUser_border';
-import SignUpFHeader from './src/components/SignUpF_Header';
 const App = () => {
   return (
     <View>
-      <SignUpFHeader />
+      <SignUpF_TextInput title={'Name'} placeholder={'Name'} />
     </View>
   );
 };
