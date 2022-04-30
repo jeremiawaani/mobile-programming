@@ -5,6 +5,7 @@ import DetailsF_BarSkill from '../DetailsF_BarSkill';
 import DetailsF_BarClient from '../DetailsF_BarClient';
 import DetailsF_BarEmail from '../DetailsF_BarEmail';
 import Gap from '../Gap';
+import DetailsF_Button from '../DetailsF_Button';
 
 const DetailsF_Content = () => {
   return (
@@ -17,7 +18,13 @@ const DetailsF_Content = () => {
         <DetailsF_BarEmail />
       </View>
       <Gap height={27} />
-      <DetailsF_BarClient />
+      <View style={styles.flexD}>
+        <DetailsF_BarClient />
+        <Gap width={60} />
+        <DetailsF_Button title={'Contact'} />
+        <Gap width={6} />
+        <DetailsF_Button title={'Apply'} />
+      </View>
     </View>
   );
 };
