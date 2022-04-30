@@ -16,14 +16,11 @@ import {
   DetailsF_BarEmail,
   DetailsF_Content,
 } from './src/components';
-import SelectUser from './src/pages/SelectUser';
-import HomeF from './src/pages/HomeF';
-import BorderUser from './src/components/SelectUser_border';
-import {SignUpF} from './src/pages';
+import {DetailsF} from './src';
 const App = () => {
   return (
     <View>
-      <DetailsF_Content />
+      <DetailsF />
     </View>
   );
 };
