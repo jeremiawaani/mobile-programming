@@ -12,6 +12,7 @@ import {
   SignUpF_Header,
   SignUpF_TextInput,
   DetailsF_BarSkill,
+  DetailsF_BarClient,
 } from './src/components';
 import SelectUser from './src/pages/SelectUser';
 import HomeF from './src/pages/HomeF';
@@ -20,7 +21,7 @@ import {SignUpF} from './src/pages';
 const App = () => {
   return (
     <View>
-      <DetailsF_BarSkill />
+      <DetailsF_BarClient />
     </View>
   );
 };

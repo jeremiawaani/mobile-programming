@@ -10,6 +10,7 @@ import SignUpF_Button from './SignUpF_Button';
 import SignUpF_Footer from './SignUpF_Footer';
 import DetailsF_BarDesc from './DetailsF_BarDesc';
 import DetailsF_BarSkill from './DetailsF_BarSkill';
+import DetailsF_BarClient from './DetailsF_BarClient';
 
 export {
   Footer,
@@ -24,4 +25,5 @@ export {
   SignUpF_Footer,
   DetailsF_BarDesc,
   DetailsF_BarSkill,
+  DetailsF_BarClient,
 };
