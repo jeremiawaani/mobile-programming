@@ -5,6 +5,7 @@ import {
   DetailsU_Header,
   Footer,
   HeaderUser,
+  SignUpF_Button,
   SignUpF_Header,
   SignUpF_TextInput,
 } from './src/components';
@@ -14,7 +15,7 @@ import BorderUser from './src/components/SelectUser_border';
 const App = () => {
   return (
     <View>
-      <SignUpF_TextInput title={'Name'} placeholder={'Name'} />
+      <SignUpF_Button />
     </View>
   );
 };

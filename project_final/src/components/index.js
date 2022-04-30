@@ -7,6 +7,7 @@ import ProfileF_Top from './ProfileF_Top';
 import ProfileF_Bottom from './ProfileF_Bottom';
 import SignUpF_Header from './SignUpF_Header';
 import SignUpF_TextInput from './SignUpF_TextInput';
+import SignUpF_Button from './SignUpF_Button';
 
 export {
   Footer,
@@ -18,4 +19,5 @@ export {
   ProfileF_Bottom,
   SignUpF_Header,
   SignUpF_TextInput,
+  SignUpF_Button,
 };
