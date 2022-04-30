@@ -9,6 +9,7 @@ import SignUpF_TextInput from './SignUpF_TextInput';
 import SignUpF_Button from './SignUpF_Button';
 import SignUpF_Footer from './SignUpF_Footer';
 import DetailsF_BarDesc from './DetailsF_BarDesc';
+import DetailsF_BarSkill from './DetailsF_BarSkill';
 
 export {
   Footer,
@@ -22,4 +23,5 @@ export {
   SignUpF_Button,
   SignUpF_Footer,
   DetailsF_BarDesc,
+  DetailsF_BarSkill,
 };
