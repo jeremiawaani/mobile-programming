@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {
+  DetailsF_BarDesc,
   DetailsF_Header,
   DetailsU_Bar,
   DetailsU_Header,
@@ -18,7 +19,7 @@ import {SignUpF} from './src/pages';
 const App = () => {
   return (
     <View>
-      <DetailsF_Header />
+      <DetailsF_BarDesc />
     </View>
   );
 };
