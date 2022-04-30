@@ -11,6 +11,7 @@ import SignUpF_Footer from './SignUpF_Footer';
 import DetailsF_BarDesc from './DetailsF_BarDesc';
 import DetailsF_BarSkill from './DetailsF_BarSkill';
 import DetailsF_BarClient from './DetailsF_BarClient';
+import DetailsF_BarEmail from './DetailsF_BarEmail';
 
 export {
   Footer,
@@ -26,4 +27,5 @@ export {
   DetailsF_BarDesc,
   DetailsF_BarSkill,
   DetailsF_BarClient,
+  DetailsF_BarEmail,
 };
