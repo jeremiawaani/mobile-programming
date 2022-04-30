@@ -14,6 +14,7 @@ import {
   DetailsF_BarSkill,
   DetailsF_BarClient,
   DetailsF_BarEmail,
+  DetailsF_Content,
 } from './src/components';
 import SelectUser from './src/pages/SelectUser';
 import HomeF from './src/pages/HomeF';
@@ -22,7 +23,7 @@ import {SignUpF} from './src/pages';
 const App = () => {
   return (
     <View>
-      <DetailsF_BarEmail />
+      <DetailsF_Content />
     </View>
   );
 };

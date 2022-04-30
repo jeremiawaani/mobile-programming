@@ -12,6 +12,7 @@ import DetailsF_BarDesc from './DetailsF_BarDesc';
 import DetailsF_BarSkill from './DetailsF_BarSkill';
 import DetailsF_BarClient from './DetailsF_BarClient';
 import DetailsF_BarEmail from './DetailsF_BarEmail';
+import DetailsF_Content from './DetailsF_Content';
 
 export {
   Footer,
@@ -28,4 +29,5 @@ export {
   DetailsF_BarSkill,
   DetailsF_BarClient,
   DetailsF_BarEmail,
+  DetailsF_Content,
 };
