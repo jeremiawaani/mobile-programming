@@ -13,10 +13,11 @@ import {
 import SelectUser from './src/pages/SelectUser';
 import HomeF from './src/pages/HomeF';
 import BorderUser from './src/components/SelectUser_border';
+import {SignUpF} from './src/pages';
 const App = () => {
   return (
     <View>
-      <SignUpF_Footer />
+      <SignUpF />
     </View>
   );
 };

@@ -1,17 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
 
 const SelectUser = () => {
   return (
     <View>
-    <Text>
-        SelectUser
-    </Text>
+      <Text>SelectUser</Text>
     </View>
-  )
-}
+  );
+};
 
-export default SelectUser
+export default SelectUser;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
