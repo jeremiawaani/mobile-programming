@@ -16,14 +16,17 @@ import {
   DetailsF_BarEmail,
   DetailsF_Content,
 } from './src/components';
-import {DetailsF, SelectUser, ProfileF} from './src';
+import {DetailsF, HomeF, SelectUser} from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
+import HomeF_Header from './src/components/HomeF_Header';
 const App = () => {
   return (
     <View>
       {/* <SelectUser/> */}
-      <ProfileF />
+      {/* <SplashScreen/> */}
+     {/* <HomeF_Header/> */}
+      {/* <HomeF/> */}
     </View>
   );
 };
