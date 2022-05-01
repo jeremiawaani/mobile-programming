@@ -18,12 +18,12 @@ import {
 } from './src/components';
 import {DetailsF, SelectUser} from './src';
 import BorderUser from './src/components/SelectUser_border';
+import SplashScreen from './src/pages/SplashScreen';
 const App = () => {
   return (
     <View>
-      {/* <DetailsF /> */}
-      {/* <BorderUser/> */}
-      <SelectUser/>
+      {/* <SelectUser/> */}
+      <SplashScreen/>
     </View>
   );
 };
