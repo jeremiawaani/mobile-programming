@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import {Gap, ProfileF_Button} from '../../components'
+import {Gap, Profile_Button} from '../../components'
 import { Profile, Pencil, Info, Achievement, Skills, IconBack } from '../../../assets'
 
 const ProfileF_Bottom = () => {
@@ -11,7 +11,7 @@ const ProfileF_Bottom = () => {
       <View style={styles.container}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <View style={{ flex: 1}}>
-            <ProfileF_Button style={{ flex: 1}} width={40} title={<Info/>} color='#D2F5FD'></ProfileF_Button>
+            <Profile_Button style={{ flex: 1}} width={40} title={<Info/>} color='#D2F5FD'></Profile_Button>
           </View>
           <View style={{flex:3, alignItems: 'flex-start'}}>
             <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Information</Text>
@@ -23,7 +23,7 @@ const ProfileF_Bottom = () => {
         <Gap height={11} />
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <View style={{ flex: 1}}>
-            <ProfileF_Button style={{ flex: 1}} width={40} title={<Achievement/>} color='#D2F5FD'></ProfileF_Button>
+            <Profile_Button style={{ flex: 1}} width={40} title={<Achievement/>} color='#D2F5FD'></Profile_Button>
           </View>
           <View style={{flex:3, alignItems: 'flex-start'}}>
             <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Achievement</Text>
@@ -35,7 +35,7 @@ const ProfileF_Bottom = () => {
         <Gap height={11} />
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <View style={{ flex: 1}}>
-            <ProfileF_Button style={{ flex: 1}} width={40} title={<Skills/>} color='#D2F5FD'></ProfileF_Button>
+            <Profile_Button style={{ flex: 1}} width={40} title={<Skills/>} color='#D2F5FD'></Profile_Button>
           </View>
           <View style={{flex:3, alignItems: 'flex-start'}}>
             <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Skills</Text>
@@ -45,7 +45,7 @@ const ProfileF_Bottom = () => {
           </View>
         </View>
         <Gap height={30} />
-        <ProfileF_Button width={270} title='Log Out' color='#D2F5FD'></ProfileF_Button>
+        <Profile_Button width={270} title='Log Out' color='#D2F5FD'></Profile_Button>
       </View>
     </View>
   )
