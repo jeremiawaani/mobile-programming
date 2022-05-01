@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
   },
   textSubtile: {
     fontSize: 14, 
-    color: '#000000' 
+    color: '#000000',
+    fontFamily: 'Segoe UI',
   }
 })

@@ -11,7 +11,7 @@ const HeaderUser = ({title}) => {
           <IconBack style={styles.iconBack} />
         </View>
         <View style={{flex:5, alignItems: 'center'}}>
-          <Text style={styles.txt}>{title="Search Job"}</Text>
+          <Text style={styles.txt}>{title}</Text>
         </View>
         <View style={{alignItems:'flex-end', flex:1}}>
           <Profile />
