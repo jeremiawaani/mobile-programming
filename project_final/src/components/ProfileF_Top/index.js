@@ -5,6 +5,7 @@ import Gap from '../Gap'
 
 const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
   return (
+    //a
     <View style={styles.page}>
     <View style={styles.container}>
       <Profile height={70} width={70}/>
