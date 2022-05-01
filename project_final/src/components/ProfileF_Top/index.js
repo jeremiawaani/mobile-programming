@@ -1,26 +1,26 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View  } from 'react-native'
 import React from 'react'
 import { Pencil, Profile } from '../../../assets'
-import Gap from '../Gap'
+import {Gap} from '../../components'
 
 const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
   return (
-    //a
     <View style={styles.page}>
-    <View style={styles.container}>
-      <Profile height={70} width={70}/>
-      <Gap width={23} />
-      <View>
-        <Text style={styles.textName}>{name}</Text>
-        <Text style={styles.statusName}>{status}</Text>
+      <View style={styles.container}>
+        <Profile height={70} width={70}/>
+        <Gap width={23} />
+        <View>
+          <Text style={styles.textName}>{name}</Text>
+          <Text style={styles.statusName}>{status}</Text>
+        </View>
+        <Gap width={60} />
+        <Pencil />
       </View>
-      <Gap width={60} />
-      <Pencil />
-      
-      
-    </View>
-    
     <Text style={{marginLeft: 50, marginTop: 17, fontFamily: 'Segoe UI', fontSize: 13}}>My Status</Text>
+    <View style={styles.container}>
+    
+    
+    </View>
     </View>
     
   )
@@ -47,5 +47,6 @@ const styles = StyleSheet.create({
   },
   statusName: {
     fontFamily: 'Segoe UI'
-  }
+  },
+ 
 })

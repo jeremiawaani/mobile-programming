@@ -14,6 +14,7 @@ import DetailsF_BarClient from './DetailsF_BarClient';
 import DetailsF_BarEmail from './DetailsF_BarEmail';
 import DetailsF_Content from './DetailsF_Content';
 import DetailsF_Button from './DetailsF_Button';
+import ProfileF_Button from './ProfileF_Button';
 
 export {
   Footer,
@@ -32,4 +33,5 @@ export {
   DetailsF_BarEmail,
   DetailsF_Content,
   DetailsF_Button,
+  ProfileF_Button
 };
