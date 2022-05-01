@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View  } from 'react-native'
 import React from 'react'
 import { Pencil, Profile } from '../../../assets'
-import {Gap} from '../../components'
+import {Gap, ProfileF_Button} from '../../components'
 
 const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
   return (
@@ -17,9 +17,13 @@ const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
         <Pencil />
       </View>
     <Text style={{marginLeft: 50, marginTop: 17, fontFamily: 'Segoe UI', fontSize: 13}}>My Status</Text>
+    <Gap height={10} />
     <View style={styles.container}>
-    
-    
+      <ProfileF_Button title='Online' color='#E2D4FE'/>
+      <Gap width={9} />
+      <ProfileF_Button title='Offline' color='#D1FBEA'/>
+      <Gap width={9} />
+      <ProfileF_Button title='Full Projects' color='#D2F5FD'/>
     </View>
     </View>
     
