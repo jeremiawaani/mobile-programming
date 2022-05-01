@@ -7,7 +7,11 @@ const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
   return (
     <View style={styles.container}>
       <Profile height={70} width={70}/>
-      
+      <Gap width={23} />
+      <View>
+        <Text style={styles.textName}>{name}</Text>
+        <Text style={styles.statusName}>{status}</Text>
+      </View>
     </View>
   )
 }
@@ -22,5 +26,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  
+  textName: {
+    fontFamily: 'Segoe UI Bold',
+    fontSize: 16, 
+  },
+  statusName: {
+    fontFamily: 'Segoe UI'
+  }
 })
