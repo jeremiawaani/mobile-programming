@@ -1,10 +1,12 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import { HeaderUser } from '../../components';
 
 const ProfileF = () => {
   return (
     <View>
-      <Text>ProfileF</Text>
+      <HeaderUser />
+      
     </View>
   );
 };
