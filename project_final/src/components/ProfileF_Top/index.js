@@ -4,7 +4,7 @@ import React from 'react'
 const ProfileF_Top = () => {
   return (
     <View>
-      <Text>ProfileF_Top</Text>
+      
     </View>
   )
 }

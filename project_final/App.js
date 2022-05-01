@@ -25,7 +25,7 @@ const App = () => {
     <View>
       {/* <SelectUser/> */}
       {/* <SplashScreen/> */}
-      <HomeF_Header/>
+     {/* <HomeF_Header/> */}
       {/* <HomeF/> */}
     </View>
   );
