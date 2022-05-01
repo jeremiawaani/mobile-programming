@@ -8,4 +8,8 @@ import Profile from './Profile.svg';
 import Search from './Search.svg';
 import LogoKecil from './LogoKecil.svg';
 import  Pencil  from './pencil.svg';
-export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, Pencil};
+import Info from './info.svg';
+import Achievement from './achievement.svg';
+import Skills from './skills.svg';
+
+export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, Pencil, Info, Achievement, Skills};
