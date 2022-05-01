@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Profile } from '../../../assets'
+import { Pencil, Profile } from '../../../assets'
 import Gap from '../Gap'
 
 const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
@@ -12,6 +12,8 @@ const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
         <Text style={styles.textName}>{name}</Text>
         <Text style={styles.statusName}>{status}</Text>
       </View>
+      <Gap width={60} />
+      <Pencil />
     </View>
   )
 }
