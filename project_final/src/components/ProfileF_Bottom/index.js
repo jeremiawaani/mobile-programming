@@ -10,12 +10,41 @@ const ProfileF_Bottom = () => {
       <Gap height={12} />
       <View style={styles.container}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-        <ProfileF_Button width={40} title={<Info/>} color='#D2F5FD'></ProfileF_Button>
-        <Gap width={20} />
-        <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Information</Text>
-        <Gap width={70} />
-        <IconBack style={{transform: [{ rotateY: '180deg' }]}} />
+          <View style={{ flex: 1}}>
+            <ProfileF_Button style={{ flex: 1}} width={40} title={<Info/>} color='#D2F5FD'></ProfileF_Button>
+          </View>
+          <View style={{flex:3, alignItems: 'flex-start'}}>
+            <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Information</Text>
+          </View>
+          <View style={{alignItems:'flex-end', flex:1}}>
+            <IconBack style={{transform: [{ rotateY: '180deg'}], }} />
+          </View>
         </View>
+        <Gap height={11} />
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+          <View style={{ flex: 1}}>
+            <ProfileF_Button style={{ flex: 1}} width={40} title={<Achievement/>} color='#D2F5FD'></ProfileF_Button>
+          </View>
+          <View style={{flex:3, alignItems: 'flex-start'}}>
+            <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Achievement</Text>
+          </View>
+          <View style={{alignItems:'flex-end', flex:1}}>
+            <IconBack style={{transform: [{ rotateY: '180deg'}], }} />
+          </View>
+        </View>
+        <Gap height={11} />
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+          <View style={{ flex: 1}}>
+            <ProfileF_Button style={{ flex: 1}} width={40} title={<Skills/>} color='#D2F5FD'></ProfileF_Button>
+          </View>
+          <View style={{flex:3, alignItems: 'flex-start'}}>
+            <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Skills</Text>
+          </View>
+          <View style={{alignItems:'flex-end', flex:1}}>
+            <IconBack style={{transform: [{ rotateY: '180deg'}], }} />
+          </View>
+        </View>
+       
       </View>
     </View>
   )
@@ -30,8 +59,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container: {
-    flexDirection: 'row',
+    marginLeft: 60,
+    marginRight: 45,
     alignItems: 'center',
+    alignSelf: 'center',
     justifyContent: 'center',
   },
  
