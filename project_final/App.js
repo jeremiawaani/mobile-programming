@@ -27,6 +27,7 @@ const App = () => {
       {/* <SplashScreen/> */}
      {/* <HomeF_Header/> */}
       {/* <HomeF/> */}
+      <ProfileF />
     </View>
   );
 };
