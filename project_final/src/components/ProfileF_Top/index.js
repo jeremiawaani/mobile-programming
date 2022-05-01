@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   textName: {
     fontFamily: 'Segoe UI Bold',
     fontSize: 16, 
+    color: 'black',
   },
   statusName: {
     fontFamily: 'Segoe UI'
