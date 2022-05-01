@@ -44,7 +44,8 @@ const ProfileF_Bottom = () => {
             <IconBack style={{transform: [{ rotateY: '180deg'}], }} />
           </View>
         </View>
-       
+        <Gap height={30} />
+        <ProfileF_Button width={270} title='Log Out' color='#D2F5FD'></ProfileF_Button>
       </View>
     </View>
   )

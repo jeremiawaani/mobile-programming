@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import { HeaderUser, ProfileF_Bottom, ProfileF_Top } from '../../components';
+import { HeaderUser, ProfileF_Bottom, ProfileF_Top, Footer } from '../../components';
 
 const ProfileF = () => {
   return (
@@ -8,6 +8,7 @@ const ProfileF = () => {
       <HeaderUser title='My Profile' />
       <ProfileF_Top />
       <ProfileF_Bottom />
+      <Footer />
     </View>
   );
 };
