@@ -5,6 +5,7 @@ import Gap from '../Gap'
 
 const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
   return (
+    <View style={styles.page}>
     <View style={styles.container}>
       <Profile height={70} width={70}/>
       <Gap width={23} />
@@ -14,16 +15,26 @@ const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
       </View>
       <Gap width={60} />
       <Pencil />
+      
+      
     </View>
+    
+    <Text style={{marginLeft: 50, marginTop: 17, fontFamily: 'Segoe UI', fontSize: 13}}>My Status</Text>
+    </View>
+    
   )
 }
 
 export default ProfileF_Top
 
 const styles = StyleSheet.create({
-  container: {
+  page:{
     paddingVertical: 20,
     backgroundColor: 'white',
+    justifyContent: 'center',
+  },
+  container: {
+    
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',

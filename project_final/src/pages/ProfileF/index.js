@@ -5,7 +5,7 @@ import { HeaderUser, ProfileF_Top } from '../../components';
 const ProfileF = () => {
   return (
     <View>
-      <HeaderUser />
+      <HeaderUser title='My Profile' />
       <ProfileF_Top />
     </View>
   );
