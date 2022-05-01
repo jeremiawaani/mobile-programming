@@ -1,10 +1,12 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import { Footer, HeaderUser } from '../../components';
 
 const SearchJob = () => {
   return (
     <View>
-      <Text>SearchJob</Text>
+      <HeaderUser title='Search Job' />
+      <Footer />
     </View>
   );
 };

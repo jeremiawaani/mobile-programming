@@ -16,7 +16,7 @@ import {
   DetailsF_BarEmail,
   DetailsF_Content,
 } from './src/components';
-import {DetailsF, HomeF, SelectUser, ProfileF, ProfileC} from './src';
+import {DetailsF, HomeF, SelectUser, ProfileF, ProfileC, SearchJob} from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
 import HomeF_Header from './src/components/HomeF_Header';
@@ -28,7 +28,8 @@ const App = () => {
      {/* <HomeF_Header/> */}
       {/* <HomeF/> */}
       {/* <ProfileF /> */}
-      <ProfileC />
+      {/* <ProfileC /> */}
+      <SearchJob />
     </View>
   );
 };
