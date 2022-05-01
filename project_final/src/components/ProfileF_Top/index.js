@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const ProfileF_Top = () => {
+const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
   return (
     <View>
       
