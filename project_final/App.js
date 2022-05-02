@@ -16,10 +16,13 @@ import {
   DetailsF_BarEmail,
   DetailsF_Content,
 } from './src/components';
-import {DetailsF} from './src';
+import {DetailsF, SignUpF} from './src';
 const App = () => {
   return (
     <View>
+      {/* Agung p commit */}
+      <SignUpF />
+      {/* Erick p commit */}
       <DetailsF />
     </View>
   );
