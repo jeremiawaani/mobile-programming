@@ -9,7 +9,7 @@ const ProfileF_Bottom = () => {
       <Text style={{marginLeft: 50, marginTop: 17, fontFamily: 'Segoe UI', fontSize: 13}}>Dashboard</Text>
       <Gap height={12} />
       <View style={styles.container}>
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+        <View style={{flexDirection: 'row'}}>
           <View style={{ flex: 1}}>
             <Profile_Button style={{ flex: 1}} width={40} title={<Info/>} color='#D2F5FD'></Profile_Button>
           </View>

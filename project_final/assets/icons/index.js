@@ -11,5 +11,6 @@ import  Pencil  from './pencil.svg';
 import Info from './info.svg';
 import Achievement from './achievement.svg';
 import Skills from './skills.svg';
+import SearchInfo from './SearchInfo.svg';
 
-export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, Pencil, Info, Achievement, Skills};
+export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, Pencil, Info, Achievement, Skills, SearchInfo};
