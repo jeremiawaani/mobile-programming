@@ -20,12 +20,15 @@ import {DetailsF, HomeF, SelectUser} from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
 import HomeF_Header from './src/components/HomeF_Header';
+import HomeF_ContentEarnings from './src/components/HomeF_ContentEarnings';
+import HomeF_ContentJobCat from './src/components/HomeF_ContentJobCat';
 const App = () => {
   return (
     <View>
       {/* <SelectUser/> */}
       {/* <SplashScreen/> */}
      {/* <HomeF_Header/> */}
+     <HomeF_ContentJobCat/>
       {/* <HomeF/> */}
     </View>
   );

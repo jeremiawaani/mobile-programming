@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import HomeF_Header from '../../components/HomeF_Header'
 
 const HomeF = () => {
   return (
     <View>
-      <Text>HomeF</Text>
+      <HomeF_Header/>
     </View>
   )
 }
