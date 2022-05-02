@@ -4,6 +4,8 @@ import HeaderUser from './HeaderUser';
 import DetailsF_Header from './DetailsF_Header';
 import ProfileF_Top from './ProfileF_Top';
 import ProfileF_Bottom from './ProfileF_Bottom';
+import ProfileC_Top from './ProfileC_Top';
+import ProfileC_Bottom from './ProfileC_Bottom';
 import SignUpF_Header from './SignUpF_Header';
 import SignUpF_TextInput from './SignUpF_TextInput';
 import SignUpF_Button from './SignUpF_Button';
@@ -14,6 +16,9 @@ import DetailsF_BarClient from './DetailsF_BarClient';
 import DetailsF_BarEmail from './DetailsF_BarEmail';
 import DetailsF_Content from './DetailsF_Content';
 import DetailsF_Button from './DetailsF_Button';
+import Profile_Button from './Profile_Button';
+import HomeF_ContentJobCat from './HomeF_ContentJobCat'
+import HomeF_ContentEarnings from './HomeF_ContentEarnings';
 
 export {
   Footer,
@@ -22,6 +27,8 @@ export {
   DetailsF_Header,
   ProfileF_Top,
   ProfileF_Bottom,
+  ProfileC_Top,
+  ProfileC_Bottom,
   SignUpF_Header,
   SignUpF_TextInput,
   SignUpF_Button,
@@ -32,4 +39,7 @@ export {
   DetailsF_BarEmail,
   DetailsF_Content,
   DetailsF_Button,
+  Profile_Button,
+  HomeF_ContentEarnings,
+  HomeF_ContentJobCat
 };
