@@ -1,10 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import { HeaderUser, ProfileF_Bottom, ProfileF_Top, Footer } from '../../components';
 
 const ProfileF = () => {
   return (
     <View>
-      <Text>ProfileF</Text>
+      <HeaderUser title='My Profile' />
+      <ProfileF_Top />
+      <ProfileF_Bottom />
+      <Footer />
     </View>
   );
 };

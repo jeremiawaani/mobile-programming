@@ -3,7 +3,7 @@ import React from 'react'
 import { Pencil, Profile } from '../../../assets'
 import {Gap, Profile_Button} from '../../components'
 
-const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
+const ProfileC_Top = ({name='Salomo Mandagi', status='JCOs Director'}) => {
   return (
     <View style={styles.page}>
       <View style={styles.container}>
@@ -23,14 +23,14 @@ const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
       <Gap width={9} />
       <Profile_Button title='Offline' color='#D1FBEA'/>
       <Gap width={9} />
-      <Profile_Button title='Full Projects' color='#D2F5FD'/>
+      <Profile_Button title='Looking for Service' color='#D2F5FD'/>
     </View>
     </View>
     
   )
 }
 
-export default ProfileF_Top
+export default ProfileC_Top
 
 const styles = StyleSheet.create({
   page:{

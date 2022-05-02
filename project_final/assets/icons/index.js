@@ -7,4 +7,9 @@ import IconBack from './IconBack.svg';
 import Profile from './Profile.svg';
 import Search from './Search.svg';
 import LogoKecil from './LogoKecil.svg';
-export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil};
+import  Pencil  from './pencil.svg';
+import Info from './info.svg';
+import Achievement from './achievement.svg';
+import Skills from './skills.svg';
+
+export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, Pencil, Info, Achievement, Skills};

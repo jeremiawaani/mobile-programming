@@ -16,14 +16,27 @@ import {
   DetailsF_BarEmail,
   DetailsF_Content,
 } from './src/components';
-import {DetailsF, SignUpF} from './src';
+import {
+  DetailsF,
+  HomeF,
+  SelectUser,
+  ProfileF,
+  ProfileC,
+  SearchJob,
+} from './src';
+import BorderUser from './src/components/SelectUser_border';
+import SplashScreen from './src/pages/SplashScreen';
+import HomeF_Header from './src/components/HomeF_Header';
 const App = () => {
   return (
     <View>
-      {/* Agung p commit */}
-      <SignUpF />
-      {/* Erick p commit */}
-      <DetailsF />
+      {/* <SelectUser/> */}
+      {/* <SplashScreen/> */}
+      {/* <HomeF_Header/> */}
+      {/* <HomeF/> */}
+      {/* <ProfileF /> */}
+      {/* <ProfileC /> */}
+      <SearchJob />
     </View>
   );
 };
