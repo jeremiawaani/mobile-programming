@@ -6,16 +6,18 @@ const SearchJob = () => {
   return (
     <View>
       <HeaderUser title='Search Job' />
-      <View style={{alignItems: 'center'}}>
-      <Profile_Button width={293} height={100} color='#E2D4FE' />
+      <View style={{alignItems: 'center', backgroundColor: 'white'}}>
+      <Gap height={15} />
+      <Profile_Button width={293} height={120} color='#E2D4FE' />
       <Gap height={20} />
-      <Profile_Button width={293} height={100} color='#D1FBEA' />
+      <Profile_Button width={293} height={120} color='#D1FBEA' />
       <Gap height={20} />
-      <Profile_Button width={293} height={100} color='#D2F5FD' />
+      <Profile_Button width={293} height={120} color='#D2F5FD' />
       <Gap height={20} />
-      <Profile_Button width={293} height={100} color='#E2D4FE' />
-      <Gap height={20} />
+      <Profile_Button width={293} height={120} color='#E2D4FE' />
+      <Gap height={15} />
       </View>
+
       <Footer />
     </View>
   );
