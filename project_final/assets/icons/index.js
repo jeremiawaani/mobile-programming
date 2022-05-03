@@ -12,11 +12,34 @@ import Male from './Male.svg';
 import TimeMachine from './TimeMachine.svg';
 import ToDoList from './ToDoListLogo.svg';
 import Location from './Location.svg';
-import Notification from './Notification.svg'
-import History  from './History.svg';
+import Notification from './Notification.svg';
+import History from './History.svg';
 import StackJob from './StackJob.svg';
 import WebShield from './WebShield.svg';
 import Pencil from './Pencil.svg';
 import Achievement from './Achievement.svg';
+import Calendar from './Calendar.svg';
 
-export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, History, JobSeeker, Male, Notification, Location, TimeMachine, ToDoList, StackJob, WebShield, Pencil, Achievement};
+export {
+  Logo,
+  Calendar,
+  People,
+  User,
+  Chat,
+  Home,
+  IconBack,
+  Profile,
+  Search,
+  LogoKecil,
+  History,
+  JobSeeker,
+  Male,
+  Notification,
+  Location,
+  TimeMachine,
+  ToDoList,
+  StackJob,
+  WebShield,
+  Pencil,
+  Achievement,
+};
