@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import React from 'react';
 import {Filter, JobPicture1, Remove, Sort} from '../../../assets';
 import Gap from '../Gap';

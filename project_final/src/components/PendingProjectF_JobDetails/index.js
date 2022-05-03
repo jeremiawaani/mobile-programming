@@ -4,16 +4,17 @@ import {JobPicture1, Remove} from '../../../assets';
 import Gap from '../Gap';
 
 const PendingProjectF_JobDetails = ({title, subTitle}) => {
+  const IconJob = <JobPicture1 />;
   return (
     <View style={styles.content}>
       <View style={styles.contentWrapper}>
         <JobPicture1 />
         <Gap width={10} />
-        <View>
+        <View style={styles.jobCategory}>
           <Text style={styles.txtTitle}>{title}</Text>
           <Text style={styles.txtSubtitle}>{subTitle}</Text>
         </View>
-        <Gap width={120} />
+        <Gap width={46} />
         <Remove />
       </View>
       <Gap height={7} />
@@ -49,5 +50,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Segoe Ui Semi Light',
     fontSize: 12,
     color: '#474747',
+    width: 275,
+  },
+  jobCategory: {
+    width: 190,
   },
 });
