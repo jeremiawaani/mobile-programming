@@ -1,8 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { ProjectF_Label, Gap, ProjectF_Button } from '../../atoms'
-import { Search, Monitor, Pencil, Keyboard, ToDoList} from '../../../assets'
-
+import { ProjectF_Label, Gap, ProjectF_Button } from '../../components'
+import {Monitor, Pencil, Keyboard, ToDoList} from '../../../assets'
 
 const ProjectF_MyProjects = () => {
   return (
