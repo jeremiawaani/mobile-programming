@@ -18,6 +18,9 @@
 		4A412E6E2BC34390822BEFB4 /* Segoe UI Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 479FBE8F733E443DB58C3000 /* Segoe UI Bold.ttf */; };
 		602760CEFE3A4820A7E2B22E /* Segoe UI Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59EC288D32E942459AA56729 /* Segoe UI Italic.ttf */; };
 		594129E2BDA14057A392EA3A /* Segoe UI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA25A6010A5B48A08D251689 /* Segoe UI.ttf */; };
+		27F1851800634DCCA121DEC2 /* Segoe UI Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA8B1803B7C0498FBABDDCB2 /* Segoe UI Light.ttf */; };
+		28B0CBC570134790B46BE477 /* Segoe UI Semi Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EDBC93E414EFFBAB2AE80 /* Segoe UI Semi Bold.ttf */; };
+		B89008C5A5E64A52BF1DADB0 /* Segoe UI Semi Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C73B5E22A67A4A678CF0F875 /* Segoe UI Semi Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		479FBE8F733E443DB58C3000 /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; name = "Segoe UI Bold.ttf"; path = "../assets/fonts/Segoe UI Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		59EC288D32E942459AA56729 /* Segoe UI Italic.ttf */ = {isa = PBXFileReference; name = "Segoe UI Italic.ttf"; path = "../assets/fonts/Segoe UI Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		DA25A6010A5B48A08D251689 /* Segoe UI.ttf */ = {isa = PBXFileReference; name = "Segoe UI.ttf"; path = "../assets/fonts/Segoe UI.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA8B1803B7C0498FBABDDCB2 /* Segoe UI Light.ttf */ = {isa = PBXFileReference; name = "Segoe UI Light.ttf"; path = "../assets/fonts/Segoe UI Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3E0EDBC93E414EFFBAB2AE80 /* Segoe UI Semi Bold.ttf */ = {isa = PBXFileReference; name = "Segoe UI Semi Bold.ttf"; path = "../assets/fonts/Segoe UI Semi Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C73B5E22A67A4A678CF0F875 /* Segoe UI Semi Light.ttf */ = {isa = PBXFileReference; name = "Segoe UI Semi Light.ttf"; path = "../assets/fonts/Segoe UI Semi Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,9 @@
 				479FBE8F733E443DB58C3000 /* Segoe UI Bold.ttf */,
 				59EC288D32E942459AA56729 /* Segoe UI Italic.ttf */,
 				DA25A6010A5B48A08D251689 /* Segoe UI.ttf */,
+				EA8B1803B7C0498FBABDDCB2 /* Segoe UI Light.ttf */,
+				3E0EDBC93E414EFFBAB2AE80 /* Segoe UI Semi Bold.ttf */,
+				C73B5E22A67A4A678CF0F875 /* Segoe UI Semi Light.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -269,6 +278,9 @@
 				4A412E6E2BC34390822BEFB4 /* Segoe UI Bold.ttf in Resources */,
 				602760CEFE3A4820A7E2B22E /* Segoe UI Italic.ttf in Resources */,
 				594129E2BDA14057A392EA3A /* Segoe UI.ttf in Resources */,
+				27F1851800634DCCA121DEC2 /* Segoe UI Light.ttf in Resources */,
+				28B0CBC570134790B46BE477 /* Segoe UI Semi Bold.ttf in Resources */,
+				B89008C5A5E64A52BF1DADB0 /* Segoe UI Semi Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

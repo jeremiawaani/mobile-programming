@@ -3,7 +3,7 @@ import React from 'react';
 import {Calendar, IconBack, Profile} from '../../../assets';
 import Gap from '../Gap';
 
-const DetailsF_Header = () => {
+const PendingProjectF_Header = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -39,7 +39,7 @@ const DetailsF_Header = () => {
   );
 };
 
-export default DetailsF_Header;
+export default PendingProjectF_Header;
 
 const styles = StyleSheet.create({
   borderIconBack: {
