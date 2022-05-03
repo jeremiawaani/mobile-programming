@@ -23,6 +23,7 @@ import {
   ProfileF,
   ProfileC,
   SearchJob,
+  HomeC,
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
