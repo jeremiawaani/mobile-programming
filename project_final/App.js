@@ -25,6 +25,7 @@ import {
   SearchJob,
   PendingProjectF_Header,
   PendingProjectF_Content,
+  PendingProjectF_JobDetails,
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';

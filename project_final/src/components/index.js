@@ -22,6 +22,7 @@ import HomeF_ContentJobCat from './HomeF_ContentJobCat';
 import HomeF_Header from './HomeF_Header';
 import PendingProjectF_Header from './PendingProjectF_Header';
 import PendingProjectF_Content from './PendingProjectF_Content';
+import PendingProjectF_JobDetails from './PendingProjectF_JobDetails';
 export {
   Footer,
   Gap,
@@ -47,4 +48,5 @@ export {
   HomeF_Header,
   PendingProjectF_Header,
   PendingProjectF_Content,
+  PendingProjectF_JobDetails,
 };

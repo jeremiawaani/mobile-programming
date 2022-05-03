@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Filter, JobPicture1, Remove, Sort} from '../../../assets';
 import Gap from '../Gap';
+import PendingProjectF_JobDetails from '../PendingProjectF_JobDetails';
 
 const PendingProjectF_Content = () => {
   return (
@@ -21,22 +22,10 @@ const PendingProjectF_Content = () => {
         </View>
         <Gap height={18} />
         <View style={styles.content}>
-          <View style={styles.contentWrapper}>
-            <JobPicture1 />
-            <Gap width={10} />
-            <View>
-              <Text style={styles.txtTitle}>Design Interface</Text>
-              <Text style={styles.txtSubtitle}>PT. Shopee</Text>
-            </View>
-            <Gap width={120} />
-            <Remove />
-          </View>
-          <Gap height={7} />
-          <Text style={styles.txtContent}>
-            {
-              'Lorem ipsum dolor sit amet, consectetur adipis\nelit. Aliquam mi mauris vestibulum aliquam viverra\nmolestie nibh.'
-            }
-          </Text>
+          <PendingProjectF_JobDetails
+            title={'Design Interface'}
+            subTitle={'PT. Shopee'}
+          />
         </View>
       </View>
     </View>
