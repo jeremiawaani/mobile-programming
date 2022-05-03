@@ -10,7 +10,6 @@ const HomeF = () => {
       <HomeF_ContentEarnings/>
       <Gap height={15}/>
       <HomeF_ContentJobCat/>
-      <Gap height={1}/>
       <Footer/>
     </View>
   )
