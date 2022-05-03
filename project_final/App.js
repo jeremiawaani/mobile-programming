@@ -30,20 +30,18 @@ import SplashScreen from './src/pages/SplashScreen';
 import HomeF_Header from './src/components/HomeF_Header';
 import HomeF_ContentEarnings from './src/components/HomeF_ContentEarnings';
 import HomeF_ContentJobCat from './src/components/HomeF_ContentJobCat';
-import {ProfileC_Top} from './src';
+import { ProfileC_Top } from './src';
 const App = () => {
   return (
     <View>
       {/* <SelectUser/> */}
       {/* <SplashScreen/> */}
-      {/* <HomeF_Header/> */}
-      {/* <HomeF_ContentJobCat/> */}
-      {/* <HomeF /> */}
-      <PendingProjectF_Header />
+     {/* <HomeF_Header/> */}
+     {/* <HomeF_ContentJobCat/> */}
+      <HomeC/>
       {/* <ProfileF /> */}
       {/* <ProfileC_Top/> */}
       {/* <SearchJob /> */}
-      {/* Tes */}
     </View>
   );
 };
