@@ -23,12 +23,8 @@ import {
   ProfileF,
   ProfileC,
   SearchJob,
-<<<<<<< HEAD
   PendingProjectF_Header,
   PendingProjectF_Content,
-=======
-  HomeC,
->>>>>>> 2aa35bf1a24640a190abf59cf2ae28257410f83d
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
