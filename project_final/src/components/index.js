@@ -17,9 +17,9 @@ import DetailsF_BarEmail from './DetailsF_BarEmail';
 import DetailsF_Content from './DetailsF_Content';
 import DetailsF_Button from './DetailsF_Button';
 import Profile_Button from './Profile_Button';
-import HomeF_ContentJobCat from './HomeF_ContentJobCat'
 import HomeF_ContentEarnings from './HomeF_ContentEarnings';
-
+import HomeF_ContentJobCat from './HomeF_ContentJobCat';
+import HomeF_Header from './HomeF_Header';
 export {
   Footer,
   Gap,
@@ -41,5 +41,6 @@ export {
   DetailsF_Button,
   Profile_Button,
   HomeF_ContentEarnings,
-  HomeF_ContentJobCat
+  HomeF_ContentJobCat,
+  HomeF_Header
 };

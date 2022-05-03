@@ -37,9 +37,9 @@ const App = () => {
       {/* <SplashScreen/> */}
      {/* <HomeF_Header/> */}
      {/* <HomeF_ContentJobCat/> */}
-      {/* <HomeF/> */}
+      <HomeF/>
       {/* <ProfileF /> */}
-      <ProfileC_Top/>
+      {/* <ProfileC_Top/> */}
       {/* <SearchJob /> */}
     </View>
   );

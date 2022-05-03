@@ -17,5 +17,6 @@ import History  from './History.svg';
 import StackJob from './StackJob.svg';
 import WebShield from './WebShield.svg';
 import Pencil from './Pencil.svg';
+import Achievement from './Achievement.svg';
 
-export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, History, JobSeeker, Male, Notification, Location, TimeMachine, ToDoList, StackJob, WebShield, Pencil};
+export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, History, JobSeeker, Male, Notification, Location, TimeMachine, ToDoList, StackJob, WebShield, Pencil, Achievement};

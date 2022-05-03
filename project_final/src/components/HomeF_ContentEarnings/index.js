@@ -3,53 +3,51 @@ import React from 'react'
 import Gap from '../Gap'
 import { ToDoList, JobSeeker, History } from '../../../assets'
 
-const HomeF_ContentEarnings = () => {
+const HomeF_ContentEarnings = ({marginLeft=0, paddingLeft=38}) => {
   return (
     <View style={styles.contentEarnings}>
                <View style={{alignSelf: 'center'}}>
                     <View style={styles.content}>
                         <Gap height={10}/>
                         <Text style={styles.earnings}>Earnings</Text>
-                        <Text style={{fontSize: 20, fontWeight: 'bold'}}>Rp 12.500.000</Text>
+                        <Text style={styles.totalEarnings}>Rp 12.500.000</Text>
                         <Gap height={17} />
-                        <View style={styles.TPP}>
+                        <View style={styles.TPH}>
                             <View style={styles.iconStyle}>
                                 <View style={styles.iconWrapper}>
                                     <ToDoList/>
                                 </View>
                             </View>
-                            {/* <Gap width={24} /> */}
                             <View style={styles.iconStyle}>
                                 <View style={styles.iconWrapper}>
                                     <JobSeeker/>
                                 </View>
                             </View>
-                            {/* <Gap width={28} /> */}
                             <View style={styles.iconStyle}>
                                 <View style={styles.iconWrapper}>
                                     <History/>
                                 </View>
-                                
                             </View>
                         </View>
+                        <Gap height={3}/>
                         <View style={{flexDirection: 'row', alignSelf: 'flex-start'}}>
-                            <Text style={{paddingLeft: 30}}>To do List</Text>
-                            <Text style={{paddingLeft: 28}}>Projects</Text>
-                            <Text style={{paddingLeft: 34}}>Projects</Text>
+                            <Text style={styles.txtTPH(paddingLeft)}>To do List</Text>
+                            <Text style={styles.txtTPH(paddingLeft=48)}>Projects</Text>
+                            <Text style={styles.txtTPH(paddingLeft=51)}>History</Text>
                         </View>
                         <Gap height={17} />
                         <View style={styles.progressWrapper}>
-                            <View style={{justifyContent: 'center', alignItems: 'center'}}>
+                            <View style={styles.styleContProg(marginLeft)}>
                                 <Text style={styles.totalProgress}>25</Text>
                                 <Text style={styles.deskripsiProgress}>Complete</Text>
                             </View>
                             <View style={styles.lineVertical}/>
-                            <View style={{justifyContent: 'center', alignItems: 'center', marginLeft: 14}}>
+                            <View style={styles.styleContProg(marginLeft=14)}>
                                 <Text style={styles.totalProgress}>25</Text>
                                 <Text style={styles.deskripsiProgress}>All Projects</Text>
                             </View>
                             <View style={styles.lineVertical}/>
-                            <View style={{justifyContent: 'center', alignItems: 'center', marginLeft: 17}}>
+                            <View style={styles.styleContProg(marginLeft=17)}>
                                 <Text style={styles.totalProgress}>25</Text>
                                 <Text style={styles.deskripsiProgress}>In Complete</Text>
                             </View>
@@ -92,9 +90,10 @@ const styles = StyleSheet.create({
     },
     earnings: {
         fontSize: 11,
-        fontFamily: 'Segoe UI'
+        fontFamily: 'Segoe UI',
+        color: '#000000'
     },
-    TPP: {
+    TPH: {
         flexDirection: 'row', 
         width: 210, 
         justifyContent: 'space-between',
@@ -108,12 +107,14 @@ const styles = StyleSheet.create({
         paddingHorizontal: 14
     },
     totalProgress: {
-        fontWeight: 'bold', 
-        fontSize: 16
+        fontFamily: 'Segoe UI Bold', 
+        fontSize: 16,
+        color: '#000000'
     },
     deskripsiProgress: {
-        fontWeight: 'bold', 
-        fontSize: 11
+        fontFamily: 'Segoe UI', 
+        fontSize: 11,
+        color: '#000000'
     },
     lineVertical: {
         height: 41, 
@@ -121,5 +122,21 @@ const styles = StyleSheet.create({
         marginLeft: 13, 
         backgroundColor: '#C0C0C0', 
         marginTop: 8
-    }
+    },
+    totalEarnings: {
+        fontSize: 20, 
+        fontFamily: 'Segoe UI Bold',
+        color: '#000000'
+    },
+    styleContProg: (marginLeft)=>({
+        marginLeft: marginLeft,
+        justifyContent: 'center', 
+        alignItems: 'center', 
+    }),
+    txtTPH: (paddingLeft) => ({
+        paddingLeft: paddingLeft, 
+        color: '#000000', 
+        fontFamily: 'Segoe UI', 
+        fontSize: 10
+    })
 })
