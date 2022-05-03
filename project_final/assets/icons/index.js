@@ -19,10 +19,11 @@ import WebShield from './WebShield.svg';
 import Pencil from './Pencil.svg';
 import Achievement from './Achievement.svg';
 import Calendar from './Calendar.svg';
-import Sort from './Sort.svg';
-import Filter from './Filter.svg';
-import JobPicture1 from './JobPicture1.svg';
-import Remove from './Remove.svg';
+import Keyboard from './Keyboard.svg';
+import Monitor  from './Monitor.svg';
+import Add from './Add.svg';
+import Present from './Present.svg';
+import ProjectList from './ProjectList.svg'
 
 export {
   Logo,
@@ -46,8 +47,9 @@ export {
   WebShield,
   Pencil,
   Achievement,
-  Sort,
-  Filter,
-  JobPicture1,
-  Remove,
+  Keyboard,
+  Monitor,
+  Add,
+  Present,
+  ProjectList
 };

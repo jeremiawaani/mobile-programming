@@ -1,11 +1,15 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import ProjectF_MyProjects from '../../components/ProjectF_MyProjects'
+import { Footer, Gap, HomeC_ContentHome, HomeF_Header } from '../../components';
+
 const HomeC = () => {
   return (
     <View>
-      <Text>HomeC</Text>
-      <ProjectF_MyProjects/>
+      {/* <Text>HomeC</Text> */}
+      <HomeF_Header/>
+      <HomeC_ContentHome/>
+      <Gap height={22}/>
+      <Footer/>
     </View>
   );
 };
