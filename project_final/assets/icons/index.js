@@ -7,9 +7,16 @@ import IconBack from './IconBack.svg';
 import Profile from './Profile.svg';
 import Search from './Search.svg';
 import LogoKecil from './LogoKecil.svg';
-import  Pencil  from './pencil.svg';
-import Info from './info.svg';
-import Achievement from './achievement.svg';
-import Skills from './skills.svg';
+import JobSeeker from './JobSeeker.svg';
+import Male from './Male.svg';
+import TimeMachine from './TimeMachine.svg';
+import ToDoList from './ToDoListLogo.svg';
+import Location from './Location.svg';
+import Notification from './Notification.svg'
+import History  from './History.svg';
+import StackJob from './StackJob.svg';
+import WebShield from './WebShield.svg';
+import Pencil from './Pencil.svg';
+import Achievement from './Achievement.svg';
 
-export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, Pencil, Info, Achievement, Skills};
+export {Logo, People, User, Chat, Home, IconBack, Profile, Search, LogoKecil, History, JobSeeker, Male, Notification, Location, TimeMachine, ToDoList, StackJob, WebShield, Pencil, Achievement};
