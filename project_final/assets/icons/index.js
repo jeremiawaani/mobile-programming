@@ -4,7 +4,6 @@ import User from './User.svg';
 import Chat from './Chat.svg';
 import Home from './Home.svg';
 import IconBack from './IconBack.svg';
-import Profile from './Profile.svg';
 import Search from './Search.svg';
 import LogoKecil from './LogoKecil.svg';
 import JobSeeker from './JobSeeker.svg';
@@ -16,8 +15,6 @@ import Notification from './Notification.svg';
 import History from './History.svg';
 import StackJob from './StackJob.svg';
 import WebShield from './WebShield.svg';
-import Pencil from './pencil.svg';
-import Achievement from './achievement.svg';
 import Calendar from './Calendar.svg';
 import Keyboard from './Keyboard.svg';
 import Monitor from './Monitor.svg';
@@ -30,6 +27,12 @@ import JobPicture1 from './JobPicture1.svg';
 import JobPicture2 from './JobPicture2.svg';
 import Remove from './Remove.svg';
 
+//Wahyu Agung
+import Pencil from './pencil.svg';
+import Achievement from './achievement.svg';
+import Profile from './Profile.svg';
+import SearchInfo from './SearchInfo.svg'
+
 export {
   Logo,
   Calendar,
@@ -38,7 +41,6 @@ export {
   Chat,
   Home,
   IconBack,
-  Profile,
   Search,
   LogoKecil,
   History,
@@ -50,8 +52,6 @@ export {
   ToDoList,
   StackJob,
   WebShield,
-  Pencil,
-  Achievement,
   Keyboard,
   Monitor,
   Add,
@@ -62,4 +62,10 @@ export {
   JobPicture1,
   JobPicture2,
   Remove,
+
+  //Wahyu Agung
+  Profile,
+  Pencil,
+  Achievement,
+  SearchInfo
 };
