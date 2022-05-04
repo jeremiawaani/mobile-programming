@@ -35,10 +35,11 @@ import HomeF_Header from './src/components/HomeF_Header';
 import HomeF_ContentEarnings from './src/components/HomeF_ContentEarnings';
 import HomeF_ContentJobCat from './src/components/HomeF_ContentJobCat';
 import {ProfileC_Top} from './src';
+import Coba from './src/pages/Coba';
 const App = () => {
   return (
     <View>
-      {/* <SelectUser/> */}
+      {/* <SelectUser /> */}
       {/* <SplashScreen/> */}
       {/* <HomeF_Header/> */}
       {/* <HomeF_ContentJobCat/> */}
@@ -48,6 +49,8 @@ const App = () => {
       {/* <ProfileF /> */}
       {/* <ProfileC_Top/> */}
       {/* <SearchJob /> */}
+      {/* <Coba /> */}
+      {/* <PendingProjectF_JobDetails /> */}
     </View>
   );
 };

@@ -30,7 +30,9 @@ export default PendingProjectF_JobDetails;
 
 const styles = StyleSheet.create({
   content: {
+    height: 120,
     // backgroundColor: 'yellow',
+    marginLeft: 28,
   },
   txtTitle: {
     fontFamily: 'Segoe UI Bold',

@@ -1,10 +1,11 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import React, {useState} from 'react';
 import {Filter, Sort} from '../../../assets';
 import Gap from '../Gap';
 import PendingProjectF_JobDetails from '../PendingProjectF_JobDetails';
 
 const PendingProjectF_Content = () => {
+  const [job, setJob] = useState([]);
   return (
     <View style={styles.container}>
       <View style={styles.head}>
@@ -20,21 +21,6 @@ const PendingProjectF_Content = () => {
           <Gap width={7} />
           <Text style={styles.txtBold}>Filter</Text>
         </View>
-        <Gap height={10} />
-        <Gap height={18} />
-        <View style={styles.content}>
-          <Gap height={8} />
-          <PendingProjectF_JobDetails
-            title={'Design Interface'}
-            subTitle={'PT. Shopee'}
-          />
-          <Gap height={31} />
-          <PendingProjectF_JobDetails
-            title={'Design Interface'}
-            subTitle={'PT. Shopee'}
-          />
-          <Gap height={31} />
-        </View>
       </View>
     </View>
   );
@@ -43,9 +29,10 @@ const PendingProjectF_Content = () => {
 export default PendingProjectF_Content;
 
 const styles = StyleSheet.create({
+  container: {},
   head: {
     // backgroundColor: 'yellow',
-    height: 64,
+    height: 82,
     marginLeft: 29,
   },
   txtBold: {
