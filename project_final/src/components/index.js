@@ -21,14 +21,11 @@ import HomeF_ContentEarnings from './HomeF_ContentEarnings';
 import HomeF_ContentJobCat from './HomeF_ContentJobCat';
 import HomeF_Header from './HomeF_Header';
 import PendingProjectF_Header from './PendingProjectF_Header';
-<<<<<<< HEAD
 import PendingProjectF_Content from './PendingProjectF_Content';
 import PendingProjectF_JobDetails from './PendingProjectF_JobDetails';
 import PendingProjectF_Bottom from './PendingProjectF_Bottom';
-=======
 import ProjectF_MyProjects from './ProjectF_MyProjects';
 import HomeC_ContentHome from './HomeC_ContentHome';
->>>>>>> 3e9d137918f660a05391640f7e5112e224092dc0
 export {
   Footer,
   Gap,
@@ -53,12 +50,9 @@ export {
   HomeF_ContentJobCat,
   HomeF_Header,
   PendingProjectF_Header,
-<<<<<<< HEAD
   PendingProjectF_Content,
   PendingProjectF_JobDetails,
   PendingProjectF_Bottom,
-=======
   ProjectF_MyProjects,
   HomeC_ContentHome,
->>>>>>> 3e9d137918f660a05391640f7e5112e224092dc0
 };
