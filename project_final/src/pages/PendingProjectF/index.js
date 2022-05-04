@@ -20,12 +20,16 @@ const PendingProjectF = () => {
           subTitle={'PT. Shopee'}
         />
         <PendingProjectF_JobDetails
-          title={'Design Interface'}
-          subTitle={'PT. Shopee'}
+          title={'Server Security'}
+          subTitle={'PT. Tokopedia'}
         />
         <PendingProjectF_JobDetails
-          title={'Design Interface'}
-          subTitle={'PT. Shopee'}
+          title={'Database Management'}
+          subTitle={'PT. Traveloka'}
+        />
+        <PendingProjectF_JobDetails
+          title={'Software Analyst'}
+          subTitle={'PT. Bukalapak'}
         />
         <PendingProjectF_Bottom />
       </ScrollView>
