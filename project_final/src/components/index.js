@@ -51,8 +51,8 @@ export {
   HomeF_Header,
   PendingProjectF_Header,
   PendingProjectF_Content,
-  PendingProjectF_JobDetails,
   PendingProjectF_Bottom,
   ProjectF_MyProjects,
   HomeC_ContentHome,
+  PendingProjectF_JobDetails,
 };

@@ -1,6 +1,6 @@
-import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {Filter, JobPicture1, Remove, Sort} from '../../../assets';
+import {Filter, Sort} from '../../../assets';
 import Gap from '../Gap';
 import PendingProjectF_JobDetails from '../PendingProjectF_JobDetails';
 
@@ -20,12 +20,20 @@ const PendingProjectF_Content = () => {
           <Gap width={7} />
           <Text style={styles.txtBold}>Filter</Text>
         </View>
+        <Gap height={10} />
         <Gap height={18} />
         <View style={styles.content}>
+          <Gap height={8} />
           <PendingProjectF_JobDetails
             title={'Design Interface'}
             subTitle={'PT. Shopee'}
           />
+          <Gap height={31} />
+          <PendingProjectF_JobDetails
+            title={'Design Interface'}
+            subTitle={'PT. Shopee'}
+          />
+          <Gap height={31} />
         </View>
       </View>
     </View>
@@ -49,25 +57,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   content: {
-    height: 238,
     // backgroundColor: 'yellow',
-  },
-  txtTitle: {
-    fontFamily: 'Segoe UI Bold',
-    fontSize: 15,
-    color: '#030303',
-  },
-  txtSubtitle: {
-    fontFamily: 'Segoe UI Semi Bold',
-    fontSize: 12,
-    color: '#474747',
-  },
-  contentWrapper: {
-    flexDirection: 'row',
-  },
-  txtContent: {
-    fontFamily: 'Segoe Ui Semi Light',
-    fontSize: 12,
-    color: '#474747',
   },
 });

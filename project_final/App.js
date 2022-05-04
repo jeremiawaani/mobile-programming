@@ -27,6 +27,7 @@ import {
   PendingProjectF_Content,
   PendingProjectF_JobDetails,
   PendingProjectF_Bottom,
+  PendingProjectF,
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
@@ -42,7 +43,8 @@ const App = () => {
       {/* <HomeF_Header/> */}
       {/* <HomeF_ContentJobCat/> */}
       {/* <HomeF /> */}
-      <PendingProjectF_Bottom />
+      {/* <PendingProjectF_Content /> */}
+      <PendingProjectF />
       {/* <ProfileF /> */}
       {/* <ProfileC_Top/> */}
       {/* <SearchJob /> */}

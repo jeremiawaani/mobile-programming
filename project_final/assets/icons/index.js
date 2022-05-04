@@ -20,10 +20,15 @@ import Pencil from './Pencil.svg';
 import Achievement from './Achievement.svg';
 import Calendar from './Calendar.svg';
 import Keyboard from './Keyboard.svg';
-import Monitor  from './Monitor.svg';
+import Monitor from './Monitor.svg';
 import Add from './Add.svg';
 import Present from './Present.svg';
-import ProjectList from './ProjectList.svg'
+import ProjectList from './ProjectList.svg';
+import Sort from './Sort.svg';
+import Filter from './Filter.svg';
+import JobPicture1 from './JobPicture1.svg';
+import JobPicture2 from './JobPicture2.svg';
+import Remove from './Remove.svg';
 
 export {
   Logo,
@@ -51,5 +56,10 @@ export {
   Monitor,
   Add,
   Present,
-  ProjectList
+  ProjectList,
+  Sort,
+  Filter,
+  JobPicture1,
+  JobPicture2,
+  Remove,
 };

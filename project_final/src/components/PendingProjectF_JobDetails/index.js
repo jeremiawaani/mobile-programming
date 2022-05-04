@@ -4,7 +4,6 @@ import {JobPicture1, Remove} from '../../../assets';
 import Gap from '../Gap';
 
 const PendingProjectF_JobDetails = ({title, subTitle}) => {
-  const IconJob = <JobPicture1 />;
   return (
     <View style={styles.content}>
       <View style={styles.contentWrapper}>

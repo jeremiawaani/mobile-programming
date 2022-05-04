@@ -6,6 +6,7 @@ import SearchJob from './SearchJob';
 import SelectUser from './SelectUser';
 import SignUpF from './SignUpF';
 import DetailsF from './DetailsF';
+import PendingProjectF from './PendingProjectF';
 
 export {
   HomeC,
@@ -16,4 +17,5 @@ export {
   SelectUser,
   SignUpF,
   DetailsF,
+  PendingProjectF,
 };
