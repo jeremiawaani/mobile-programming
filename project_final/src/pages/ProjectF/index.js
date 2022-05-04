@@ -1,12 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { IconBack } from '../../assets/icons'
-import { Gap } from '../../components/atoms'
-import { UserPhoto, Monitor, Pencil, Keyboard, Search, ToDoList, Present } from '../../assets'
-import Header from '../../components/molecules/Header'
-import { ProjectF_SearchJob, ProjectF_MyProjects} from '../../components/molecules'
-import ProjectF_PendingProjects from '../../components/molecules/ProjectF_PendingProjects'
-
+import { ProjectF_SearchJob, ProjectF_MyProjects, Gap, ProjectF_PendingProjects, Footer, HeaderUser} from '../../components'
 
 
 const ProjectF = () => {
@@ -15,9 +9,10 @@ const ProjectF = () => {
     <View style={{marginRight: 7}}>
     {/* <Gap width={26} /> */}
     {/* Header */}
-    {/* Header ambe dari component yang ada di github */}
+    {/* Header ambe dari component yang ada di repo github */}
       {/* <Header title="Projects"/> */}
-      <View style={{height: 450, marginTop: 11}}>
+      <HeaderUser title="Projects"/>
+      <View style={{height: 450, marginTop: 15}}>
         {/* Search Job */}
         <ProjectF_SearchJob />
         <Gap height={11} />
