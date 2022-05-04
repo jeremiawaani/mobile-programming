@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { IconBack, Logo } from '../../../assets'
-import { Gap } from '../../atoms'
+import { Gap } from '../../components'
 
 const LoginF_Header = ({text}) => {
   return (

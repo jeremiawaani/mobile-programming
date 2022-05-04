@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity} from 'react-native'
 import React from 'react'
-import { Gap, LoginF_Button, LoginF_LabelActive, LoginF_TextInput} from '../../atoms'
+import { Gap, LoginF_Button, LoginF_LabelActive, LoginF_TextInput} from '../../components'
 import { ToggleOn } from '../../../assets'
 
 
