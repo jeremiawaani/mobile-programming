@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TextInput as TextInputRN } from 'react-native'
 import React from 'react'
-import Gap from '../Gap'
+
 
 const LoginF_TextInput = ({placeholder}) => {
   return (
