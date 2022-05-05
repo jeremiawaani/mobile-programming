@@ -15,11 +15,19 @@ import {
   Remove,
 } from '../../../assets';
 
-const PendingProjectF = () => {
+const CurrentProjectF = () => {
   return (
     <View>
       <ScrollView>
-        <PendingProjectF_Header />
+        <PendingProjectF_Header
+          headerText={'My\nProjects'}
+          sideHeaderText="Current Project"
+          width={110}
+          tab1Text="Current Projects"
+          tab2Text="Complete Projects"
+          widthBorder={107}
+          mR={37}
+        />
         <Gap height={13} />
         <PendingProjectF_Content />
         <PendingProjectF_JobDetails
@@ -52,6 +60,6 @@ const PendingProjectF = () => {
   );
 };
 
-export default PendingProjectF;
+export default CurrentProjectF;
 
 const styles = StyleSheet.create({});

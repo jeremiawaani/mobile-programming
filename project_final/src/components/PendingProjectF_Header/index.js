@@ -3,7 +3,15 @@ import React from 'react';
 import {Calendar, IconBack, Profile} from '../../../assets';
 import Gap from '../Gap';
 
-const PendingProjectF_Header = () => {
+const PendingProjectF_Header = ({
+  headerText = 'Waiting\nfor approval',
+  width = 85,
+  sideHeaderText = 'Job Apply',
+  widthBorder = 60,
+  tab1Text = 'Projects',
+  tab2Text = 'Client Profile',
+  mR = 48,
+}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -16,12 +24,12 @@ const PendingProjectF_Header = () => {
       </View>
       <View style={styles.header2}>
         <View style={styles.header2Border}>
-          <Text style={styles.txt}>{'Waiting\nfor approval'}</Text>
-          <View style={styles.jobApply}>
+          <Text style={styles.txt}>{headerText}</Text>
+          <View style={styles.jobApply(width)}>
             <View style={styles.jobQuantity}>
               <Text style={styles.txtQuantity}>5</Text>
             </View>
-            <Text style={styles.txtJob}>Job Apply</Text>
+            <Text style={styles.txtJob}>{sideHeaderText}</Text>
           </View>
         </View>
         <View style={styles.calendarBorder}>
@@ -30,10 +38,10 @@ const PendingProjectF_Header = () => {
         </View>
       </View>
       <View style={styles.header3}>
-        <Text style={styles.projectTxt}>Projects</Text>
-        <Text style={styles.profileTxt}>Client Profile</Text>
+        <Text style={styles.projectTxt(mR)}>{tab1Text}</Text>
+        <Text style={styles.profileTxt}>{tab2Text}</Text>
       </View>
-      <View style={styles.borderSelect} />
+      <View style={styles.borderSelect(widthBorder)} />
       <View style={styles.border} />
     </View>
   );
@@ -64,19 +72,20 @@ const styles = StyleSheet.create({
     fontFamily: 'Segoe UI Bold',
     fontSize: 20,
     color: '#030303',
+    width: 118,
   },
   header2Border: {
     flexDirection: 'row',
   },
-  jobApply: {
-    width: 85,
+  jobApply: width => ({
+    width: width,
     height: 19,
     borderRadius: 8,
     backgroundColor: '#F3F3F3',
     alignItems: 'center',
     flexDirection: 'row',
     marginLeft: 55,
-  },
+  }),
   txtJob: {
     fontFamily: 'Segoe UI Bold',
     fontSize: 10,
@@ -116,27 +125,27 @@ const styles = StyleSheet.create({
     // backgroundColor: 'yellow',
     alignItems: 'center',
   },
-  projectTxt: {
+  projectTxt: mR => ({
     fontFamily: 'Segoe UI Bold',
     fontSize: 13,
     color: '#030303',
-  },
+    marginRight: mR,
+  }),
   profileTxt: {
     fontFamily: 'Segoe UI',
     fontSize: 13,
     color: '#030303',
-    marginLeft: 48,
   },
   border: {
     borderColor: '#C5C5C5',
     borderTopWidth: 1,
   },
-  borderSelect: {
+  borderSelect: widthBorder => ({
     borderColor: '#50DFFF',
     borderBottomWidth: 3,
-    width: 60,
+    width: widthBorder,
     marginLeft: 28,
     borderTopEndRadius: 5,
     borderTopLeftRadius: 5,
-  },
+  }),
 });
