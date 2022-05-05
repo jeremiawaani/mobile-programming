@@ -30,6 +30,7 @@ import {
   PendingProjectF,
   SignUpF,
   ProjectF,
+  HomeC,
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
@@ -47,10 +48,10 @@ const App = () => {
       {/* <HomeF_ContentJobCat/> */}
       {/* <HomeF /> */}
       {/* <PendingProjectF_Content /> */}
-      <ProjectF />
+      {/* <ProjectF /> */}
       {/* <ProfileF /> */}
       {/* <ProfileC_Top/> */}
-      {/* <SearchJob /> */}
+      <LoginF />
       {/* <Coba /> */}
       {/* <PendingProjectF_JobDetails /> */}
     </View>

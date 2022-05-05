@@ -26,6 +26,8 @@ import Filter from './Filter.svg';
 import JobPicture1 from './JobPicture1.svg';
 import JobPicture2 from './JobPicture2.svg';
 import Remove from './Remove.svg';
+import ToggleOn from './ToggleOn.svg';
+import BackBlueIcon from './BackBlueIcon.svg';
 
 //Wahyu Agung
 import Pencil from './Pencil.svg';
@@ -67,4 +69,6 @@ export {
   Pencil,
   Achievement,
   SearchInfo,
+  ToggleOn,
+  BackBlueIcon,
 };
