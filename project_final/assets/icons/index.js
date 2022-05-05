@@ -32,6 +32,7 @@ import Info from './Info.svg';
 import Skills from './Skills.svg';
 import ProfileLomoKecil from './ProfileLomoKecil.svg';
 import ProfileLomoBesar from './ProfileLomoBesar.svg';
+import AddTabBottom from './AddTabBottom.svg'
 import SearchProject from './SearchProject.svg';
 import ToDoListProjects from './TodoListProjects.svg';
 import JobPicture3 from './JobPicture3.svg';
@@ -74,6 +75,7 @@ export {
   JobPicture1,
   JobPicture2,
   Remove,
+  AddTabBottom,
   SearchProject,
   ToDoListProjects,
   //Wahyu Agung

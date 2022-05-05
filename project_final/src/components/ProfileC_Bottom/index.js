@@ -75,7 +75,7 @@ const ProfileC_Bottom = () => {
             <Profile_Button
               style={{flex: 1}}
               width={40}
-              title={<Skills />}
+              title={<Pencil />}
               color="#E2D4FE"></Profile_Button>
           </View>
           <View style={{flex: 3, alignItems: 'flex-start'}}>

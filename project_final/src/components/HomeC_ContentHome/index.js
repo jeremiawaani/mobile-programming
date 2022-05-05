@@ -3,13 +3,13 @@ import React from 'react'
 import Gap from '../Gap'
 import { Add, Keyboard, Monitor, Pencil, Present, ProjectList } from '../../../assets'
 
-const HomeC_ContentHome = ({backgroundColor='#D1FBEA'}) => {
+const HomeC_ContentHome = ({backgroundColor='#D1FBEA', marginL, icons, title, subtitle}) => {
   return (
     <View style={styles.styleContent}>
         <View style={styles.borderContent(backgroundColor)}>
             <View style={{height:128}}>
-                <Text style={styles.text}>Add Job</Text>
-                <Text style={styles.subText}>12 Job Complete</Text>
+                <Text style={styles.text}>{title}</Text>
+                <Text style={styles.subText}>{subtitle}</Text>
                 <Gap height={11}/>
                 <View style={styles.styleIcon}>
                     <Monitor/>
@@ -17,61 +17,15 @@ const HomeC_ContentHome = ({backgroundColor='#D1FBEA'}) => {
                     <Keyboard/>
                 </View>
             </View>
-            <Gap width={92}/>
-            <View style={{alignItems: 'center'}}>
+            <View style={styles.marginLeftBtn(marginL)}>
             <Gap height={28}/>
-                <Add/>
+                {icons}
                 <Gap height={14}/>
                 <View style={styles.button}>
                     <Text style={styles.textBtn}>View</Text>
                 </View>
             </View>
         </View>
-        <Gap height={13}/>
-        <View style={styles.borderContent(backgroundColor='#D2F5FD')}>
-            <View style={{height:128}}>
-                <Text style={styles.text}>My Projects</Text>
-                <Text style={styles.subText}>12 Projects Complete</Text>
-                <Gap height={11}/>
-                <View style={styles.styleIcon}>
-                    <Monitor/>
-                    <Pencil/>
-                    <Keyboard/>
-                </View>
-            </View>
-            <Gap width={67}/>
-            <View style={{alignItems: 'center'}}>
-            <Gap height={26}/>
-                <ProjectList/>
-                <Gap height={14}/>
-                <View style={styles.button}>
-                    <Text style={styles.textBtn}>View</Text>
-                </View>
-            </View>
-        </View>
-        <Gap height={13}/>
-        <View style={styles.borderContent(backgroundColor='#E2D4FE')}>
-            <View style={{height:128}}>
-                <Text style={styles.text}>Pending Projects</Text>
-                <Text style={styles.subText}>12 Pending Projects</Text>
-                <Gap height={11}/>
-                <View style={styles.styleIcon}>
-                    <Monitor/>
-                    <Pencil/>
-                    <Keyboard/>
-                </View>
-            </View>
-            <Gap width={63}/>
-            <View style={{alignItems: 'center'}}>
-            <Gap height={23}/>
-                <Present/>
-                <Gap height={14}/>
-                <View style={styles.button}>
-                    <Text style={styles.textBtn}>View</Text>
-                </View>
-            </View>
-        </View>
-
     </View>
   )
 }
@@ -122,5 +76,9 @@ const styles = StyleSheet.create({
         fontFamily: 'Segoe UI Bold',
         fontSize: 14,
         color: '#FFFFFF'
-    }
+    },
+    marginLeftBtn: (marginL) => ({
+        marginLeft: marginL,
+        alignItems: 'center',
+    })
 })

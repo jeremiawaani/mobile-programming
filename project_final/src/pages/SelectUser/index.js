@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import BorderUser from '../../components/SelectUser_border';
 import { Gap } from '../../components';
+import { Male, People } from '../../../assets';
 
 const SelectUser = () => {
   return (
@@ -13,9 +14,9 @@ const SelectUser = () => {
           <Text style={styles.please}>Please select user</Text>
         </View>
         <View style={styles.container}>
-            <BorderUser color='#D2F5FD' Title='Freelancer' SubTitle='Find Job'/>
+            <BorderUser color='#D2F5FD' Title='Freelancer' SubTitle='Find Job' icons={<People/>}/>
             <Gap height={18}/>
-            <BorderUser color='#D1FBEA' Title='Client' SubTitle='Find Service'/>
+            <BorderUser color='#D1FBEA' Title='Client' SubTitle='Find Service' icons={<Male/>}/>
             
         </View>
     </View>
