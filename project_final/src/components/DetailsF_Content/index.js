@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import DetailsF_BarDesc from '../DetailsF_BarDesc';
 import DetailsF_BarSkill from '../DetailsF_BarSkill';
@@ -21,9 +21,13 @@ const DetailsF_Content = () => {
       <View style={styles.flexD}>
         <DetailsF_BarClient />
         <Gap width={60} />
-        <DetailsF_Button title={'Contact'} />
+        <TouchableOpacity activeOpacity={0.7}>
+          <DetailsF_Button title={'Contact'} />
+        </TouchableOpacity>
         <Gap width={6} />
-        <DetailsF_Button title={'Apply'} />
+        <TouchableOpacity activeOpacity={0.7}>
+          <DetailsF_Button title={'Apply'} />
+        </TouchableOpacity>
       </View>
     </View>
   );

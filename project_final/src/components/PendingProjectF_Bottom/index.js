@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import Gap from '../Gap';
 
@@ -6,9 +6,11 @@ const PendingProjectF_Bottom = () => {
   return (
     <View style={styles.container}>
       <Gap height={4} />
-      <View style={styles.buttonStyles}>
-        <Text style={styles.txt}>Confirm</Text>
-      </View>
+      <TouchableOpacity activeOpacity={0.7}>
+        <View style={styles.buttonStyles}>
+          <Text style={styles.txt}>Confirm</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };

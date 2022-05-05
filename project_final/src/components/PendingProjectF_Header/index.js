@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {Calendar, IconBack, Profile} from '../../../assets';
 import Gap from '../Gap';
@@ -20,9 +20,11 @@ const PendingProjectF_Header = ({
     <View style={styles.container}>
       <View style={styles.header}>
         <Gap width={25} />
-        <View style={styles.borderIconBack}>
-          <IconBack />
-        </View>
+        <TouchableOpacity activeOpacity={0.7}>
+          <View style={styles.borderIconBack}>
+            <IconBack />
+          </View>
+        </TouchableOpacity>
         <Gap width={240} />
         {profile}
       </View>
