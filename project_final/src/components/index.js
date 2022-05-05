@@ -41,6 +41,7 @@ import HeaderClient from './HeaderClient';
 // Gerald p page
 import CurrentProjectF_Header from './CurrentProjectF_Header';
 import CurrentProjectF_Content from './CurrentProjectF_Content';
+import CurrentProjectF_JobDetails from './CurrentProjectF_JobDetails';
 
 export {
   Footer,
@@ -85,4 +86,5 @@ export {
   // Gerald p Page
   CurrentProjectF_Header,
   CurrentProjectF_Content,
+  CurrentProjectF_JobDetails,
 };

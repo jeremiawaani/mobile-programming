@@ -17,6 +17,7 @@ import {
   DetailsF_Content,
   CurrentProjectF_Header,
   CurrentProjectF_Content,
+  CurrentProjectF_JobDetails,
 } from './src/components';
 import {
   DetailsF,
@@ -44,7 +45,7 @@ import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
-      <CurrentProjectF_Content />
+      <CurrentProjectF_JobDetails />
 
       {/* Tes */}
     </View>
