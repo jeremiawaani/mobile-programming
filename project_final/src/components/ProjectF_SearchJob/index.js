@@ -1,15 +1,11 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {Search, Monitor, Pencil, Keyboard} from '../../../assets';
+import {Monitor, Pencil, Keyboard, SearchProject} from '../../../assets';
 import Gap from '../Gap';
 import ProjectF_Label from '../ProjectF_Label';
 import ProjectF_Button from '../ProjectF_Button';
 
-const ProjectF_SearchJob = ({
-  labelPassiveColor,
-  labelPassiveFamily,
-  labelActiveColor,
-}) => {
+const ProjectF_SearchJob = () => {
   return (
     <View style={styles.container}>
       <View style={{flexDirection: 'row', height: 21}}>
@@ -19,7 +15,7 @@ const ProjectF_SearchJob = ({
           title="Looking for a job"
         />
         <View style={{marginLeft: 60}}>
-          <Search />
+          <SearchProject />
         </View>
       </View>
 
