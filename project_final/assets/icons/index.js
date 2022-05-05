@@ -28,10 +28,10 @@ import JobPicture2 from './JobPicture2.svg';
 import Remove from './Remove.svg';
 
 //Wahyu Agung
-import Pencil from './pencil.svg';
-import Achievement from './achievement.svg';
+import Pencil from './Pencil.svg';
+import Achievement from './Achievement.svg';
 import Profile from './Profile.svg';
-import SearchInfo from './SearchInfo.svg'
+import SearchInfo from './SearchInfo.svg';
 
 export {
   Logo,
@@ -62,10 +62,9 @@ export {
   JobPicture1,
   JobPicture2,
   Remove,
-
   //Wahyu Agung
   Profile,
   Pencil,
   Achievement,
-  SearchInfo
+  SearchInfo,
 };
