@@ -1,9 +1,16 @@
+<<<<<<< HEAD
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { ProjectF_Label, Gap, ProjectF_Button } from '../../components'
+import { Present, Monitor, Keyboard, Pencil } from '../../../assets'
+=======
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Present, Monitor, Keyboard, Pencil} from '../../../assets';
 import ProjectF_Label from '../ProjectF_Label';
 import Gap from '../Gap';
 import ProjectF_Button from '../ProjectF_Button';
+>>>>>>> b8d5a5aae94d36b494b00c47787df00fc43a9429
 const ProjectF_PendingProjects = () => {
   return (
     <View style={styles.container}>
