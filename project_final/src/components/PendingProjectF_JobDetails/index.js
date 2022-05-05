@@ -3,18 +3,24 @@ import React from 'react';
 import {JobPicture1, Remove} from '../../../assets';
 import Gap from '../Gap';
 
-const PendingProjectF_JobDetails = ({title, subTitle}) => {
+const PendingProjectF_JobDetails = ({
+  title,
+  subTitle,
+  JobImg,
+  icons = <Remove />,
+}) => {
   return (
     <View style={styles.content}>
       <View style={styles.contentWrapper}>
-        <JobPicture1 />
+        {JobImg}
+        {/* <JobPicture1 /> */}
         <Gap width={10} />
         <View style={styles.jobCategory}>
           <Text style={styles.txtTitle}>{title}</Text>
           <Text style={styles.txtSubtitle}>{subTitle}</Text>
         </View>
         <Gap width={46} />
-        <Remove />
+        {icons}
       </View>
       <Gap height={7} />
       <Text style={styles.txtContent}>

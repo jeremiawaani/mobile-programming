@@ -15,6 +15,9 @@ import {
   DetailsF_BarClient,
   DetailsF_BarEmail,
   DetailsF_Content,
+  CurrentProjectF_Header,
+  CurrentProjectF_Content,
+  CurrentProjectF_JobDetails,
 } from './src/components';
 import {
   DetailsF,
@@ -31,6 +34,11 @@ import {
   SignUpF,
   ProjectF,
   HomeC,
+  CurrentProjectF,
+  CompleteProjectF,
+  PendingProjectC,
+  CurrentProjectC,
+  CompleteProjectC,
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
