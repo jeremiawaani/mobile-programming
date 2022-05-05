@@ -32,6 +32,8 @@ import Info from './Info.svg';
 import Skills from './Skills.svg';
 import ProfileLomoKecil from './ProfileLomoKecil.svg';
 import ProfileLomoBesar from './ProfileLomoBesar.svg';
+import JobPicture3 from './JobPicture3.svg';
+import JobPicture4 from './JobPicture4.svg';
 
 //Wahyu Agung
 import Pencil from './Pencil.svg';
@@ -79,4 +81,6 @@ export {
   Skills,
   ProfileLomoKecil,
   ProfileLomoBesar,
+  JobPicture3,
+  JobPicture4,
 };
