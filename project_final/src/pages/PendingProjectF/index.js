@@ -7,6 +7,12 @@ import {
   PendingProjectF_Header,
   PendingProjectF_JobDetails,
 } from '../../components';
+import {
+  JobPicture1,
+  JobPicture2,
+  JobPicture3,
+  JobPicture4,
+} from '../../../assets';
 
 const PendingProjectF = () => {
   return (
@@ -18,18 +24,22 @@ const PendingProjectF = () => {
         <PendingProjectF_JobDetails
           title={'Design Interface'}
           subTitle={'PT. Shopee'}
+          iconsPass={<JobPicture1 />}
         />
         <PendingProjectF_JobDetails
           title={'Server Security'}
           subTitle={'PT. Tokopedia'}
+          iconsPass={<JobPicture2 />}
         />
         <PendingProjectF_JobDetails
           title={'Database Management'}
           subTitle={'PT. Traveloka'}
+          iconsPass={<JobPicture3 />}
         />
         <PendingProjectF_JobDetails
           title={'Software Analyst'}
           subTitle={'PT. Bukalapak'}
+          iconsPass={<JobPicture4 />}
         />
         <PendingProjectF_Bottom />
       </ScrollView>

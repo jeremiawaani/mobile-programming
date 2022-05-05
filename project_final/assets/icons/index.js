@@ -34,6 +34,9 @@ import ProfileLomoKecil from './ProfileLomoKecil.svg';
 import ProfileLomoBesar from './ProfileLomoBesar.svg';
 import SearchProject from './SearchProject.svg'
 import ToDoListProjects from './TodoListProjects.svg'
+import JobPicture3 from './JobPicture3.svg';
+import JobPicture4 from './JobPicture4.svg';
+
 //Wahyu Agung
 import Pencil from './Pencil.svg';
 import Achievement from './Achievement.svg';
@@ -82,4 +85,6 @@ export {
   Skills,
   ProfileLomoKecil,
   ProfileLomoBesar,
+  JobPicture3,
+  JobPicture4,
 };
