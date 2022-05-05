@@ -4,7 +4,7 @@ import {Filter, Sort} from '../../../assets';
 import Gap from '../Gap';
 import PendingProjectF_JobDetails from '../PendingProjectF_JobDetails';
 
-const PendingProjectF_Content = () => {
+const CurrentProjectF_Content = () => {
   return (
     <View style={styles.container}>
       <View style={styles.head}>
@@ -25,7 +25,7 @@ const PendingProjectF_Content = () => {
   );
 };
 
-export default PendingProjectF_Content;
+export default CurrentProjectF_Content;
 
 const styles = StyleSheet.create({
   container: {},

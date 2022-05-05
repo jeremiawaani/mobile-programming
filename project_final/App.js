@@ -16,6 +16,7 @@ import {
   DetailsF_BarEmail,
   DetailsF_Content,
   CurrentProjectF_Header,
+  CurrentProjectF_Content,
 } from './src/components';
 import {
   DetailsF,
@@ -43,7 +44,7 @@ import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
-      <CurrentProjectF_Header />
+      <CurrentProjectF_Content />
 
       {/* Tes */}
     </View>

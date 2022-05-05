@@ -37,7 +37,10 @@ import LoginF_Content from './LoginF_Content';
 import LoginF_Footer from './LoginF_Footer';
 import LoginF_Button from './LoginF_Button';
 import HeaderClient from './HeaderClient';
+
+// Gerald p page
 import CurrentProjectF_Header from './CurrentProjectF_Header';
+import CurrentProjectF_Content from './CurrentProjectF_Content';
 
 export {
   Footer,
@@ -79,5 +82,7 @@ export {
   LoginF_Label,
   LoginF_TextInput,
   HeaderClient,
+  // Gerald p Page
   CurrentProjectF_Header,
+  CurrentProjectF_Content,
 };
