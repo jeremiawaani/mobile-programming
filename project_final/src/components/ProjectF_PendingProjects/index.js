@@ -12,7 +12,7 @@ const ProjectF_PendingProjects = () => {
           labelSize={16}
           title="Pending Projects"
         />
-        <View style={{marginLeft: 71}}>
+        <View style={{marginLeft: 64}}>
           <Present />
         </View>
       </View>

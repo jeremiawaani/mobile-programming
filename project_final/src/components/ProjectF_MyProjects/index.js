@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { ProjectF_Label, Gap, ProjectF_Button } from '../../components'
-import {Monitor, Pencil, Keyboard, ToDoList} from '../../../assets'
+import {Monitor, Pencil, Keyboard, ToDoListProjects} from '../../../assets'
 
 const ProjectF_MyProjects = () => {
   return (
@@ -9,8 +9,8 @@ const ProjectF_MyProjects = () => {
           {/* <View style={{}}> */}
           <View style={{flexDirection: 'row', height: 21}}>
             <ProjectF_Label labelFamily= 'Segoe UI Bold' labelSize= {16} title="My Projects" />
-              <View style={{marginLeft: 106}}>
-                <ToDoList />
+              <View style={{marginLeft: 102}}>
+                <ToDoListProjects />
               </View>
           </View>
 

@@ -42,7 +42,9 @@ import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
-      <PendingProjectF />
+      {/* <PendingProjectF /> */}
+      {/* <LoginF /> */}
+      <ProjectF />
 
       {/* Tes */}
     </View>
