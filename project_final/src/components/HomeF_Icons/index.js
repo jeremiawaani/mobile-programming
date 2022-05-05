@@ -1,12 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const HomeF_IconsContEarn = ({icons}) => {
   return (
     <View style={styles.iconStyle}>
-        <View style={styles.iconWrapper}>
-            {icons}
-        </View>
+        <TouchableOpacity activeOpacity={0.7}>
+            <View style={styles.iconWrapper}>
+                {icons}
+            </View>
+        </TouchableOpacity>
+        
     </View>
   )
 }
