@@ -7,6 +7,8 @@ import SelectUser from './SelectUser';
 import SignUpF from './SignUpF';
 import DetailsF from './DetailsF';
 import PendingProjectF from './PendingProjectF';
+import ProjectF from './ProjectF';
+import LoginF from './LoginF';
 
 export {
   HomeC,
@@ -18,4 +20,6 @@ export {
   SignUpF,
   DetailsF,
   PendingProjectF,
+  ProjectF,
+  LoginF,
 };

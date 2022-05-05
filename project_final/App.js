@@ -28,6 +28,8 @@ import {
   PendingProjectF_JobDetails,
   PendingProjectF_Bottom,
   PendingProjectF,
+  SignUpF,
+  ProjectF,
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
@@ -35,7 +37,7 @@ import HomeF_Header from './src/components/HomeF_Header';
 import HomeF_ContentEarnings from './src/components/HomeF_ContentEarnings';
 import HomeF_ContentJobCat from './src/components/HomeF_ContentJobCat';
 import {ProfileC_Top} from './src';
-import Coba from './src/pages/Coba';
+import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
@@ -45,7 +47,7 @@ const App = () => {
       {/* <HomeF_ContentJobCat/> */}
       {/* <HomeF /> */}
       {/* <PendingProjectF_Content /> */}
-      <PendingProjectF />
+      <ProjectF />
       {/* <ProfileF /> */}
       {/* <ProfileC_Top/> */}
       {/* <SearchJob /> */}
