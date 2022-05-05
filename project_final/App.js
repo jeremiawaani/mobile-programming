@@ -50,7 +50,7 @@ import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
-      <CompleteProjectC />
+      <HeaderUser />
 
       {/* Tes */}
     </View>

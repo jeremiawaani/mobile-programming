@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {
   Gap,
@@ -25,7 +25,9 @@ const SignUpF = () => {
         <Gap height={8} />
         <SignUpF_TextInput title={'Password'} placeholder={'Password'} />
         <Gap height={33} />
-        <SignUpF_Button />
+        <TouchableOpacity activeOpacity={0.7}>
+          <SignUpF_Button />
+        </TouchableOpacity>
       </View>
       <View style={styles.footer}>
         <SignUpF_Footer />

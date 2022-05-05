@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {IconBack, Profile} from '../../../assets';
 import Gap from '../Gap';
@@ -12,9 +12,11 @@ const DetailsF_Header = () => {
       />
       <View style={styles.header}>
         <Gap width={25} />
-        <View style={styles.borderIconBack}>
-          <IconBack />
-        </View>
+        <TouchableOpacity activeOpacity={0.7}>
+          <View style={styles.borderIconBack}>
+            <IconBack />
+          </View>
+        </TouchableOpacity>
         <Gap width={240} />
         <Profile />
       </View>

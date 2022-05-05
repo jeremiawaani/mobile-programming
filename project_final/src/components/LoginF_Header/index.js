@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {BackBlueIcon, Logo} from '../../../assets';
 import {Gap} from '../../components';
@@ -8,7 +8,9 @@ const LoginF_Header = ({text}) => {
     <View style={styles.container}>
       {/*Icon Back*/}
       <View style={styles.iconBack}>
-        <BackBlueIcon />
+        <TouchableOpacity activeOpacity={0.7}>
+          <BackBlueIcon />
+        </TouchableOpacity>
       </View>
       {/*Logo dan Teks*/}
       <View style={styles.logoWrapper}>
