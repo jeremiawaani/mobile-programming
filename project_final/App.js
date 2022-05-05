@@ -51,7 +51,7 @@ const App = () => {
       {/* <ProjectF /> */}
       {/* <ProfileF /> */}
       {/* <ProfileC_Top/> */}
-      <LoginF />
+      <ProfileF />
       {/* <Coba /> */}
       {/* <PendingProjectF_JobDetails /> */}
     </View>
