@@ -32,6 +32,7 @@ import Info from './Info.svg';
 import Skills from './Skills.svg';
 import ProfileLomoKecil from './ProfileLomoKecil.svg';
 import ProfileLomoBesar from './ProfileLomoBesar.svg';
+import AddTabBottom from './AddTabBottom.svg'
 
 //Wahyu Agung
 import Pencil from './Pencil.svg';
@@ -68,6 +69,7 @@ export {
   JobPicture1,
   JobPicture2,
   Remove,
+  AddTabBottom,
   //Wahyu Agung
   Profile,
   Pencil,

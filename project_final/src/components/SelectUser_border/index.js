@@ -3,11 +3,13 @@ import React from 'react'
 import { People } from '../../../assets'
 import Gap from '../Gap'
 
-const BorderUser = ({color='#D2F5FD', Title, SubTitle}) => {
+const BorderUser = ({color='#D2F5FD', Title, SubTitle, icons}) => {
   return (
     <TouchableOpacity activeOpacity={0.6}>
       <View style={styles.wrapper(color)}>
-        <People style={styles.icon}/>
+        <View style={styles.icon}>
+          {icons}
+        </View>
         <View style={{marginLeft: 55.98}}>
           <Gap height={41}/>
           <Text style={styles.textTitle}>{Title}</Text>

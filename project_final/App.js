@@ -42,9 +42,8 @@ import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
-      <PendingProjectF />
-
-      {/* Tes */}
+      {/* <ProfileC /> */}
+      <ProfileC/>
     </View>
   );
 };

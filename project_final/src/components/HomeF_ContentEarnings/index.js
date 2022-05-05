@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Gap from '../Gap'
 import { ToDoList, JobSeeker, History } from '../../../assets'
+import HomeF_IconsContEarn from '../HomeF_Icons'
 
 const HomeF_ContentEarnings = ({marginLeft=0, paddingLeft=38}) => {
   return (
@@ -13,21 +14,9 @@ const HomeF_ContentEarnings = ({marginLeft=0, paddingLeft=38}) => {
                         <Text style={styles.totalEarnings}>Rp 12.500.000</Text>
                         <Gap height={17} />
                         <View style={styles.TPH}>
-                            <View style={styles.iconStyle}>
-                                <View style={styles.iconWrapper}>
-                                    <ToDoList/>
-                                </View>
-                            </View>
-                            <View style={styles.iconStyle}>
-                                <View style={styles.iconWrapper}>
-                                    <JobSeeker/>
-                                </View>
-                            </View>
-                            <View style={styles.iconStyle}>
-                                <View style={styles.iconWrapper}>
-                                    <History/>
-                                </View>
-                            </View>
+                            <HomeF_IconsContEarn icons={<ToDoList/>}/>
+                            <HomeF_IconsContEarn icons={<JobSeeker/>}/>
+                            <HomeF_IconsContEarn icons={<History/>}/>
                         </View>
                         <Gap height={3}/>
                         <View style={{flexDirection: 'row', alignSelf: 'flex-start'}}>
@@ -72,19 +61,6 @@ const styles = StyleSheet.create({
         width: 292, 
         backgroundColor: '#D2F5FD', 
         borderRadius: 20, 
-        flexDirection: 'column', 
-        alignItems: 'center'
-    },
-    iconWrapper: {
-        width: 40, 
-        height: 40, 
-        backgroundColor: 'white', 
-        borderRadius: 40, 
-        flexDirection: 'column', 
-        justifyContent: 'center', 
-        alignItems: 'center',
-    },
-    iconStyle: {
         flexDirection: 'column', 
         alignItems: 'center'
     },
