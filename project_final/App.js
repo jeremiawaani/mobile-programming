@@ -45,10 +45,10 @@ const App = () => {
       {/* <HomeF_ContentJobCat/> */}
       {/* <HomeF /> */}
       {/* <PendingProjectF_Content /> */}
-      {/* <PendingProjectF /> */}
+      <PendingProjectF />
       {/* <ProfileF /> */}
       {/* <ProfileC_Top/> */}
-      <SearchJob />
+      {/* <SearchJob /> */}
       {/* <Coba /> */}
       {/* <PendingProjectF_JobDetails /> */}
     </View>
