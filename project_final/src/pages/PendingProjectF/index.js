@@ -12,6 +12,7 @@ import {
   JobPicture2,
   JobPicture3,
   JobPicture4,
+  Profile,
   Remove,
 } from '../../../assets';
 
@@ -19,7 +20,7 @@ const PendingProjectF = () => {
   return (
     <View>
       <ScrollView>
-        <PendingProjectF_Header />
+        <PendingProjectF_Header profile={<Profile />} />
         <Gap height={13} />
         <PendingProjectF_Content />
         <PendingProjectF_JobDetails

@@ -14,6 +14,7 @@ const PendingProjectF_Header = ({
   mL = 28,
   fontFamilyTab1 = 'Segoe UI Bold',
   fontFamilyTab2 = 'Segoe UI',
+  profile,
 }) => {
   return (
     <View style={styles.container}>
@@ -23,7 +24,7 @@ const PendingProjectF_Header = ({
           <IconBack />
         </View>
         <Gap width={240} />
-        <Profile />
+        {profile}
       </View>
       <View style={styles.header2}>
         <View style={styles.header2Border}>

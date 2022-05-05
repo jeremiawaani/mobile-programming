@@ -36,6 +36,7 @@ import {
   HomeC,
   CurrentProjectF,
   CompleteProjectF,
+  PendingProjectC,
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
@@ -47,7 +48,7 @@ import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
-      <CompleteProjectF />
+      <PendingProjectC />
 
       {/* Tes */}
     </View>

@@ -12,6 +12,7 @@ import {
   JobPicture2,
   JobPicture3,
   JobPicture4,
+  Profile,
   Remove,
 } from '../../../assets';
 
@@ -27,6 +28,7 @@ const CurrentProjectF = () => {
           tab2Text="Complete Projects"
           widthBorder={107}
           mR={37}
+          profile={<Profile />}
         />
         <Gap height={13} />
         <PendingProjectF_Content />

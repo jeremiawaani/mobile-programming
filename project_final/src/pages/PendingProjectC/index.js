@@ -8,56 +8,48 @@ import {
   PendingProjectF_JobDetails,
 } from '../../components';
 import {
-  InfoJob,
   JobPicture1,
   JobPicture2,
   JobPicture3,
   JobPicture4,
-  Profile,
+  Ok,
+  ProfileLomoKecil,
+  Remove,
 } from '../../../assets';
 
-const CompleteProjectF = () => {
+const PendingProjectC = () => {
   return (
     <View>
       <ScrollView>
         <PendingProjectF_Header
-          headerText={'My\nProjects'}
-          sideHeaderText="Complete Project"
-          width={110}
-          tab1Text="Current Projects"
-          tab2Text="Complete Projects"
-          widthBorder={126}
-          mR={37}
-          mL={155}
-          fontFamilyTab1={'Segoe UI'}
-          fontFamilyTab2={'Segoe UI Bold'}
-          profile={<Profile />}
+          profile={<ProfileLomoKecil />}
+          tab2Text="Freelance Profile"
         />
         <Gap height={13} />
         <PendingProjectF_Content />
         <PendingProjectF_JobDetails
           title={'Design Interface'}
-          subTitle={'PT. Shopee'}
+          subTitle={'Andre Waani'}
           JobImg={<JobPicture1 />}
-          icons={<InfoJob />}
+          icons={<Ok />}
         />
         <PendingProjectF_JobDetails
           title={'Server Security'}
-          subTitle={'PT. Tokopedia'}
+          subTitle={'Salomo Mandagi'}
           JobImg={<JobPicture2 />}
-          icons={<InfoJob />}
+          icons={<Ok />}
         />
         <PendingProjectF_JobDetails
           title={'Database Management'}
-          subTitle={'PT. Traveloka'}
+          subTitle={'Wahyu Agung'}
           JobImg={<JobPicture3 />}
-          icons={<InfoJob />}
+          icons={<Ok />}
         />
         <PendingProjectF_JobDetails
           title={'Software Analyst'}
-          subTitle={'PT. Bukalapak'}
+          subTitle={'Gerald Wuysang'}
           JobImg={<JobPicture4 />}
-          icons={<InfoJob />}
+          icons={<Ok />}
         />
         <PendingProjectF_Bottom />
       </ScrollView>
@@ -65,6 +57,6 @@ const CompleteProjectF = () => {
   );
 };
 
-export default CompleteProjectF;
+export default PendingProjectC;
 
 const styles = StyleSheet.create({});

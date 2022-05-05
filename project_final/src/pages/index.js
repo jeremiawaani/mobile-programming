@@ -11,6 +11,7 @@ import ProjectF from './ProjectF';
 import LoginF from './LoginF';
 import CurrentProjectF from './CurrentProjectF';
 import CompleteProjectF from './CompleteProjectF';
+import PendingProjectC from './PendingProjectC';
 
 export {
   HomeC,
@@ -26,4 +27,5 @@ export {
   LoginF,
   CurrentProjectF,
   CompleteProjectF,
+  PendingProjectC,
 };
