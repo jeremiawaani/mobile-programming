@@ -30,6 +30,8 @@ import ToggleOn from './ToggleOn.svg';
 import BackBlueIcon from './BackBlueIcon.svg';
 import Info from './Info.svg';
 import Skills from './Skills.svg';
+import ProfileLomoKecil from './ProfileLomoKecil.svg';
+import ProfileLomoBesar from './ProfileLomoBesar.svg';
 
 //Wahyu Agung
 import Pencil from './Pencil.svg';
@@ -75,4 +77,6 @@ export {
   BackBlueIcon,
   Info,
   Skills,
+  ProfileLomoKecil,
+  ProfileLomoBesar,
 };

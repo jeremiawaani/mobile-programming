@@ -42,18 +42,7 @@ import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
-      {/* <SelectUser /> */}
-      {/* <SplashScreen/> */}
-      {/* <HomeF_Header/> */}
-      {/* <HomeF_ContentJobCat/> */}
-      {/* <HomeF /> */}
-      {/* <PendingProjectF_Content /> */}
-      {/* <ProjectF /> */}
-      {/* <ProfileF /> */}
-      {/* <ProfileC_Top/> */}
-      <ProfileF />
-      {/* <Coba /> */}
-      {/* <PendingProjectF_JobDetails /> */}
+      <ProfileC />
     </View>
   );
 };

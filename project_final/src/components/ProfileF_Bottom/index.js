@@ -54,7 +54,7 @@ const ProfileF_Bottom = () => {
               style={{flex: 1}}
               width={40}
               title={<Achievement />}
-              color="#D2F5FD"></Profile_Button>
+              color="#D1FBEA"></Profile_Button>
           </View>
           <View style={{flex: 3, alignItems: 'flex-start'}}>
             <Text
@@ -77,7 +77,7 @@ const ProfileF_Bottom = () => {
               style={{flex: 1}}
               width={40}
               title={<Skills />}
-              color="#D2F5FD"></Profile_Button>
+              color="#E2D4FE"></Profile_Button>
           </View>
           <View style={{flex: 3, alignItems: 'flex-start'}}>
             <Text
@@ -97,7 +97,7 @@ const ProfileF_Bottom = () => {
         <Profile_Button
           width={270}
           title="Log Out"
-          color="#D2F5FD"></Profile_Button>
+          color="#D1FBEA"></Profile_Button>
       </View>
     </View>
   );
