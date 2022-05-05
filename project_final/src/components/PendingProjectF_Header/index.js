@@ -11,6 +11,9 @@ const PendingProjectF_Header = ({
   tab1Text = 'Projects',
   tab2Text = 'Client Profile',
   mR = 48,
+  mL = 28,
+  fontFamilyTab1 = 'Segoe UI Bold',
+  fontFamilyTab2 = 'Segoe UI',
 }) => {
   return (
     <View style={styles.container}>
@@ -38,10 +41,10 @@ const PendingProjectF_Header = ({
         </View>
       </View>
       <View style={styles.header3}>
-        <Text style={styles.projectTxt(mR)}>{tab1Text}</Text>
-        <Text style={styles.profileTxt}>{tab2Text}</Text>
+        <Text style={styles.projectTxt(mR, fontFamilyTab1)}>{tab1Text}</Text>
+        <Text style={styles.profileTxt(fontFamilyTab2)}>{tab2Text}</Text>
       </View>
-      <View style={styles.borderSelect(widthBorder)} />
+      <View style={styles.borderSelect(widthBorder, mL)} />
       <View style={styles.border} />
     </View>
   );
@@ -125,26 +128,26 @@ const styles = StyleSheet.create({
     // backgroundColor: 'yellow',
     alignItems: 'center',
   },
-  projectTxt: mR => ({
-    fontFamily: 'Segoe UI Bold',
+  projectTxt: (mR, fontFamilyTab1) => ({
+    fontFamily: fontFamilyTab1,
     fontSize: 13,
     color: '#030303',
     marginRight: mR,
   }),
-  profileTxt: {
-    fontFamily: 'Segoe UI',
+  profileTxt: fontFamilyTab2 => ({
+    fontFamily: fontFamilyTab2,
     fontSize: 13,
     color: '#030303',
-  },
+  }),
   border: {
     borderColor: '#C5C5C5',
     borderTopWidth: 1,
   },
-  borderSelect: widthBorder => ({
+  borderSelect: (widthBorder, mL) => ({
     borderColor: '#50DFFF',
     borderBottomWidth: 3,
     width: widthBorder,
-    marginLeft: 28,
+    marginLeft: mL,
     borderTopEndRadius: 5,
     borderTopLeftRadius: 5,
   }),
