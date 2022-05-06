@@ -39,6 +39,7 @@ import JobPicture3 from './JobPicture3.svg';
 import JobPicture4 from './JobPicture4.svg';
 import InfoJob from './InfoJob.svg';
 import Ok from './Ok.svg';
+import PresentKecil from './PresentKecil.svg'
 
 //Wahyu Agung
 import Pencil from './Pencil.svg';
@@ -78,6 +79,7 @@ export {
   AddTabBottom,
   SearchProject,
   ToDoListProjects,
+  PresentKecil,
   //Wahyu Agung
   Profile,
   Pencil,

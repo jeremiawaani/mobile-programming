@@ -33,5 +33,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 44,
     flexDirection: 'row',
     textAlign: 'center',
+    backgroundColor: '#FFFFFF'
   },
 });

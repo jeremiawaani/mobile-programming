@@ -1,14 +1,16 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {IconBack, Profile, ProfileLomoKecil} from '../../../assets';
 import Gap from '../Gap';
 
 const HeaderClient = ({title}) => {
   return (
-    <View>
+    <View style={{backgroundColor: '#FFFFFF'}}>
       <View style={styles.container}>
         <View style={{flex: 1}}>
-          <IconBack style={styles.iconBack} />
+          <TouchableOpacity activeOpacity={0.7}>
+            <IconBack style={styles.iconBack} />
+          </TouchableOpacity>
         </View>
         <View style={{flex: 5, alignItems: 'center'}}>
           <Text style={styles.txt}>{title}</Text>

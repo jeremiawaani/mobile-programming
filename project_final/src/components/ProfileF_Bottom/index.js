@@ -33,12 +33,13 @@ const ProfileF_Bottom = () => {
               title={<Info />}
               color="#D2F5FD"></Profile_Button>
           </View>
-          <View style={{flex: 3, alignItems: 'flex-start'}}>
+          <View style={{flex: 3, alignItems: 'flex-start', justifyContent: 'center'}}>
             <Text
               style={{
                 fontFamily: 'Segoe UI Bold',
                 color: 'black',
                 fontSize: 16,
+                
               }}>
               Information
             </Text>
@@ -56,7 +57,7 @@ const ProfileF_Bottom = () => {
               title={<Achievement />}
               color="#D1FBEA"></Profile_Button>
           </View>
-          <View style={{flex: 3, alignItems: 'flex-start'}}>
+          <View style={{flex: 3, alignItems: 'flex-start', justifyContent: 'center'}}>
             <Text
               style={{
                 fontFamily: 'Segoe UI Bold',
@@ -79,7 +80,7 @@ const ProfileF_Bottom = () => {
               title={<Skills />}
               color="#E2D4FE"></Profile_Button>
           </View>
-          <View style={{flex: 3, alignItems: 'flex-start'}}>
+          <View style={{flex: 3, alignItems: 'flex-start', justifyContent: 'center'}}>
             <Text
               style={{
                 fontFamily: 'Segoe UI Bold',

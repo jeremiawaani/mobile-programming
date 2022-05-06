@@ -5,7 +5,7 @@ import Gap from '../Gap';
 
 const HeaderUser = ({title}) => {
   return (
-    <View>
+    <View style={{backgroundColor: '#FFFFFF'}}>
       <View style={styles.container}>
         <View style={{flex: 1}}>
           <TouchableOpacity activeOpacity={0.7}>
