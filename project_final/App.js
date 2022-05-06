@@ -34,16 +34,13 @@ import {
   SignUpF,
   ProjectF,
   HomeC,
-<<<<<<< HEAD
   LoginF,
-  AddJob
-=======
+  AddJob,
   CurrentProjectF,
   CompleteProjectF,
   PendingProjectC,
   CurrentProjectC,
   CompleteProjectC,
->>>>>>> 04feef3c6189619008f27ae115a97ed9bd2f7675
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
@@ -57,21 +54,8 @@ import AddJob_BarDesc from './src/components/AddJob_Content';
 const App = () => {
   return (
     <View>
-<<<<<<< HEAD
-      {/* <PendingProjectF /> */}
-      {/* <LoginF /> */}
-      {/* <ProjectF /> */}
-      {/* <DetailsF_BarClient /> */}
-      {/* <DetailsF_BarDesc /> */}
-      {/* <DetailsF_Content /> */}
-      {/* <AddJob_Header /> */}
-      {/* <AddJob_BarDesc /> */}
-      {/* Tes */}
-      <AddJob />
-=======
       {/* <ProfileC /> */}
-      <DetailsF />
->>>>>>> 04feef3c6189619008f27ae115a97ed9bd2f7675
+      <PendingProjectF />
     </View>
   );
 };

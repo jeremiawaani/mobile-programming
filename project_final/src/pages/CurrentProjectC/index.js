@@ -58,7 +58,7 @@ const CurrentProjectC = () => {
           icons={<Remove />}
         />
       </ScrollView>
-      <PendingProjectF_Bottom />
+      <PendingProjectF_Bottom title={'Cancel this job?'} />
     </View>
   );
 };

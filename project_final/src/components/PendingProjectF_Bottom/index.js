@@ -1,12 +1,28 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import React from 'react';
+import {StyleSheet, Text, View, TouchableOpacity, Modal} from 'react-native';
+import React, {useState} from 'react';
 import Gap from '../Gap';
+import ApplyModal from '../ApplyModal';
 
-const PendingProjectF_Bottom = () => {
+const PendingProjectF_Bottom = ({title}) => {
+  const [isModalVisible, setisModalVisible] = useState(false);
+
+  const changeModalVisible = bool => {
+    setisModalVisible(bool);
+  };
   return (
     <View style={styles.container}>
+      <Modal
+        transparent={true}
+        animationType="fade"
+        visible={isModalVisible}
+        nRequestClose={() => changeModalVisible(false)}>
+        <View style={{height: 600, backgroundColor: '#000000AA'}}></View>
+        <ApplyModal changeModalVisible={changeModalVisible} title={title} />
+      </Modal>
       <Gap height={4} />
-      <TouchableOpacity activeOpacity={0.7}>
+      <TouchableOpacity
+        activeOpacity={0.7}
+        onPress={() => changeModalVisible(true)}>
         <View style={styles.buttonStyles}>
           <Text style={styles.txt}>Confirm</Text>
         </View>

@@ -9,7 +9,7 @@ import {
   HeaderUser,
   ProjectF_Content,
 } from '../../components';
-import { Present, SearchProject, ToDoListProjects } from '../../../assets';
+import {Present, SearchProject, ToDoListProjects} from '../../../assets';
 
 const ProjectF = () => {
   return (
@@ -22,40 +22,28 @@ const ProjectF = () => {
       <View style={{marginRight: 7}}>
         <HeaderUser title="Projects" />
         <View style={{height: 450, marginTop: 15}}>
-<<<<<<< HEAD
-          <ProjectF_Content 
-            title="Looking for A Job"
-            subTitle="12 Job Available"  
-            txtBtn="Find"  
-            icons={<SearchProject/>} 
-            backgroundColor='#D1FBEA'
-            width={61}
-            />
-
-=======
           {/* Search Job */}
 
           <ProjectF_SearchJob />
->>>>>>> 04feef3c6189619008f27ae115a97ed9bd2f7675
           <Gap height={11} />
 
-          <ProjectF_Content 
-          title="My Projects" 
-          subTitle="12 Job Complete"  
-          txtBtn="View"  
-          icons={<ToDoListProjects/>} 
-          backgroundColor='#D2F5FD'
-          width={106}
+          <ProjectF_Content
+            title="My Projects"
+            subTitle="12 Job Complete"
+            txtBtn="View"
+            icons={<ToDoListProjects />}
+            backgroundColor="#D2F5FD"
+            width={106}
           />
 
           <Gap height={11} />
 
-          <ProjectF_Content 
-            title="Pending Projects" 
-            subTitle="12 Pending Projects"  
-            txtBtn="View"  
-            icons={<Present/>} 
-            backgroundColor='#E2D4FE'
+          <ProjectF_Content
+            title="Pending Projects"
+            subTitle="12 Pending Projects"
+            txtBtn="View"
+            icons={<Present />}
+            backgroundColor="#E2D4FE"
             width={66}
           />
         </View>

@@ -52,7 +52,7 @@ const PendingProjectC = () => {
           icons={<Ok />}
         />
       </ScrollView>
-      <PendingProjectF_Bottom />
+      <PendingProjectF_Bottom title={'Accept this job?'} />
     </View>
   );
 };

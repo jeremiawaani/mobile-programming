@@ -32,14 +32,14 @@ import Info from './Info.svg';
 import Skills from './Skills.svg';
 import ProfileLomoKecil from './ProfileLomoKecil.svg';
 import ProfileLomoBesar from './ProfileLomoBesar.svg';
-import AddTabBottom from './AddTabBottom.svg'
+import AddTabBottom from './AddTabBottom.svg';
 import SearchProject from './SearchProject.svg';
 import ToDoListProjects from './TodoListProjects.svg';
 import JobPicture3 from './JobPicture3.svg';
 import JobPicture4 from './JobPicture4.svg';
 import InfoJob from './InfoJob.svg';
 import Ok from './Ok.svg';
-import PresentKecil from './PresentKecil.svg'
+import PresentKecil from './PresentKecil.svg';
 
 //Wahyu Agung
 import Pencil from './Pencil.svg';
@@ -93,10 +93,6 @@ export {
   ProfileLomoBesar,
   JobPicture3,
   JobPicture4,
-<<<<<<< HEAD
-
-=======
   InfoJob,
   Ok,
->>>>>>> 04feef3c6189619008f27ae115a97ed9bd2f7675
 };

@@ -1,15 +1,41 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import React from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Modal,
+  Alert,
+} from 'react-native';
+import React, {useState} from 'react';
 import Gap from '../Gap';
+import CenterModal from '../CenterModal';
 
-const ApplyModal = props => {
+const ApplyModal = ({changeModalVisible, title}) => {
+  // const [isModalCenterVisible, setisModalCenterVisible] = useState(false);
+
   const closeModal = bool => {
-    props.changeModalVisible(bool);
+    changeModalVisible(bool);
   };
+
+  // const changeModalCenterVisible = bool => {
+  //   setisModalCenterVisible(bool);
+  // };
+
+  // const deleteData = () => {
+  //   Alert.alert('Request Sent', 'Please wait until you are accepted', [
+  //     {
+  //       text: 'Cancel',
+  //       onPress: () => console.log('Cancel Pressed'),
+  //       style: 'cancel',
+  //     },
+  //     {text: 'OK', onPress: () => console.log('OK Pressed')},
+  //   ]);
+  // };
+
   return (
     <TouchableOpacity disabled={true} style={styles.container}>
       <View style={styles.modal}>
-        <Text style={styles.txt}>Apply this job?</Text>
+        <Text style={styles.txt}>{title}</Text>
         <View style={styles.btnContainer}>
           <Gap width={59} />
           <TouchableOpacity
@@ -26,6 +52,13 @@ const ApplyModal = props => {
             <Text style={styles.btnTxt}>No</Text>
           </TouchableOpacity>
         </View>
+        {/* <Modal
+          transparent={true}
+          animationType="fade"
+          visible={isModalCenterVisible}
+          nRequestClose={() => changeModalCenterVisible(false)}>
+          <CenterModal />
+        </Modal> */}
       </View>
     </TouchableOpacity>
   );

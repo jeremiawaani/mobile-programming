@@ -34,7 +34,7 @@ const CompleteProjectC = () => {
       />
       <Gap height={13} />
       <PendingProjectF_Content />
-      <ScrollView style={{height: 238}}>
+      <ScrollView style={{height: 340}}>
         <PendingProjectF_JobDetails
           title={'Design Interface'}
           subTitle={'Andre Waani'}
@@ -60,7 +60,6 @@ const CompleteProjectC = () => {
           icons={<InfoJob />}
         />
       </ScrollView>
-      <PendingProjectF_Bottom />
     </View>
   );
 };

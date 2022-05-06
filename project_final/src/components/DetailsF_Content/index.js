@@ -22,7 +22,11 @@ const DetailsF_Content = () => {
         animationType="fade"
         visible={isModalVisible}
         nRequestClose={() => changeModalVisible(false)}>
-        <ApplyModal changeModalVisible={changeModalVisible} />
+        <View style={{height: 600, backgroundColor: '#000000AA'}}></View>
+        <ApplyModal
+          changeModalVisible={changeModalVisible}
+          title="Apply this job?"
+        />
       </Modal>
       <DetailsF_BarDesc />
       <Gap height={15} />

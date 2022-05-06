@@ -34,7 +34,7 @@ const CompleteProjectF = () => {
       />
       <Gap height={13} />
       <PendingProjectF_Content />
-      <ScrollView style={{height: 238}}>
+      <ScrollView style={{height: 340}}>
         <PendingProjectF_JobDetails
           title={'Design Interface'}
           subTitle={'PT. Shopee'}
@@ -60,7 +60,6 @@ const CompleteProjectF = () => {
           icons={<InfoJob />}
         />
       </ScrollView>
-      <PendingProjectF_Bottom />
     </View>
   );
 };

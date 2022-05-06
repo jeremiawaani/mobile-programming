@@ -43,7 +43,7 @@ const PendingProjectF = () => {
           JobImg={<JobPicture4 />}
         />
       </ScrollView>
-      <PendingProjectF_Bottom />
+      <PendingProjectF_Bottom title={'Cancel this job?'} />
     </View>
   );
 };
