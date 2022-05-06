@@ -22,6 +22,7 @@ const ProjectF = () => {
       <View style={{marginRight: 7}}>
         <HeaderUser title="Projects" />
         <View style={{height: 450, marginTop: 15}}>
+<<<<<<< HEAD
           <ProjectF_Content 
             title="Looking for A Job"
             subTitle="12 Job Available"  
@@ -31,6 +32,11 @@ const ProjectF = () => {
             width={61}
             />
 
+=======
+          {/* Search Job */}
+
+          <ProjectF_SearchJob />
+>>>>>>> 04feef3c6189619008f27ae115a97ed9bd2f7675
           <Gap height={11} />
 
           <ProjectF_Content 

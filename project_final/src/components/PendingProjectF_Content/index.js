@@ -5,7 +5,6 @@ import Gap from '../Gap';
 import PendingProjectF_JobDetails from '../PendingProjectF_JobDetails';
 
 const PendingProjectF_Content = () => {
-  const [job, setJob] = useState([]);
   return (
     <View style={styles.container}>
       <View style={styles.head}>

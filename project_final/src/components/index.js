@@ -36,8 +36,14 @@ import LoginF_Content from './LoginF_Content';
 import LoginF_Footer from './LoginF_Footer';
 import LoginF_Button from './LoginF_Button';
 import HeaderClient from './HeaderClient';
+<<<<<<< HEAD
 import AddJob_Content from './AddJob_Content';
 import AddJob_Header from './AddJob_Header';
+=======
+import SearchJobF_content from './SearchJobF_content';
+import ApplyModal from './ApplyModal';
+
+>>>>>>> 04feef3c6189619008f27ae115a97ed9bd2f7675
 export {
   Footer,
   Gap,
@@ -76,6 +82,11 @@ export {
   LoginF_Label,
   LoginF_TextInput,
   HeaderClient,
+<<<<<<< HEAD
   AddJob_Content,
   AddJob_Header
+=======
+  SearchJobF_content,
+  ApplyModal,
+>>>>>>> 04feef3c6189619008f27ae115a97ed9bd2f7675
 };

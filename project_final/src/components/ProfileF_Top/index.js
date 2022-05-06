@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View  } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity  } from 'react-native'
 import React from 'react'
 import { Pencil, Profile } from '../../../assets'
 import {Gap, Profile_Button} from '../../components'
@@ -14,7 +14,9 @@ const ProfileF_Top = ({name='Erick Chang', status='Senior Designer'}) => {
           <Text style={styles.statusName}>{status}</Text>
         </View>
         <Gap width={60} />
-        <Pencil />
+        <TouchableOpacity activeOpacity={0.7}>
+          <Pencil />
+        </TouchableOpacity>
       </View>
     <Text style={{marginLeft: 50, marginTop: 17, fontFamily: 'Segoe UI', fontSize: 13}}>My Status</Text>
     <Gap height={10} />

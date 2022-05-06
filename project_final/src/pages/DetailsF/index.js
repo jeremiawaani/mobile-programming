@@ -1,5 +1,5 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {StyleSheet, Text, View, Modal} from 'react-native';
+import React, {useState} from 'react';
 import {DetailsF_Content, DetailsF_Header, Footer, Gap} from '../../components';
 
 const DetailsF = () => {
@@ -7,6 +7,7 @@ const DetailsF = () => {
     <View>
       <DetailsF_Header />
       <Gap height={22} />
+
       <View style={styles.content}>
         <DetailsF_Content />
       </View>

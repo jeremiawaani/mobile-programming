@@ -1,78 +1,78 @@
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
-import { Footer, Gap, HeaderUser, Profile_Button } from '../../components';
-import {SearchInfo } from '../../../assets';
-import React from 'react'
+import {
+  Footer,
+  Gap,
+  HeaderUser,
+  Profile_Button,
+  SearchJobF_content,
+} from '../../components';
+import React from 'react';
 
 const SearchJob = () => {
   return (
-    <ScrollView>
-      <HeaderUser title='Search Job' />
-      <View style={styles.container}>
-        <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Database Management</Text>
-        <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center'}}>
-          <SearchInfo />
-          <Text style={{fontFamily: 'Segoe UI', fontSize: 15, color: 'black'}}> 3x Design Revision</Text>
-          <Text style={{fontFamily: 'Segoe UI Bold', fontSize: 16, color: 'black', marginLeft: 60, marginTop: -2}}> Rp59.000</Text>
-        </View>
-        <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center', alignContent: 'space-between'}}>
-        <SearchInfo />
-        <Text style={{fontFamily: 'Segoe UI', fontSize: 15, color: 'black'}}> 30 Days</Text>
-        <Profile_Button  mL={125} textColor='white' color='black' title='Apply Job'></Profile_Button>
-        </View>
-      </View>
-      <Gap height={20} />
-      <View style={styles.container1}>
-        <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Database Management</Text>
-        <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center'}}>
-          <SearchInfo />
-          <Text style={{fontFamily: 'Segoe UI', fontSize: 15, color: 'black'}}> 3x Design Revision</Text>
-          <Text style={{fontFamily: 'Segoe UI Bold', fontSize: 16, color: 'black', marginLeft: 60, marginTop: -2}}> Rp59.000</Text>
-        </View>
-        <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center', alignContent: 'space-between'}}>
-        <SearchInfo />
-        <Text style={{fontFamily: 'Segoe UI', fontSize: 15, color: 'black'}}> 30 Days</Text>
-        <Profile_Button  mL={125} textColor='white' color='black' title='Apply Job'></Profile_Button>
-        </View>
-      </View>
-      <Gap height={20} />
-      <View style={styles.container3}>
-        <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Database Management</Text>
-        <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center'}}>
-          <SearchInfo />
-          <Text style={{fontFamily: 'Segoe UI', fontSize: 15, color: 'black'}}> 3x Design Revision</Text>
-          <Text style={{fontFamily: 'Segoe UI Bold', fontSize: 16, color: 'black', marginLeft: 60, marginTop: -2}}> Rp59.000</Text>
-        </View>
-        <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center', alignContent: 'space-between'}}>
-        <SearchInfo />
-        <Text style={{fontFamily: 'Segoe UI', fontSize: 15, color: 'black'}}> 30 Days</Text>
-        <Profile_Button  mL={125} textColor='white' color='black' title='Apply Job'></Profile_Button>
-        </View>
-      </View>
-      <Gap height={20} />
-      <View style={styles.container3}>
-        <Text style={{fontFamily: 'Segoe UI Bold', color: 'black', fontSize: 16}}>Database Management</Text>
-        <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center'}}>
-          <SearchInfo />
-          <Text style={{fontFamily: 'Segoe UI', fontSize: 15, color: 'black'}}> 3x Design Revision</Text>
-          <Text style={{fontFamily: 'Segoe UI Bold', fontSize: 16, color: 'black', marginLeft: 60, marginTop: -2}}> Rp59.000</Text>
-        </View>
-        <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center', alignContent: 'space-between'}}>
-        <SearchInfo />
-        <Text style={{fontFamily: 'Segoe UI', fontSize: 15, color: 'black'}}> 30 Days</Text>
-        <Profile_Button  mL={125} textColor='white' color='black' title='Apply Job'></Profile_Button>
-        </View>
-      </View>
-      <Gap height={20} />
-      <Footer />
-    </ScrollView>
-  )
-}
+    <View>
+      {/* <View> */}
+      <HeaderUser title="Search Job" />
+      {/* </View> */}
 
-export default SearchJob
+      <ScrollView style={{height: 485}}>
+        <SearchJobF_content color={'#E2D4FE'} />
+        <Gap height={14} />
+        <SearchJobF_content
+          title={'Design Interface'}
+          color={'#D1FBEA'}
+          marginL={27}
+        />
+        <Gap height={14} />
+        <SearchJobF_content
+          title={'Server Security'}
+          color={'#D2F5FD'}
+          marginL={27}
+        />
+        <Gap height={14} />
+        <SearchJobF_content
+          title={'Software Analyst'}
+          color={'#E2D4FE'}
+          marginL={27}
+        />
+        <Gap height={20} />
+        <SearchJobF_content
+          title={'UI UX Designer'}
+          color={'#D1FBEA'}
+          marginL={27}
+        />
+        <Gap height={14} />
+        <SearchJobF_content
+          title={'Mobile Apps'}
+          color={'#D2F5FD'}
+          marginL={27}
+        />
+        <Gap height={14} />
+        <SearchJobF_content
+          title={'Flutter Developer'}
+          color={'#E2D4FE'}
+          marginL={27}
+        />
+      </ScrollView>
+      <Footer />
+    </View>
+  );
+};
+
+export default SearchJob;
 
 const styles = StyleSheet.create({
-  container:{
-    backgroundColor:'#E2D4FE',
+  container: {
+    backgroundColor: '#E2D4FE',
+    height: 106,
+    borderRadius: 10,
+    paddingLeft: 11,
+    paddingTop: 8,
+    marginLeft: 34,
+    marginRight: 33,
+  },
+  container1: {
+    backgroundColor: '#D1FBEA',
     height: 160,
     borderRadius: 10,
     paddingLeft: 19,
@@ -80,8 +80,8 @@ const styles = StyleSheet.create({
     marginLeft: 36,
     marginRight: 31,
   },
-  container1:{
-    backgroundColor:'#D1FBEA',
+  container2: {
+    backgroundColor: '#D2F5FD',
     height: 160,
     borderRadius: 10,
     paddingLeft: 19,
@@ -89,17 +89,8 @@ const styles = StyleSheet.create({
     marginLeft: 36,
     marginRight: 31,
   },
-  container2:{
-    backgroundColor:'#D2F5FD',
-    height: 160,
-    borderRadius: 10,
-    paddingLeft: 19,
-    paddingTop: 33,
-    marginLeft: 36,
-    marginRight: 31,
-  },
-  container3:{
-    backgroundColor:'#E2D4FE',
+  container3: {
+    backgroundColor: '#E2D4FE',
     height: 160,
     borderRadius: 10,
     paddingLeft: 19,

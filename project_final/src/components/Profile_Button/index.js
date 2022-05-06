@@ -26,8 +26,9 @@ const styles = StyleSheet.create({
 
   }),
   text: (textColor) => ({
-    fontSize: 14,
+    fontSize: 13,
     fontFamily: 'Segoe UI',
     color: textColor,
+    textAlign: 'center'
   })
 })

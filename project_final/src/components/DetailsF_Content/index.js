@@ -1,15 +1,29 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {StyleSheet, TouchableOpacity, View, Modal} from 'react-native';
+import React, {useState} from 'react';
 import DetailsF_BarDesc from '../DetailsF_BarDesc';
 import DetailsF_BarSkill from '../DetailsF_BarSkill';
 import DetailsF_BarClient from '../DetailsF_BarClient';
 import DetailsF_BarEmail from '../DetailsF_BarEmail';
 import Gap from '../Gap';
 import DetailsF_Button from '../DetailsF_Button';
+import ApplyModal from '../ApplyModal';
 
 const DetailsF_Content = () => {
+  const [isModalVisible, setisModalVisible] = useState(false);
+
+  const changeModalVisible = bool => {
+    setisModalVisible(bool);
+  };
+
   return (
     <View>
+      <Modal
+        transparent={true}
+        animationType="fade"
+        visible={isModalVisible}
+        nRequestClose={() => changeModalVisible(false)}>
+        <ApplyModal changeModalVisible={changeModalVisible} />
+      </Modal>
       <DetailsF_BarDesc />
       <Gap height={15} />
       <View style={styles.flexD}>
@@ -21,9 +35,15 @@ const DetailsF_Content = () => {
       <View style={styles.flexD}>
         <DetailsF_BarClient />
         <Gap width={60} />
-        <DetailsF_Button title={'Contact'} />
+        <TouchableOpacity activeOpacity={0.7}>
+          <DetailsF_Button title={'Contact'} />
+        </TouchableOpacity>
         <Gap width={6} />
-        <DetailsF_Button title={'Apply'} />
+        <TouchableOpacity
+          activeOpacity={0.7}
+          onPress={() => changeModalVisible(true)}>
+          <DetailsF_Button title={'Apply'} />
+        </TouchableOpacity>
       </View>
     </View>
   );

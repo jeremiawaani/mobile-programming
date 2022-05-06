@@ -1,27 +1,41 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {Calendar, IconBack, Profile} from '../../../assets';
 import Gap from '../Gap';
 
-const PendingProjectF_Header = () => {
+const PendingProjectF_Header = ({
+  headerText = 'Waiting\nfor approval',
+  width = 85,
+  sideHeaderText = 'Job Apply',
+  widthBorder = 60,
+  tab1Text = 'Projects',
+  tab2Text = 'Client Profile',
+  mR = 48,
+  mL = 28,
+  fontFamilyTab1 = 'Segoe UI Bold',
+  fontFamilyTab2 = 'Segoe UI',
+  profile,
+}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Gap width={25} />
-        <View style={styles.borderIconBack}>
-          <IconBack />
-        </View>
+        <TouchableOpacity activeOpacity={0.7}>
+          <View style={styles.borderIconBack}>
+            <IconBack />
+          </View>
+        </TouchableOpacity>
         <Gap width={240} />
-        <Profile />
+        {profile}
       </View>
       <View style={styles.header2}>
         <View style={styles.header2Border}>
-          <Text style={styles.txt}>{'Waiting\nfor approval'}</Text>
-          <View style={styles.jobApply}>
+          <Text style={styles.txt}>{headerText}</Text>
+          <View style={styles.jobApply(width)}>
             <View style={styles.jobQuantity}>
               <Text style={styles.txtQuantity}>5</Text>
             </View>
-            <Text style={styles.txtJob}>Job Apply</Text>
+            <Text style={styles.txtJob}>{sideHeaderText}</Text>
           </View>
         </View>
         <View style={styles.calendarBorder}>
@@ -30,10 +44,10 @@ const PendingProjectF_Header = () => {
         </View>
       </View>
       <View style={styles.header3}>
-        <Text style={styles.projectTxt}>Projects</Text>
-        <Text style={styles.profileTxt}>Client Profile</Text>
+        <Text style={styles.projectTxt(mR, fontFamilyTab1)}>{tab1Text}</Text>
+        <Text style={styles.profileTxt(fontFamilyTab2)}>{tab2Text}</Text>
       </View>
-      <View style={styles.borderSelect} />
+      <View style={styles.borderSelect(widthBorder, mL)} />
       <View style={styles.border} />
     </View>
   );
@@ -64,19 +78,20 @@ const styles = StyleSheet.create({
     fontFamily: 'Segoe UI Bold',
     fontSize: 20,
     color: '#030303',
+    width: 118,
   },
   header2Border: {
     flexDirection: 'row',
   },
-  jobApply: {
-    width: 85,
+  jobApply: width => ({
+    width: width,
     height: 19,
     borderRadius: 8,
     backgroundColor: '#F3F3F3',
     alignItems: 'center',
     flexDirection: 'row',
     marginLeft: 55,
-  },
+  }),
   txtJob: {
     fontFamily: 'Segoe UI Bold',
     fontSize: 10,
@@ -116,27 +131,27 @@ const styles = StyleSheet.create({
     // backgroundColor: 'yellow',
     alignItems: 'center',
   },
-  projectTxt: {
-    fontFamily: 'Segoe UI Bold',
+  projectTxt: (mR, fontFamilyTab1) => ({
+    fontFamily: fontFamilyTab1,
     fontSize: 13,
     color: '#030303',
-  },
-  profileTxt: {
-    fontFamily: 'Segoe UI',
+    marginRight: mR,
+  }),
+  profileTxt: fontFamilyTab2 => ({
+    fontFamily: fontFamilyTab2,
     fontSize: 13,
     color: '#030303',
-    marginLeft: 48,
-  },
+  }),
   border: {
     borderColor: '#C5C5C5',
     borderTopWidth: 1,
   },
-  borderSelect: {
+  borderSelect: (widthBorder, mL) => ({
     borderColor: '#50DFFF',
     borderBottomWidth: 3,
-    width: 60,
-    marginLeft: 28,
+    width: widthBorder,
+    marginLeft: mL,
     borderTopEndRadius: 5,
     borderTopLeftRadius: 5,
-  },
+  }),
 });

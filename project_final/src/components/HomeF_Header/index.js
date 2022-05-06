@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Location, Notification } from '../../../assets'
 import Gap from '../Gap'
@@ -13,6 +13,11 @@ const HomeF_Header = () => {
                     <Text style={styles.unklab}>Universitas Klabat</Text>      
                 </View>
             </View>
+            <TouchableOpacity activeOpacity={0.7}>
+                <View style={styles.borderNotif}>
+                    <Notification style={styles.notif}/>
+                </View>
+            </TouchableOpacity>
             <View style={styles.borderNotif}>
                 <Notification style={styles.notif}/>
             </View>

@@ -1,18 +1,22 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {Chat, Home, Search, User} from '../../../assets';
-import Gap from '../Gap';
 
-const Footer = () => {
+const Footer = ({search=<Search/>}) => {
   return (
     <View style={styles.container}>
-      <Home />
-      <Gap width={60} />
-      <Search />
-      <Gap width={60} />
-      <Chat />
-      <Gap width={60} />
-      <User />
+      <TouchableOpacity activeOpacity={0.7}>
+        <Home />
+      </TouchableOpacity>
+      <TouchableOpacity activeOpacity={0.7}>
+        {search}
+      </TouchableOpacity>
+      <TouchableOpacity activeOpacity={0.7}>
+        <Chat />
+      </TouchableOpacity>
+      <TouchableOpacity activeOpacity={0.7}>
+        <User />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -25,8 +29,10 @@ const styles = StyleSheet.create({
     borderColor: '#C0C0C0',
     height: 51,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 44,
     flexDirection: 'row',
     textAlign: 'center',
+    backgroundColor: '#FFFFFF'
   },
 });

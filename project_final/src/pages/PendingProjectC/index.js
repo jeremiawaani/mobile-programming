@@ -12,35 +12,44 @@ import {
   JobPicture2,
   JobPicture3,
   JobPicture4,
-  Profile,
+  Ok,
+  ProfileLomoKecil,
+  Remove,
 } from '../../../assets';
 
-const PendingProjectF = () => {
+const PendingProjectC = () => {
   return (
     <View>
-      <PendingProjectF_Header profile={<Profile />} />
+      <PendingProjectF_Header
+        profile={<ProfileLomoKecil />}
+        tab2Text="Freelance Profile"
+      />
       <Gap height={13} />
       <PendingProjectF_Content />
       <ScrollView style={{height: 238}}>
         <PendingProjectF_JobDetails
           title={'Design Interface'}
-          subTitle={'PT. Shopee'}
+          subTitle={'Andre Waani'}
           JobImg={<JobPicture1 />}
+          icons={<Ok />}
         />
         <PendingProjectF_JobDetails
           title={'Server Security'}
-          subTitle={'PT. Tokopedia'}
+          subTitle={'Salomo Mandagi'}
           JobImg={<JobPicture2 />}
+          icons={<Ok />}
         />
         <PendingProjectF_JobDetails
           title={'Database Management'}
-          subTitle={'PT. Traveloka'}
+          subTitle={'Wahyu Agung'}
           JobImg={<JobPicture3 />}
+          icons={<Ok />}
         />
         <PendingProjectF_JobDetails
           title={'Software Analyst'}
-          subTitle={'PT. Bukalapak'}
+          subTitle={'Gerald Wuysang'}
           JobImg={<JobPicture4 />}
+          icons={<Ok />}
         />
       </ScrollView>
       <PendingProjectF_Bottom />
@@ -48,6 +57,6 @@ const PendingProjectF = () => {
   );
 };
 
-export default PendingProjectF;
+export default PendingProjectC;
 
 const styles = StyleSheet.create({});

@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import Gap from '../Gap';
 
@@ -8,7 +8,9 @@ const SignUpF_Footer = () => {
       <Gap height={18} />
       <Text style={styles.txt}>Already have an account?</Text>
       <Gap height={8} />
-      <Text style={styles.txtLogin}>Log In</Text>
+      <TouchableOpacity activeOpacity={0.7}>
+        <Text style={styles.txtLogin}>Log In</Text>
+      </TouchableOpacity>
     </View>
   );
 };

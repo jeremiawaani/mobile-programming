@@ -7,6 +7,7 @@ import {
   Footer,
   HeaderClient,
 } from '../../components';
+import { AddTabBottom } from '../../../assets';
 
 const ProfileC = () => {
   return (
@@ -14,7 +15,7 @@ const ProfileC = () => {
       <HeaderClient title="My Profile" />
       <ProfileC_Top />
       <ProfileC_Bottom />
-      <Footer />
+      <Footer search={<AddTabBottom/>}/>
     </View>
   );
 };

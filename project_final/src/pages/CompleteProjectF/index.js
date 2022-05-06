@@ -8,6 +8,7 @@ import {
   PendingProjectF_JobDetails,
 } from '../../components';
 import {
+  InfoJob,
   JobPicture1,
   JobPicture2,
   JobPicture3,
@@ -15,10 +16,22 @@ import {
   Profile,
 } from '../../../assets';
 
-const PendingProjectF = () => {
+const CompleteProjectF = () => {
   return (
     <View>
-      <PendingProjectF_Header profile={<Profile />} />
+      <PendingProjectF_Header
+        headerText={'My\nProjects'}
+        sideHeaderText="Complete Project"
+        width={110}
+        tab1Text="Current Projects"
+        tab2Text="Complete Projects"
+        widthBorder={126}
+        mR={37}
+        mL={155}
+        fontFamilyTab1={'Segoe UI'}
+        fontFamilyTab2={'Segoe UI Bold'}
+        profile={<Profile />}
+      />
       <Gap height={13} />
       <PendingProjectF_Content />
       <ScrollView style={{height: 238}}>
@@ -26,21 +39,25 @@ const PendingProjectF = () => {
           title={'Design Interface'}
           subTitle={'PT. Shopee'}
           JobImg={<JobPicture1 />}
+          icons={<InfoJob />}
         />
         <PendingProjectF_JobDetails
           title={'Server Security'}
           subTitle={'PT. Tokopedia'}
           JobImg={<JobPicture2 />}
+          icons={<InfoJob />}
         />
         <PendingProjectF_JobDetails
           title={'Database Management'}
           subTitle={'PT. Traveloka'}
           JobImg={<JobPicture3 />}
+          icons={<InfoJob />}
         />
         <PendingProjectF_JobDetails
           title={'Software Analyst'}
           subTitle={'PT. Bukalapak'}
           JobImg={<JobPicture4 />}
+          icons={<InfoJob />}
         />
       </ScrollView>
       <PendingProjectF_Bottom />
@@ -48,6 +65,6 @@ const PendingProjectF = () => {
   );
 };
 
-export default PendingProjectF;
+export default CompleteProjectF;
 
 const styles = StyleSheet.create({});
