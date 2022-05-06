@@ -51,7 +51,7 @@ const App = () => {
   return (
     <View>
       {/* <ProfileC /> */}
-      <CompleteProjectC />
+      <DetailsF />
     </View>
   );
 };

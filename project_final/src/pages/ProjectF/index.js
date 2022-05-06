@@ -21,6 +21,7 @@ const ProjectF = () => {
         <HeaderUser title="Projects" />
         <View style={{height: 450, marginTop: 15}}>
           {/* Search Job */}
+
           <ProjectF_SearchJob />
           <Gap height={11} />
 

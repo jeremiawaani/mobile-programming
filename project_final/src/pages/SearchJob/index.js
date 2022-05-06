@@ -38,36 +38,18 @@ const SearchJob = () => {
         <Gap height={20} />
         <SearchJobF_content
           title={'UI UX Designer'}
-          color={'#E2D4FE'}
-          marginL={27}
-        />
-        <Gap height={14} />
-        <SearchJobF_content
-          title={'Mobile Apps'}
           color={'#D1FBEA'}
           marginL={27}
         />
         <Gap height={14} />
         <SearchJobF_content
-          title={'Flutter Developer'}
+          title={'Mobile Apps'}
           color={'#D2F5FD'}
           marginL={27}
         />
         <Gap height={14} />
         <SearchJobF_content
-          title={'Data Analyst'}
-          color={'#E2D4FE'}
-          marginL={27}
-        />
-        <Gap height={14} />
-        <SearchJobF_content
-          title={'BackEnd Dev'}
-          color={'#E2D4FE'}
-          marginL={27}
-        />
-        <Gap height={14} />
-        <SearchJobF_content
-          title={'FrontEnd Dev'}
+          title={'Flutter Developer'}
           color={'#E2D4FE'}
           marginL={27}
         />
