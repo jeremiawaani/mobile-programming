@@ -1,45 +1,87 @@
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
-import { Footer, Gap, HeaderUser, Profile_Button } from '../../components';
-import React from 'react'
-import SearchJobF_content from '../../components/SearchJobF_content';
+import {
+  Footer,
+  Gap,
+  HeaderUser,
+  Profile_Button,
+  SearchJobF_content,
+} from '../../components';
+import React from 'react';
 
 const SearchJob = () => {
   return (
-   <View >
-    {/* <View> */}
-      <HeaderUser title='Search Job' />
-    {/* </View> */}
-      <ScrollView  style={{height: 485}}>
-        <SearchJobF_content color={'#E2D4FE'}/>
+    <View>
+      {/* <View> */}
+      <HeaderUser title="Search Job" />
+      {/* </View> */}
+
+      <ScrollView style={{height: 485}}>
+        <SearchJobF_content color={'#E2D4FE'} />
         <Gap height={14} />
-        <SearchJobF_content title={'Design Interface'} color={'#D1FBEA'} marginL={27}/>
+        <SearchJobF_content
+          title={'Design Interface'}
+          color={'#D1FBEA'}
+          marginL={27}
+        />
         <Gap height={14} />
-        <SearchJobF_content title={'Server Security'} color={'#D2F5FD'} marginL={27}/>
+        <SearchJobF_content
+          title={'Server Security'}
+          color={'#D2F5FD'}
+          marginL={27}
+        />
         <Gap height={14} />
-        <SearchJobF_content title={'Software Analyst'} color={'#E2D4FE'} marginL={27}/>
+        <SearchJobF_content
+          title={'Software Analyst'}
+          color={'#E2D4FE'}
+          marginL={27}
+        />
         <Gap height={20} />
-        <SearchJobF_content title={'UI UX Designer'} color={'#E2D4FE'} marginL={27}/>
+        <SearchJobF_content
+          title={'UI UX Designer'}
+          color={'#E2D4FE'}
+          marginL={27}
+        />
         <Gap height={14} />
-        <SearchJobF_content title={'Mobile Apps'} color={'#D1FBEA'} marginL={27}/>
+        <SearchJobF_content
+          title={'Mobile Apps'}
+          color={'#D1FBEA'}
+          marginL={27}
+        />
         <Gap height={14} />
-        <SearchJobF_content title={'Flutter Developer'} color={'#D2F5FD'} marginL={27}/>
+        <SearchJobF_content
+          title={'Flutter Developer'}
+          color={'#D2F5FD'}
+          marginL={27}
+        />
         <Gap height={14} />
-        <SearchJobF_content title={'Data Analyst'} color={'#E2D4FE'} marginL={27}/>
+        <SearchJobF_content
+          title={'Data Analyst'}
+          color={'#E2D4FE'}
+          marginL={27}
+        />
         <Gap height={14} />
-        <SearchJobF_content title={'BackEnd Dev'} color={'#E2D4FE'} marginL={27}/>
+        <SearchJobF_content
+          title={'BackEnd Dev'}
+          color={'#E2D4FE'}
+          marginL={27}
+        />
         <Gap height={14} />
-        <SearchJobF_content title={'FrontEnd Dev'} color={'#E2D4FE'} marginL={27}/>
+        <SearchJobF_content
+          title={'FrontEnd Dev'}
+          color={'#E2D4FE'}
+          marginL={27}
+        />
       </ScrollView>
       <Footer />
-      </View>
-  )
-}
+    </View>
+  );
+};
 
-export default SearchJob
+export default SearchJob;
 
 const styles = StyleSheet.create({
-  container:{
-    backgroundColor:'#E2D4FE',
+  container: {
+    backgroundColor: '#E2D4FE',
     height: 106,
     borderRadius: 10,
     paddingLeft: 11,
@@ -47,8 +89,8 @@ const styles = StyleSheet.create({
     marginLeft: 34,
     marginRight: 33,
   },
-  container1:{
-    backgroundColor:'#D1FBEA',
+  container1: {
+    backgroundColor: '#D1FBEA',
     height: 160,
     borderRadius: 10,
     paddingLeft: 19,
@@ -56,8 +98,8 @@ const styles = StyleSheet.create({
     marginLeft: 36,
     marginRight: 31,
   },
-  container2:{
-    backgroundColor:'#D2F5FD',
+  container2: {
+    backgroundColor: '#D2F5FD',
     height: 160,
     borderRadius: 10,
     paddingLeft: 19,
@@ -65,8 +107,8 @@ const styles = StyleSheet.create({
     marginLeft: 36,
     marginRight: 31,
   },
-  container3:{
-    backgroundColor:'#E2D4FE',
+  container3: {
+    backgroundColor: '#E2D4FE',
     height: 160,
     borderRadius: 10,
     paddingLeft: 19,

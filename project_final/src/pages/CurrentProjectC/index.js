@@ -20,19 +20,19 @@ import {
 const CurrentProjectC = () => {
   return (
     <View>
-      <ScrollView>
-        <PendingProjectF_Header
-          headerText={'My\nProjects'}
-          sideHeaderText="Current Project"
-          width={110}
-          tab1Text="Current Projects"
-          tab2Text="Complete Projects"
-          widthBorder={107}
-          mR={37}
-          profile={<ProfileLomoKecil />}
-        />
-        <Gap height={13} />
-        <PendingProjectF_Content />
+      <PendingProjectF_Header
+        headerText={'My\nProjects'}
+        sideHeaderText="Current Project"
+        width={110}
+        tab1Text="Current Projects"
+        tab2Text="Complete Projects"
+        widthBorder={107}
+        mR={37}
+        profile={<ProfileLomoKecil />}
+      />
+      <Gap height={13} />
+      <PendingProjectF_Content />
+      <ScrollView style={{height: 238}}>
         <PendingProjectF_JobDetails
           title={'Design Interface'}
           subTitle={'Andre Waani'}
@@ -57,8 +57,8 @@ const CurrentProjectC = () => {
           JobImg={<JobPicture4 />}
           icons={<Remove />}
         />
-        <PendingProjectF_Bottom />
       </ScrollView>
+      <PendingProjectF_Bottom />
     </View>
   );
 };

@@ -19,19 +19,19 @@ import {
 const CurrentProjectF = () => {
   return (
     <View>
-      <ScrollView>
-        <PendingProjectF_Header
-          headerText={'My\nProjects'}
-          sideHeaderText="Current Project"
-          width={110}
-          tab1Text="Current Projects"
-          tab2Text="Complete Projects"
-          widthBorder={107}
-          mR={37}
-          profile={<Profile />}
-        />
-        <Gap height={13} />
-        <PendingProjectF_Content />
+      <PendingProjectF_Header
+        headerText={'My\nProjects'}
+        sideHeaderText="Current Project"
+        width={110}
+        tab1Text="Current Projects"
+        tab2Text="Complete Projects"
+        widthBorder={107}
+        mR={37}
+        profile={<Profile />}
+      />
+      <Gap height={13} />
+      <PendingProjectF_Content />
+      <ScrollView style={{height: 238}}>
         <PendingProjectF_JobDetails
           title={'Design Interface'}
           subTitle={'PT. Shopee'}
@@ -56,8 +56,8 @@ const CurrentProjectF = () => {
           JobImg={<JobPicture4 />}
           icons={<Remove />}
         />
-        <PendingProjectF_Bottom />
       </ScrollView>
+      <PendingProjectF_Bottom />
     </View>
   );
 };

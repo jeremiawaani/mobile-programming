@@ -37,6 +37,7 @@ import LoginF_Content from './LoginF_Content';
 import LoginF_Footer from './LoginF_Footer';
 import LoginF_Button from './LoginF_Button';
 import HeaderClient from './HeaderClient';
+import SearchJobF_content from './SearchJobF_content';
 
 export {
   Footer,
@@ -78,4 +79,5 @@ export {
   LoginF_Label,
   LoginF_TextInput,
   HeaderClient,
+  SearchJobF_content,
 };

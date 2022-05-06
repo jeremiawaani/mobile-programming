@@ -18,10 +18,10 @@ import {
 const PendingProjectF = () => {
   return (
     <View>
-      <ScrollView>
-        <PendingProjectF_Header profile={<Profile />} />
-        <Gap height={13} />
-        <PendingProjectF_Content />
+      <PendingProjectF_Header profile={<Profile />} />
+      <Gap height={13} />
+      <PendingProjectF_Content />
+      <ScrollView style={{height: 238}}>
         <PendingProjectF_JobDetails
           title={'Design Interface'}
           subTitle={'PT. Shopee'}
@@ -42,8 +42,8 @@ const PendingProjectF = () => {
           subTitle={'PT. Bukalapak'}
           JobImg={<JobPicture4 />}
         />
-        <PendingProjectF_Bottom />
       </ScrollView>
+      <PendingProjectF_Bottom />
     </View>
   );
 };
