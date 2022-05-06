@@ -50,14 +50,9 @@ import LoginF from './src/pages/LoginF';
 const App = () => {
   return (
     <View>
-<<<<<<< HEAD
       <HeaderUser />
 
       {/* Tes */}
-=======
-      {/* <ProfileC /> */}
-      <ProfileC/>
->>>>>>> 018e296512d1618e60d96b358d8f7425f16327f5
     </View>
   );
 };
