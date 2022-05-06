@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Gap from '../Gap'
 import { Add, Keyboard, Monitor, Pencil, Present, ProjectList } from '../../../assets'
@@ -19,11 +19,15 @@ const HomeC_ContentHome = ({backgroundColor='#D1FBEA', marginL, icons, title, su
             </View>
             <View style={styles.marginLeftBtn(marginL)}>
             <Gap height={28}/>
-                {icons}
+                <TouchableOpacity activeOpacity={0.7}>
+                    {icons}
+                </TouchableOpacity>
                 <Gap height={14}/>
-                <View style={styles.button}>
-                    <Text style={styles.textBtn}>View</Text>
-                </View>
+                <TouchableOpacity activeOpacity={0.7}>
+                    <View style={styles.button}>
+                        <Text style={styles.textBtn}>View</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     </View>

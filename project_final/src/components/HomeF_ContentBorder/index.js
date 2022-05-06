@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Gap from '../Gap'
 
@@ -12,9 +12,12 @@ const HomeF_ContentBorder = ({color='#D1FBEA', title, totJobs, icons}) => {
         <Text style={styles.deskripsiJobCat}>{title}</Text>
         <Text style={styles.totJobsCat}>{totJobs}</Text>
         <Gap height={10}/>
-        <View style={styles.btnView}>
-            <Text style={styles.btnText}>View</Text>
-        </View>
+        <TouchableOpacity activeOpacity={0.7}>
+            <View style={styles.btnView}>
+             <Text style={styles.btnText}>View</Text>
+            </View>
+        </TouchableOpacity>
+
     </View>
   )
 }

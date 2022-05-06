@@ -5,7 +5,7 @@ import Gap from '../Gap'
 
 const BorderUser = ({color='#D2F5FD', Title, SubTitle, icons}) => {
   return (
-    <TouchableOpacity activeOpacity={0.6}>
+    <TouchableOpacity activeOpacity={0.7}>
       <View style={styles.wrapper(color)}>
         <View style={styles.icon}>
           {icons}
