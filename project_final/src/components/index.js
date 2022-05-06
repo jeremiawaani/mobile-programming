@@ -25,11 +25,10 @@ import PendingProjectF_Content from './PendingProjectF_Content';
 import PendingProjectF_JobDetails from './PendingProjectF_JobDetails';
 import PendingProjectF_Bottom from './PendingProjectF_Bottom';
 import HomeC_ContentHome from './HomeC_ContentHome';
-import ProjectF_MyProjects from './ProjectF_MyProjects';
+
 import ProjectF_Label from './ProjectF_Label';
 import ProjectF_Button from './ProjectF_Button';
-import ProjectF_SearchJob from './ProjectF_SearchJob';
-import ProjectF_PendingProjects from './ProjectF_PendingProjects';
+import ProjectF_Content from './ProjectF_Content';
 import LoginF_TextInput from './LoginF_TextInput';
 import LoginF_Label from './LoginF_Label';
 import LoginF_Header from './LoginF_Header';
@@ -37,7 +36,8 @@ import LoginF_Content from './LoginF_Content';
 import LoginF_Footer from './LoginF_Footer';
 import LoginF_Button from './LoginF_Button';
 import HeaderClient from './HeaderClient';
-
+import AddJob_Content from './AddJob_Content';
+import AddJob_Header from './AddJob_Header';
 export {
   Footer,
   Gap,
@@ -66,11 +66,9 @@ export {
   PendingProjectF_Bottom,
   HomeC_ContentHome,
   PendingProjectF_JobDetails,
-  ProjectF_MyProjects,
   ProjectF_Button,
-  ProjectF_PendingProjects,
-  ProjectF_SearchJob,
   ProjectF_Label,
+  ProjectF_Content,
   LoginF_Button,
   LoginF_Content,
   LoginF_Footer,
@@ -78,4 +76,6 @@ export {
   LoginF_Label,
   LoginF_TextInput,
   HeaderClient,
+  AddJob_Content,
+  AddJob_Header
 };

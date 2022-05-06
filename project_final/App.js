@@ -31,6 +31,8 @@ import {
   SignUpF,
   ProjectF,
   HomeC,
+  LoginF,
+  AddJob
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
@@ -38,15 +40,22 @@ import HomeF_Header from './src/components/HomeF_Header';
 import HomeF_ContentEarnings from './src/components/HomeF_ContentEarnings';
 import HomeF_ContentJobCat from './src/components/HomeF_ContentJobCat';
 import {ProfileC_Top} from './src';
-import LoginF from './src/pages/LoginF';
+import AddJob_Header from './src/components/AddJob_Header';
+import AddJob_BarDesc from './src/components/AddJob_Content';
+
 const App = () => {
   return (
     <View>
       {/* <PendingProjectF /> */}
       {/* <LoginF /> */}
-      <ProjectF />
-
+      {/* <ProjectF /> */}
+      {/* <DetailsF_BarClient /> */}
+      {/* <DetailsF_BarDesc /> */}
+      {/* <DetailsF_Content /> */}
+      {/* <AddJob_Header /> */}
+      {/* <AddJob_BarDesc /> */}
       {/* Tes */}
+      <AddJob />
     </View>
   );
 };

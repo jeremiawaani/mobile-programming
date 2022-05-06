@@ -9,7 +9,7 @@ import DetailsF from './DetailsF';
 import PendingProjectF from './PendingProjectF';
 import ProjectF from './ProjectF';
 import LoginF from './LoginF';
-
+import AddJob from './AddJob';
 export {
   HomeC,
   HomeF,
@@ -22,4 +22,5 @@ export {
   PendingProjectF,
   ProjectF,
   LoginF,
+  AddJob
 };
