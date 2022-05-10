@@ -1,11 +1,14 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const DetailsF_Button = ({title}) => {
+const DetailsF_Button = ({title, onPress}) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity
+      style={styles.container}
+      activeOpacity={0.7}
+      onPress={onPress}>
       <Text style={styles.txt}>{title}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 

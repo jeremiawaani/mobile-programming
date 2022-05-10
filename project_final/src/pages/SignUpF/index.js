@@ -25,9 +25,7 @@ const SignUpF = ({navigation}) => {
         <Gap height={8} />
         <SignUpF_TextInput title={'Password'} placeholder={'Password'} />
         <Gap height={33} />
-        <TouchableOpacity activeOpacity={0.7}>
-          <SignUpF_Button />
-        </TouchableOpacity>
+        <SignUpF_Button onPress={console.log('Oke')} />
       </View>
       <View style={styles.footer}>
         <SignUpF_Footer />

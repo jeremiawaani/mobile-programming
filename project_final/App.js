@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import Routers from './routers';
@@ -55,9 +55,19 @@ import AddJob_BarDesc from './src/components/AddJob_Content';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Routers />
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <Routers />
+    // </NavigationContainer>
+
+    <View>
+      <TouchableOpacity
+        style={{
+          width: 200,
+          height: 200,
+          backgroundColor: 'yellow',
+        }}
+        onPress={console.log('Oke')}></TouchableOpacity>
+    </View>
   );
 };
 
