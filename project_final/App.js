@@ -34,6 +34,8 @@ import {
   SignUpF,
   ProjectF,
   HomeC,
+  LoginF,
+  AddJob,
   CurrentProjectF,
   CompleteProjectF,
   PendingProjectC,
@@ -46,12 +48,14 @@ import HomeF_Header from './src/components/HomeF_Header';
 import HomeF_ContentEarnings from './src/components/HomeF_ContentEarnings';
 import HomeF_ContentJobCat from './src/components/HomeF_ContentJobCat';
 import {ProfileC_Top} from './src';
-import LoginF from './src/pages/LoginF';
+import AddJob_Header from './src/components/AddJob_Header';
+import AddJob_BarDesc from './src/components/AddJob_Content';
+
 const App = () => {
   return (
     <View>
       {/* <ProfileC /> */}
-      <SearchJob/>
+      <PendingProjectF />
     </View>
   );
 };

@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {Monitor, Pencil, Keyboard, SearchProject} from '../../../assets';
 import Gap from '../Gap';
@@ -29,7 +29,9 @@ const ProjectF_SearchJob = () => {
         <Gap width={5} />
         <Keyboard />
         <Gap width={110} />
-        <ProjectF_Button title="Find" />
+        <TouchableOpacity activeOpacity={0.7}>
+          <ProjectF_Button title="Find" />
+        </TouchableOpacity>
       </View>
     </View>
   );

@@ -20,13 +20,13 @@ import {
 const PendingProjectC = () => {
   return (
     <View>
-      <ScrollView>
-        <PendingProjectF_Header
-          profile={<ProfileLomoKecil />}
-          tab2Text="Freelance Profile"
-        />
-        <Gap height={13} />
-        <PendingProjectF_Content />
+      <PendingProjectF_Header
+        profile={<ProfileLomoKecil />}
+        tab2Text="Freelance Profile"
+      />
+      <Gap height={13} />
+      <PendingProjectF_Content />
+      <ScrollView style={{height: 238}}>
         <PendingProjectF_JobDetails
           title={'Design Interface'}
           subTitle={'Andre Waani'}
@@ -51,8 +51,8 @@ const PendingProjectC = () => {
           JobImg={<JobPicture4 />}
           icons={<Ok />}
         />
-        <PendingProjectF_Bottom />
       </ScrollView>
+      <PendingProjectF_Bottom title={'Accept this job?'} />
     </View>
   );
 };

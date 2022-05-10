@@ -7,7 +7,9 @@ import {
   ProjectF_PendingProjects,
   Footer,
   HeaderUser,
+  ProjectF_Content,
 } from '../../components';
+import {Present, SearchProject, ToDoListProjects} from '../../../assets';
 
 const ProjectF = () => {
   return (
@@ -21,16 +23,29 @@ const ProjectF = () => {
         <HeaderUser title="Projects" />
         <View style={{height: 450, marginTop: 15}}>
           {/* Search Job */}
+
           <ProjectF_SearchJob />
           <Gap height={11} />
 
-          {/*My Projects*/}
-          <ProjectF_MyProjects />
+          <ProjectF_Content
+            title="My Projects"
+            subTitle="12 Job Complete"
+            txtBtn="View"
+            icons={<ToDoListProjects />}
+            backgroundColor="#D2F5FD"
+            width={106}
+          />
 
           <Gap height={11} />
 
-          {/* Pending Projects */}
-          <ProjectF_PendingProjects />
+          <ProjectF_Content
+            title="Pending Projects"
+            subTitle="12 Pending Projects"
+            txtBtn="View"
+            icons={<Present />}
+            backgroundColor="#E2D4FE"
+            width={66}
+          />
         </View>
         <Gap height={25} />
       </View>

@@ -9,6 +9,7 @@ import DetailsF from './DetailsF';
 import PendingProjectF from './PendingProjectF';
 import ProjectF from './ProjectF';
 import LoginF from './LoginF';
+import AddJob from './AddJob';
 import CurrentProjectF from './CurrentProjectF';
 import CompleteProjectF from './CompleteProjectF';
 import PendingProjectC from './PendingProjectC';
@@ -27,6 +28,7 @@ export {
   PendingProjectF,
   ProjectF,
   LoginF,
+  AddJob,
   CurrentProjectF,
   CompleteProjectF,
   PendingProjectC,

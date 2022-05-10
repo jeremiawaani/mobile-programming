@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {ProjectF_Label, Gap, ProjectF_Button} from '../../components';
 import {Present, Monitor, Keyboard, Pencil} from '../../../assets';
@@ -27,9 +27,9 @@ const ProjectF_PendingProjects = () => {
         <Gap width={5} />
         <Keyboard />
         <Gap width={110} />
-        <View style={styles.btn}>
+        <TouchableOpacity activeOpacity={0.7}>
           <ProjectF_Button title="View" />
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
