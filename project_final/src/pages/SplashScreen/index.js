@@ -1,29 +1,33 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { Logo } from '../../../assets';
+import {StyleSheet, Text, View} from 'react-native';
+import React, {useEffect} from 'react';
+import {Logo} from '../../../assets';
 
-const SplashScreen = () => {
+const SplashScreen = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('SignUpF');
+    }, 3000);
+  }, []);
   return (
     <View style={styles.container}>
       <Logo />
       <Text style={styles.txt}>Sense</Text>
-      
     </View>
   );
 };
 
-export default SplashScreen
+export default SplashScreen;
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#FFFFFF',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: 633
-    },
-    txt: {
-        fontSize: 32,
-        color: '#8DEAFF',
-        fontFamily: 'Segoe UI Bold',
-    }
-})
+  container: {
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 633,
+  },
+  txt: {
+    fontSize: 32,
+    color: '#8DEAFF',
+    fontFamily: 'Segoe UI Bold',
+  },
+});

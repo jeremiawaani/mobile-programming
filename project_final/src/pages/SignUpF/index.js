@@ -1,4 +1,4 @@
-import {StyleSheet, View, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, TouchableOpacity, Button} from 'react-native';
 import React from 'react';
 import {
   Gap,
@@ -8,7 +8,7 @@ import {
   SignUpF_TextInput,
 } from '../../components';
 
-const SignUpF = () => {
+const SignUpF = ({navigation}) => {
   return (
     <View style={styles.container}>
       <SignUpF_Header />
@@ -41,6 +41,7 @@ export default SignUpF;
 const styles = StyleSheet.create({
   container: {
     marginRight: 7,
+    backgroundColor: '#fff',
   },
   content: {
     marginLeft: 55,

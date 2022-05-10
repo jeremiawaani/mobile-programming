@@ -40,6 +40,7 @@ import AddJob_Content from './AddJob_Content';
 import AddJob_Header from './AddJob_Header';
 import SearchJobF_content from './SearchJobF_content';
 import ApplyModal from './ApplyModal';
+import ProjectF_SearchJob from './ProjectF_SearchJob';
 
 export {
   Footer,
@@ -83,4 +84,5 @@ export {
   AddJob_Header,
   SearchJobF_content,
   ApplyModal,
+  ProjectF_SearchJob,
 };

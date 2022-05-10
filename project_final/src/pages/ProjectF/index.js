@@ -1,15 +1,13 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {
-  ProjectF_SearchJob,
-  ProjectF_MyProjects,
-  Gap,
-  ProjectF_PendingProjects,
   Footer,
+  Gap,
   HeaderUser,
   ProjectF_Content,
+  ProjectF_SearchJob,
 } from '../../components';
-import {Present, SearchProject, ToDoListProjects} from '../../../assets';
+import {Present, ToDoListProjects} from '../../../assets';
 
 const ProjectF = () => {
   return (

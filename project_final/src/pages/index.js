@@ -15,6 +15,7 @@ import CompleteProjectF from './CompleteProjectF';
 import PendingProjectC from './PendingProjectC';
 import CurrentProjectC from './CurrentProjectC';
 import CompleteProjectC from './CompleteProjectC';
+import SplashScreen from './SplashScreen';
 
 export {
   HomeC,
@@ -34,4 +35,5 @@ export {
   PendingProjectC,
   CurrentProjectC,
   CompleteProjectC,
+  SplashScreen,
 };

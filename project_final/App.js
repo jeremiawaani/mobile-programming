@@ -1,5 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import Routers from './routers';
 import {
   DetailsF_BarDesc,
   DetailsF_Header,
@@ -53,10 +55,9 @@ import AddJob_BarDesc from './src/components/AddJob_Content';
 
 const App = () => {
   return (
-    <View>
-      {/* <ProfileC /> */}
-      <PendingProjectF />
-    </View>
+    <NavigationContainer>
+      <Routers />
+    </NavigationContainer>
   );
 };
 
