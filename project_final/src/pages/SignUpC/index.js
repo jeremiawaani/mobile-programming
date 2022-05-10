@@ -8,7 +8,7 @@ import {
   SignUpF_TextInput,
 } from '../../components';
 
-const SignUpF = ({navigation}) => {
+const SignUpC = ({navigation}) => {
   return (
     <View style={styles.container}>
       <SignUpF_Header />
@@ -34,7 +34,7 @@ const SignUpF = ({navigation}) => {
   );
 };
 
-export default SignUpF;
+export default SignUpC;
 
 const styles = StyleSheet.create({
   container: {

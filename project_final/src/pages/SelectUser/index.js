@@ -4,9 +4,9 @@ import BorderUser from '../../components/SelectUser_border';
 import {Gap} from '../../components';
 import {Male, People} from '../../../assets';
 
-const SelectUser = () => {
+const SelectUser = ({navigation}) => {
   return (
-    <View>
+    <View style={styles.containerInti}>
       <View style={styles.header}>
         <Text style={styles.greeting}>Hi There,</Text>
         <Text style={styles.welcome}>Welcome</Text>
@@ -19,7 +19,7 @@ const SelectUser = () => {
           Title="Freelancer"
           SubTitle="Find Job"
           icons={<People />}
-          onPress={() => console.log('Oke')}
+          onPress={() => navigation.navigate('SignUpF')}
         />
         <Gap height={18} />
         <BorderUser
@@ -27,7 +27,7 @@ const SelectUser = () => {
           Title="Client"
           SubTitle="Find Service"
           icons={<Male />}
-          onPress={() => console.log('Oke')}
+          onPress={() => navigation.navigate('SignUpC')}
         />
       </View>
     </View>
@@ -61,5 +61,8 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontFamily: 'Segoe UI',
     fontSize: 14,
+  },
+  containerInti: {
+    backgroundColor: '#fff',
   },
 });

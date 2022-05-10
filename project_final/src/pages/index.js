@@ -16,6 +16,8 @@ import PendingProjectC from './PendingProjectC';
 import CurrentProjectC from './CurrentProjectC';
 import CompleteProjectC from './CompleteProjectC';
 import SplashScreen from './SplashScreen';
+import SignUpC from './SignUpC';
+import LoginC from './LoginC';
 
 export {
   HomeC,
@@ -36,4 +38,6 @@ export {
   CurrentProjectC,
   CompleteProjectC,
   SplashScreen,
+  SignUpC,
+  LoginC,
 };

@@ -11,6 +11,8 @@ import {
   ProfileF,
   SelectUser,
   LoginF,
+  LoginC,
+  SignUpC,
 } from '../src';
 
 const Stack = createNativeStackNavigator();
@@ -21,7 +23,7 @@ const Routers = () => {
     <Stack.Navigator>
       <Stack.Screen
         name="SplashScreen"
-        component={TabFooter}
+        component={SplashScreen}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -40,8 +42,18 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
+        name="SignUpC"
+        component={SignUpC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
         name="LoginF"
         component={LoginF}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LoginC"
+        component={LoginC}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

@@ -5,7 +5,7 @@ import {Logo} from '../../../assets';
 const SplashScreen = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace('SignUpF');
+      navigation.replace('SelectUser');
     }, 3000);
   }, []);
   return (

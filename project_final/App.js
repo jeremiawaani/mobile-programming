@@ -43,6 +43,8 @@ import {
   PendingProjectC,
   CurrentProjectC,
   CompleteProjectC,
+  SignUpC,
+  LoginC,
 } from './src';
 import BorderUser from './src/components/SelectUser_border';
 import SplashScreen from './src/pages/SplashScreen';
@@ -55,13 +57,13 @@ import AddJob_BarDesc from './src/components/AddJob_Content';
 
 const App = () => {
   return (
-    // <NavigationContainer>
-    //   <Routers />
-    // </NavigationContainer>
+    <NavigationContainer>
+      <Routers />
+    </NavigationContainer>
 
-    <View>
-      <SelectUser />
-    </View>
+    // <View>
+    //   <LoginC />
+    // </View>
   );
 };
 
