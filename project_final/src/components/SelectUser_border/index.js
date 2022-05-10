@@ -3,9 +3,9 @@ import React from 'react';
 import {People} from '../../../assets';
 import Gap from '../Gap';
 
-const BorderUser = ({color = '#D2F5FD', Title, SubTitle, icons}) => {
+const BorderUser = ({color = '#D2F5FD', Title, SubTitle, icons, onPress}) => {
   return (
-    <TouchableOpacity activeOpacity={0.7}>
+    <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
       <View style={styles.wrapper(color)}>
         <View style={styles.icon}>{icons}</View>
         <View style={{marginLeft: 55.98}}>

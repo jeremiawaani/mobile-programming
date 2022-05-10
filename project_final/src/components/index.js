@@ -2,10 +2,9 @@ import Footer from './Footer';
 import Gap from './Gap';
 import HeaderUser from './HeaderUser';
 import DetailsF_Header from './DetailsF_Header';
-import ProfileF_Top from './ProfileF_Top';
 import ProfileF_Bottom from './ProfileF_Bottom';
-import ProfileC_Top from './ProfileC_Top';
 import ProfileC_Bottom from './ProfileC_Bottom';
+import ProfileC_Top from './ProfileC_Top';
 import SignUpF_Header from './SignUpF_Header';
 import SignUpF_TextInput from './SignUpF_TextInput';
 import SignUpF_Button from './SignUpF_Button';
@@ -25,6 +24,7 @@ import PendingProjectF_Content from './PendingProjectF_Content';
 import PendingProjectF_JobDetails from './PendingProjectF_JobDetails';
 import PendingProjectF_Bottom from './PendingProjectF_Bottom';
 import HomeC_ContentHome from './HomeC_ContentHome';
+import ProfileF_Top from './ProfileF_Top';
 
 import ProjectF_Label from './ProjectF_Label';
 import ProjectF_Button from './ProjectF_Button';
@@ -47,7 +47,6 @@ export {
   Gap,
   HeaderUser,
   DetailsF_Header,
-  ProfileF_Top,
   ProfileF_Bottom,
   ProfileC_Top,
   ProfileC_Bottom,
@@ -85,4 +84,5 @@ export {
   SearchJobF_content,
   ApplyModal,
   ProjectF_SearchJob,
+  ProfileF_Top,
 };

@@ -60,13 +60,7 @@ const App = () => {
     // </NavigationContainer>
 
     <View>
-      <TouchableOpacity
-        style={{
-          width: 200,
-          height: 200,
-          backgroundColor: 'yellow',
-        }}
-        onPress={console.log('Oke')}></TouchableOpacity>
+      <SelectUser />
     </View>
   );
 };

@@ -21,7 +21,7 @@ const Routers = () => {
     <Stack.Navigator>
       <Stack.Screen
         name="SplashScreen"
-        component={SplashScreen}
+        component={TabFooter}
         options={{headerShown: false}}
       />
       <Stack.Screen

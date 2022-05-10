@@ -19,6 +19,7 @@ const SelectUser = () => {
           Title="Freelancer"
           SubTitle="Find Job"
           icons={<People />}
+          onPress={() => console.log('Oke')}
         />
         <Gap height={18} />
         <BorderUser
@@ -26,6 +27,7 @@ const SelectUser = () => {
           Title="Client"
           SubTitle="Find Service"
           icons={<Male />}
+          onPress={() => console.log('Oke')}
         />
       </View>
     </View>
