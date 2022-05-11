@@ -5,7 +5,7 @@ import {Add, AddTabBottom, Present, ProjectList} from '../../../assets';
 
 const HomeC = ({navigation}) => {
   return (
-    <View style={{backgroundColor: '#fff'}}>
+    <View style={{backgroundColor: '#FFFFFF'}}>
       {/* <Text>HomeC</Text> */}
       <HomeF_Header />
       <HomeC_ContentHome
@@ -29,9 +29,9 @@ const HomeC = ({navigation}) => {
         subtitle={'12 Pending Projects'}
         icons={<Present />}
         backgroundColor={'#E2D4FE'}
-        marginL={75}
+        marginL={68}
       />
-      <Gap height={22} />
+      <Gap height={30} />
       <Footer search={<AddTabBottom />} />
     </View>
   );

@@ -22,6 +22,7 @@ import {
   PendingProjectC,
   DetailsF,
 } from '../src';
+import { AddTabBottom, Chat, Home, User } from '../assets';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -129,22 +130,42 @@ export function TabFooterF() {
       <Tab.Screen
         name="HomeF"
         component={HomeF}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <Home/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="SearcJob"
         component={SearchJob}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <AddTabBottom/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="Chat"
         component={SearchJob}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <Chat/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="ProfileF"
         component={ProfileF}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <User/>
+          ),
+          headerShown: false,
+          }}
       />
     </Tab.Navigator>
   );

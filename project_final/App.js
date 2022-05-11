@@ -61,9 +61,9 @@ const App = () => {
       <Routers />
     </NavigationContainer>
 
-    // <View>
-    //   <LoginC />
-    // </View>
+    // {/* <View>
+    //   <HomeC />
+    // </View> */}
   );
 };
 

@@ -19,8 +19,8 @@ const desc =
 const skill = 'Adobe Ilustrator\nFigma';
 const AddJob = ({navigation}) => {
   return (
-    <View>
-      <AddJob_Header />
+    <View style={{backgroundColor: '#FFFFFF'}}>
+      <AddJob_Header onPress={() => navigation.navigate('HomeC')}/>
       <View style={styles.container}>
         <Gap height={23} />
         <View style={styles.contentWrapper}>

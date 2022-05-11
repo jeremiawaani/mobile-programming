@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Gap from '../Gap'
 import { IconBack, Profile, ProfileLomoKecil} from '../../../assets'
 
-const AddJob_Header = () => {
+const AddJob_Header = ({onPress}) => {
   return (
     <View>
       <Image
@@ -12,9 +12,11 @@ const AddJob_Header = () => {
       />
       <View style={styles.header}>
         <Gap width={25} />
-        <View style={styles.borderIconBack}>
-          <IconBack />
-        </View>
+        <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
+          <View style={styles.borderIconBack}>
+            <IconBack />
+          </View>
+        </TouchableOpacity>
         <Gap width={240} />
         <ProfileLomoKecil />
       </View>
