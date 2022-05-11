@@ -20,7 +20,7 @@ const LoginF = ({navigation}) => {
       {/* Content */}
       <LoginF_Content onPress={() => navigation.navigate('HomeF')} />
       {/* Footer */}
-      <LoginF_Footer />
+      <LoginF_Footer onPress={() => navigation.navigate('SignUpF')} />
     </View>
   );
 };

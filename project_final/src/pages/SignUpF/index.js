@@ -1,7 +1,8 @@
-import {StyleSheet, View, TouchableOpacity, Button} from 'react-native';
-import React from 'react';
+import {StyleSheet, View, TouchableOpacity, Button, Modal} from 'react-native';
+import React, {useState} from 'react';
 import {
   Gap,
+  RegisterModal,
   SignUpF_Button,
   SignUpF_Footer,
   SignUpF_Header,
@@ -9,8 +10,24 @@ import {
 } from '../../components';
 
 const SignUpF = ({navigation}) => {
+  const [isModalVisible, setisModalVisible] = useState(false);
+
+  const changeModalVisible = bool => {
+    setisModalVisible(bool);
+  };
   return (
     <View style={styles.container}>
+      <Modal
+        transparent={true}
+        animationType="fade"
+        visible={isModalVisible}
+        nRequestClose={() => changeModalVisible(false)}>
+        <View style={{height: 640, backgroundColor: '#000000AA'}}></View>
+        <RegisterModal
+          changeModalVisible={changeModalVisible}
+          title="Account created!"
+        />
+      </Modal>
       <SignUpF_Header />
       <Gap height={12} />
       <View style={styles.content}>
@@ -25,7 +42,7 @@ const SignUpF = ({navigation}) => {
         <Gap height={8} />
         <SignUpF_TextInput title={'Password'} placeholder={'Password'} />
         <Gap height={33} />
-        <SignUpF_Button />
+        <SignUpF_Button onPress={() => changeModalVisible(true)} />
       </View>
       <View style={styles.footer}>
         <SignUpF_Footer onPress={() => navigation.navigate('LoginF')} />
