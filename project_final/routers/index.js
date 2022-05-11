@@ -143,7 +143,8 @@ export default Routers;
 
 export function TabFooterF() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{headerShown: false, tabBarLabel: () => false}}>
       <Tab.Screen
         name="HomeF"
         component={HomeF}
@@ -190,7 +191,8 @@ export function TabFooterF() {
 
 export function TabFooterC() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{headerShown: false, tabBarLabel: () => false}}>
       <Tab.Screen
         name="HomeC"
         component={HomeC}
