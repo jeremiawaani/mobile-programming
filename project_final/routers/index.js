@@ -21,7 +21,7 @@ import {
   CurrentProjectC,
   PendingProjectC,
 } from '../src';
-import { AddTabBottom, Chat, Home, User } from '../assets';
+import { AddTabBottom, Chat, Home, Search, User } from '../assets';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -158,22 +158,42 @@ export function TabFooterC() {
       <Tab.Screen
         name="HomeC"
         component={HomeC}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <Home/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="AddJob"
         component={AddJob}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <AddTabBottom/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="Chat"
         component={AddJob}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <Chat/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="ProfileC"
         component={ProfileC}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <User/>
+          ),
+          headerShown: false
+          }}
       />
     </Tab.Navigator>
   );
