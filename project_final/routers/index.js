@@ -18,8 +18,9 @@ import {
   HomeC,
   AddJob,
   ProfileC,
+  CurrentProjectC,
+  PendingProjectC,
 } from '../src';
-import {Add} from '../assets';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -80,6 +81,21 @@ const Routers = () => {
       <Stack.Screen
         name="HomeC"
         component={TabFooterC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CurrentProjectC"
+        component={CurrentProjectC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PendingProjectC"
+        component={PendingProjectC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AddJob"
+        component={AddJob}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

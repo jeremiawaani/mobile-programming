@@ -3,7 +3,7 @@ import React from 'react'
 import Gap from '../Gap'
 import { Add, Keyboard, Monitor, Pencil, Present, ProjectList } from '../../../assets'
 
-const HomeC_ContentHome = ({backgroundColor='#D1FBEA', marginL, icons, title, subtitle}) => {
+const HomeC_ContentHome = ({backgroundColor='#D1FBEA', marginL, icons, title, subtitle, onPress}) => {
   return (
     <View style={styles.styleContent}>
         <View style={styles.borderContent(backgroundColor)}>
@@ -19,11 +19,11 @@ const HomeC_ContentHome = ({backgroundColor='#D1FBEA', marginL, icons, title, su
             </View>
             <View style={styles.marginLeftBtn(marginL)}>
             <Gap height={28}/>
-                <TouchableOpacity activeOpacity={0.7}>
+                {/* <TouchableOpacity activeOpacity={0.7} onPress={onPress}> */}
                     {icons}
-                </TouchableOpacity>
+                {/* </TouchableOpacity> */}
                 <Gap height={14}/>
-                <TouchableOpacity activeOpacity={0.7}>
+                <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
                     <View style={styles.button}>
                         <Text style={styles.textBtn}>View</Text>
                     </View>
