@@ -17,7 +17,7 @@ import {
 const desc =
   'Lorem ipsum dolor sit amet, consectetur adipis elit.\nAliquam mi mauris vestibulum aliquam viverra\nmolestie nibh.';
 const skill = 'Adobe Ilustrator\nFigma';
-const AddJob = () => {
+const AddJob = ({navigation}) => {
   return (
     <View>
       <AddJob_Header />

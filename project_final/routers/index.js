@@ -13,6 +13,9 @@ import {
   LoginF,
   LoginC,
   SignUpC,
+  AddJob,
+  CurrentProjectC,
+  PendingProjectC,
 } from '../src';
 
 const Stack = createNativeStackNavigator();
@@ -54,6 +57,21 @@ const Routers = () => {
       <Stack.Screen
         name="LoginC"
         component={LoginC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AddJob"
+        component={AddJob}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CurrentProjectC"
+        component={CurrentProjectC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PendingProjectC"
+        component={PendingProjectC}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
