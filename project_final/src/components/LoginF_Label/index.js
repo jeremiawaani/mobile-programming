@@ -1,17 +1,11 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const LoginF_Label = ({
-  labelColor, labelSize, title
-}) => {
+const LoginF_Label = ({labelColor, labelSize, title, onPress}) => {
   return (
-    <TouchableOpacity>
-      <Text style={styles.txt(labelColor, labelSize= 13)}>
-              {title}
-      </Text>
+    <TouchableOpacity onPress={onPress}>
+      <Text style={styles.txt(labelColor, (labelSize = 13))}>{title}</Text>
     </TouchableOpacity>
-       
-    
   );
 };
 

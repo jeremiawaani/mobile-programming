@@ -9,20 +9,25 @@ import {
 } from '../../components';
 import {Present, ToDoListProjects} from '../../../assets';
 
-const ProjectF = () => {
+const ProjectF = ({navigation}) => {
   return (
     //
-    <View style={{}}>
+    <View style={{backgroundColor: '#fff'}}>
       {/* <Gap width={26} /> */}
       {/* Header */}
       {/* Header ambe dari component yang ada di repo github */}
       {/* <Header title="Projects"/> */}
       <View style={{marginRight: 7}}>
-        <HeaderUser title="Projects" />
+        <HeaderUser
+          title="Projects"
+          onPress={() => navigation.navigate('HomeF')}
+        />
         <View style={{height: 450, marginTop: 15}}>
           {/* Search Job */}
 
-          <ProjectF_SearchJob />
+          <ProjectF_SearchJob
+            onPress={() => navigation.navigate('SearchJob')}
+          />
           <Gap height={11} />
 
           <ProjectF_Content
@@ -32,6 +37,7 @@ const ProjectF = () => {
             icons={<ToDoListProjects />}
             backgroundColor="#D2F5FD"
             width={106}
+            onPress={() => navigation.navigate('CompleteProjectF')}
           />
 
           <Gap height={11} />
@@ -43,6 +49,7 @@ const ProjectF = () => {
             icons={<Present />}
             backgroundColor="#E2D4FE"
             width={66}
+            onPress={() => navigation.navigate('PendingProjectF')}
           />
         </View>
         <Gap height={25} />

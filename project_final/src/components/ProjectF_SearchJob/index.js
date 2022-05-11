@@ -5,7 +5,7 @@ import Gap from '../Gap';
 import ProjectF_Label from '../ProjectF_Label';
 import ProjectF_Button from '../ProjectF_Button';
 
-const ProjectF_SearchJob = () => {
+const ProjectF_SearchJob = ({onPress}) => {
   return (
     <View style={styles.container}>
       <View style={{flexDirection: 'row', height: 21}}>
@@ -30,7 +30,7 @@ const ProjectF_SearchJob = () => {
         <Keyboard />
         <Gap width={110} />
         <TouchableOpacity activeOpacity={0.7}>
-          <ProjectF_Button title="Find" />
+          <ProjectF_Button title="Find" onPress={onPress} />
         </TouchableOpacity>
       </View>
     </View>

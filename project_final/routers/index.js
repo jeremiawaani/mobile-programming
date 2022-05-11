@@ -13,10 +13,15 @@ import {
   LoginF,
   LoginC,
   SignUpC,
+  PendingProjectF,
+  CompleteProjectF,
+  HomeC,
   AddJob,
+  ProfileC,
   CurrentProjectC,
   PendingProjectC,
 } from '../src';
+import { AddTabBottom, Chat, Home, User } from '../assets';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -24,9 +29,14 @@ const Tab = createBottomTabNavigator();
 const Routers = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
+        options={{headerShown: false}}
+      /> */}
+      <Stack.Screen
+        name="ProjectF"
+        component={ProjectF}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -36,7 +46,7 @@ const Routers = () => {
       />
       <Stack.Screen
         name="HomeF"
-        component={TabFooter}
+        component={TabFooterF}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -60,8 +70,18 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="AddJob"
-        component={AddJob}
+        name="PendingProjectF"
+        component={PendingProjectF}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CompleteProjectF"
+        component={CompleteProjectF}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomeC"
+        component={TabFooterC}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -74,33 +94,85 @@ const Routers = () => {
         component={PendingProjectC}
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="AddJob"
+        component={AddJob}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };
 
 export default Routers;
 
-export function TabFooter() {
+export function TabFooterF() {
   return (
     <Tab.Navigator>
       <Tab.Screen
         name="HomeF"
         component={HomeF}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <Home/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="SearcJob"
         component={SearchJob}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <AddTabBottom/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="Chat"
         component={SearchJob}
-        options={{headerShown: false}}
+        options={{
+          tabBarIcon: () => (
+            <Chat/>
+          ),
+          headerShown: false
+          }}
       />
       <Tab.Screen
         name="ProfileF"
         component={ProfileF}
+        options={{
+          tabBarIcon: () => (
+            <User/>
+          ),
+          headerShown: false,
+          }}
+      />
+    </Tab.Navigator>
+  );
+}
+
+export function TabFooterC() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen
+        name="HomeC"
+        component={HomeC}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="AddJob"
+        component={AddJob}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="Chat"
+        component={AddJob}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="ProfileC"
+        component={ProfileC}
         options={{headerShown: false}}
       />
     </Tab.Navigator>
