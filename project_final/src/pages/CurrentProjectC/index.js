@@ -17,7 +17,7 @@ import {
   Remove,
 } from '../../../assets';
 
-const CurrentProjectC = ({navigation}) => {
+const CurrentProjectC = () => {
   return (
     <View>
       <PendingProjectF_Header
