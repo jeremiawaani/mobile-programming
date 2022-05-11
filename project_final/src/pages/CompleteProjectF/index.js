@@ -18,7 +18,7 @@ import {
 
 const CompleteProjectF = ({navigation}) => {
   return (
-    <View>
+    <View style={{backgroundColor: '#fff'}}>
       <PendingProjectF_Header
         headerText={'My\nProjects'}
         sideHeaderText="Complete Project"
@@ -32,6 +32,7 @@ const CompleteProjectF = ({navigation}) => {
         fontFamilyTab2={'Segoe UI Bold'}
         profile={<Profile />}
         onPress={() => navigation.navigate('ProjectF')}
+        onPress2={() => navigation.navigate('CurrentProjectF')}
       />
       <Gap height={13} />
       <PendingProjectF_Content />

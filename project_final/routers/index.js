@@ -21,8 +21,10 @@ import {
   CurrentProjectC,
   PendingProjectC,
   DetailsF,
+  CompleteProjectC,
+  CurrentProjectF,
 } from '../src';
-import { AddTabBottom, Chat, Home, Search, User } from '../assets';
+import {AddTabBottom, Chat, Home, Search, User} from '../assets';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -30,49 +32,27 @@ const Tab = createBottomTabNavigator();
 const Routers = () => {
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
         options={{headerShown: false}}
-      /> */}
-      {/* <Stack.Screen
-        name="ProjectF"
-        component={ProjectF}
-        options={{headerShown: false}}
-      /> */}
-      {/* STACK SCREEN CLIENT */}
-      <Stack.Screen
-        name="AddJob"
-        component={AddJob}
-        options={{headerShown: false}}
       />
       <Stack.Screen
-        name="HomeC"
-        component={TabFooterC}
+        name="SelectUser"
+        component={SelectUser}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="LoginC"
-        component={LoginC}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="CurrentProjectC"
-        component={CurrentProjectC}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="PendingProjectC"
-        component={PendingProjectC}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="SignUpC"
-        component={SignUpC}
-        options={{headerShown: false}}
-      />
-
       {/* STACK SCREEN FREELANCER */}
+      <Stack.Screen
+        name="ProfileF"
+        component={ProfileF}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CurrentProjectF"
+        component={CurrentProjectF}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="DetailsF"
         component={DetailsF}
@@ -86,11 +66,6 @@ const Routers = () => {
       <Stack.Screen
         name="CompleteProjectF"
         component={CompleteProjectF}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="SelectUser"
-        component={SelectUser}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -118,6 +93,48 @@ const Routers = () => {
         component={SearchJob}
         options={{headerShown: false}}
       />
+
+      {/* STACK SCREEN CLIENT */}
+      <Stack.Screen
+        name="CurrentProjectC"
+        component={CurrentProjectC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ProfileC"
+        component={ProfileC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AddJob"
+        component={AddJob}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomeC"
+        component={TabFooterC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LoginC"
+        component={LoginC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PendingProjectC"
+        component={PendingProjectC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SignUpC"
+        component={SignUpC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CompleteProjectC"
+        component={CompleteProjectC}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };
@@ -131,41 +148,41 @@ export function TabFooterF() {
         name="HomeF"
         component={HomeF}
         options={{
-          tabBarIcon: () => (
-            <Home/>
-          ),
-          headerShown: false
-          }}
+          tabBarIcon: () => <Home />,
+          headerShown: false,
+        }}
       />
+      {/* <Tab.Screen
+        name="ProjectF"
+        component={ProjectF}
+        options={{
+          tabBarIcon: () => <Home />,
+          headerShown: false,
+        }}
+      /> */}
       <Tab.Screen
         name="SearcJob"
         component={SearchJob}
         options={{
-          tabBarIcon: () => (
-            <AddTabBottom/>
-          ),
-          headerShown: false
-          }}
+          tabBarIcon: () => <Search />,
+          headerShown: false,
+        }}
       />
       <Tab.Screen
         name="Chat"
         component={SearchJob}
         options={{
-          tabBarIcon: () => (
-            <Chat/>
-          ),
-          headerShown: false
-          }}
+          tabBarIcon: () => <Chat />,
+          headerShown: false,
+        }}
       />
       <Tab.Screen
         name="ProfileF"
         component={ProfileF}
         options={{
-          tabBarIcon: () => (
-            <User/>
-          ),
+          tabBarIcon: () => <User />,
           headerShown: false,
-          }}
+        }}
       />
     </Tab.Navigator>
   );
@@ -178,41 +195,33 @@ export function TabFooterC() {
         name="HomeC"
         component={HomeC}
         options={{
-          tabBarIcon: () => (
-            <Home/>
-          ),
-          headerShown: false
-          }}
+          tabBarIcon: () => <Home />,
+          headerShown: false,
+        }}
       />
       <Tab.Screen
         name="AddJob"
         component={AddJob}
         options={{
-          tabBarIcon: () => (
-            <AddTabBottom/>
-          ),
-          headerShown: false
-          }}
+          tabBarIcon: () => <AddTabBottom />,
+          headerShown: false,
+        }}
       />
       <Tab.Screen
         name="Chat"
         component={AddJob}
         options={{
-          tabBarIcon: () => (
-            <Chat/>
-          ),
-          headerShown: false
-          }}
+          tabBarIcon: () => <Chat />,
+          headerShown: false,
+        }}
       />
       <Tab.Screen
         name="ProfileC"
         component={ProfileC}
         options={{
-          tabBarIcon: () => (
-            <User/>
-          ),
-          headerShown: false
-          }}
+          tabBarIcon: () => <User />,
+          headerShown: false,
+        }}
       />
     </Tab.Navigator>
   );

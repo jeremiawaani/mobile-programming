@@ -17,9 +17,9 @@ import {
   Remove,
 } from '../../../assets';
 
-const CurrentProjectC = () => {
+const CurrentProjectC = ({navigation}) => {
   return (
-    <View>
+    <View style={{backgroundColor: '#fff'}}>
       <PendingProjectF_Header
         headerText={'My\nProjects'}
         sideHeaderText="Current Project"
@@ -29,6 +29,8 @@ const CurrentProjectC = () => {
         widthBorder={107}
         mR={37}
         profile={<ProfileLomoKecil />}
+        onPress={() => navigation.navigate('HomeC')}
+        onPress3={() => navigation.navigate('CompleteProjectC')}
       />
       <Gap height={13} />
       <PendingProjectF_Content />

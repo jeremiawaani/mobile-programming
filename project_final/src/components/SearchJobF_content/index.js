@@ -6,6 +6,7 @@ const SearchJobF_content = ({
   title = 'Database Management',
   color,
   marginL = 0,
+  onPress,
 }) => {
   return (
     <View style={styles.container(color)}>
@@ -24,7 +25,7 @@ const SearchJobF_content = ({
       </View>
       <View style={styles.apply(marginL)}>
         <Text style={styles.gaji}> Rp59.000</Text>
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
           <View style={styles.button}>
             <Text style={styles.textBtn}>Apply Job</Text>
           </View>

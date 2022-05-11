@@ -16,9 +16,9 @@ import {
   ProfileLomoKecil,
 } from '../../../assets';
 
-const CompleteProjectC = () => {
+const CompleteProjectC = ({navigation}) => {
   return (
-    <View>
+    <View style={{backgroundColor: '#fff'}}>
       <PendingProjectF_Header
         headerText={'My\nProjects'}
         sideHeaderText="Complete Project"
@@ -31,6 +31,8 @@ const CompleteProjectC = () => {
         fontFamilyTab1={'Segoe UI'}
         fontFamilyTab2={'Segoe UI Bold'}
         profile={<ProfileLomoKecil />}
+        onPress={() => navigation.navigate('HomeC')}
+        onPress2={() => navigation.navigate('CurrentProjectC')}
       />
       <Gap height={13} />
       <PendingProjectF_Content />

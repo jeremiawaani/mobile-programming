@@ -16,6 +16,8 @@ const PendingProjectF_Header = ({
   fontFamilyTab2 = 'Segoe UI',
   profile,
   onPress,
+  onPress2,
+  onPress3,
 }) => {
   return (
     <View style={styles.container}>
@@ -45,8 +47,12 @@ const PendingProjectF_Header = ({
         </View>
       </View>
       <View style={styles.header3}>
-        <Text style={styles.projectTxt(mR, fontFamilyTab1)}>{tab1Text}</Text>
-        <Text style={styles.profileTxt(fontFamilyTab2)}>{tab2Text}</Text>
+        <TouchableOpacity onPress={onPress2}>
+          <Text style={styles.projectTxt(mR, fontFamilyTab1)}>{tab1Text}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={onPress3}>
+          <Text style={styles.profileTxt(fontFamilyTab2)}>{tab2Text}</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.borderSelect(widthBorder, mL)} />
       <View style={styles.border} />

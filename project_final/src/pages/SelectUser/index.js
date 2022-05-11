@@ -29,6 +29,7 @@ const SelectUser = ({navigation}) => {
           icons={<Male />}
           onPress={() => navigation.navigate('LoginC')}
         />
+        <View style={{backgroundColor: '#fff', height: 150}}></View>
       </View>
     </View>
   );

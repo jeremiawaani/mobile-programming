@@ -10,7 +10,10 @@ import {
 const ProfileF = ({navigation}) => {
   return (
     <View>
-      <HeaderUser title="My Profile" />
+      <HeaderUser
+        title="My Profile"
+        onPress={() => navigation.navigate('HomeF')}
+      />
       <ProfileF_Top />
       <ProfileF_Bottom onPress={() => navigation.navigate('SelectUser')} />
       <Footer />

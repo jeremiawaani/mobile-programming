@@ -4,11 +4,13 @@ import {
   View,
   TextInput as TextInputRN,
   ScrollView,
+  Modal,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {
   AddJob_Content,
   AddJob_Header,
+  ApplyModal,
   DetailsF_Button,
   Footer,
   Gap,
@@ -18,9 +20,25 @@ const desc =
   'Lorem ipsum dolor sit amet, consectetur adipis elit.\nAliquam mi mauris vestibulum aliquam viverra\nmolestie nibh.';
 const skill = 'Adobe Ilustrator\nFigma';
 const AddJob = ({navigation}) => {
+  const [isModalVisible, setisModalVisible] = useState(false);
+
+  const changeModalVisible = bool => {
+    setisModalVisible(bool);
+  };
   return (
     <View style={{backgroundColor: '#FFFFFF'}}>
-      <AddJob_Header onPress={() => navigation.navigate('HomeC')}/>
+      <Modal
+        transparent={true}
+        animationType="fade"
+        visible={isModalVisible}
+        nRequestClose={() => changeModalVisible(false)}>
+        <View style={{height: 600, backgroundColor: '#000000AA'}}></View>
+        <ApplyModal
+          changeModalVisible={changeModalVisible}
+          title="Post this job?"
+        />
+      </Modal>
+      <AddJob_Header onPress={() => navigation.navigate('HomeC')} />
       <View style={styles.container}>
         <Gap height={23} />
         <View style={styles.contentWrapper}>
@@ -77,7 +95,10 @@ const AddJob = ({navigation}) => {
             barImg={require('../../../assets/images/BarBiru.png')}
             bottomColor="#D2F5FD"
           />
-          <DetailsF_Button title={'Add'} />
+          <DetailsF_Button
+            title={'Add'}
+            onPress={() => changeModalVisible(true)}
+          />
         </View>
 
         <Gap height={30} />

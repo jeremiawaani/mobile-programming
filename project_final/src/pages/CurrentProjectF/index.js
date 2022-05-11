@@ -18,7 +18,7 @@ import {
 
 const CurrentProjectF = ({navigation}) => {
   return (
-    <View>
+    <View style={{backgroundColor: '#fff'}}>
       <PendingProjectF_Header
         headerText={'My\nProjects'}
         sideHeaderText="Current Project"
@@ -29,6 +29,7 @@ const CurrentProjectF = ({navigation}) => {
         mR={37}
         profile={<Profile />}
         onPress={() => navigation.navigate('ProjectF')}
+        onPress3={() => navigation.navigate('CompleteProjectF')}
       />
       <Gap height={13} />
       <PendingProjectF_Content />

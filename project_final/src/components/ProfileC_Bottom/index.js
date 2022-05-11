@@ -10,7 +10,7 @@ import {
   IconBack,
 } from '../../../assets';
 
-const ProfileC_Bottom = () => {
+const ProfileC_Bottom = ({onPress}) => {
   return (
     <View style={styles.page}>
       <Text
@@ -96,7 +96,8 @@ const ProfileC_Bottom = () => {
         <Profile_Button
           width={270}
           title="Log Out"
-          color="#D1FBEA"></Profile_Button>
+          color="#D1FBEA"
+          onPress={onPress}></Profile_Button>
       </View>
     </View>
   );

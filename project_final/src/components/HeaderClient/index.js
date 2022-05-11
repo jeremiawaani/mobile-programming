@@ -3,12 +3,12 @@ import React from 'react';
 import {IconBack, Profile, ProfileLomoKecil} from '../../../assets';
 import Gap from '../Gap';
 
-const HeaderClient = ({title}) => {
+const HeaderClient = ({title, onPress}) => {
   return (
     <View style={{backgroundColor: '#FFFFFF'}}>
       <View style={styles.container}>
         <View style={{flex: 1}}>
-          <TouchableOpacity activeOpacity={0.7}>
+          <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
             <IconBack style={styles.iconBack} />
           </TouchableOpacity>
         </View>

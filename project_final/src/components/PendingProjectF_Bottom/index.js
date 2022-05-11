@@ -36,7 +36,7 @@ export default PendingProjectF_Bottom;
 const styles = StyleSheet.create({
   container: {
     width: 360,
-    height: 67,
+    height: 80,
     alignItems: 'center',
   },
   buttonStyles: {

@@ -17,12 +17,13 @@ import {
   Remove,
 } from '../../../assets';
 
-const PendingProjectC = () => {
+const PendingProjectC = ({navigation}) => {
   return (
-    <View>
+    <View style={{backgroundColor: '#fff'}}>
       <PendingProjectF_Header
         profile={<ProfileLomoKecil />}
         tab2Text="Freelance Profile"
+        onPress={() => navigation.navigate('HomeC')}
       />
       <Gap height={13} />
       <PendingProjectF_Content />

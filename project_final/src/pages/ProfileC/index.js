@@ -7,15 +7,18 @@ import {
   Footer,
   HeaderClient,
 } from '../../components';
-import { AddTabBottom } from '../../../assets';
+import {AddTabBottom} from '../../../assets';
 
-const ProfileC = () => {
+const ProfileC = ({navigation}) => {
   return (
     <View>
-      <HeaderClient title="My Profile" />
+      <HeaderClient
+        title="My Profile"
+        onPress={() => navigation.navigate('HomeC')}
+      />
       <ProfileC_Top />
-      <ProfileC_Bottom />
-      <Footer search={<AddTabBottom/>}/>
+      <ProfileC_Bottom onPress={() => navigation.navigate('SelectUser')} />
+      <Footer search={<AddTabBottom />} />
     </View>
   );
 };

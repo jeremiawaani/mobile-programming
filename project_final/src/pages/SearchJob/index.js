@@ -8,50 +8,62 @@ import {
 } from '../../components';
 import React from 'react';
 
-const SearchJob = () => {
+const SearchJob = ({navigation}) => {
   return (
     <View>
       {/* <View> */}
-      <HeaderUser title="Search Job" />
+      <HeaderUser
+        title="Search Job"
+        onPress={() => navigation.navigate('ProjectF')}
+      />
       {/* </View> */}
 
-      <ScrollView style={{height: 485}}>
-        <SearchJobF_content color={'#E2D4FE'} />
+      <ScrollView style={{height: 485, backgroundColor: '#fff'}}>
+        <SearchJobF_content
+          color={'#E2D4FE'}
+          onPress={() => navigation.navigate('DetailsF')}
+        />
         <Gap height={14} />
         <SearchJobF_content
           title={'Design Interface'}
           color={'#D1FBEA'}
           marginL={27}
+          onPress={() => navigation.navigate('DetailsF')}
         />
         <Gap height={14} />
         <SearchJobF_content
           title={'Server Security'}
           color={'#D2F5FD'}
           marginL={27}
+          onPress={() => navigation.navigate('DetailsF')}
         />
         <Gap height={14} />
         <SearchJobF_content
           title={'Software Analyst'}
           color={'#E2D4FE'}
           marginL={27}
+          onPress={() => navigation.navigate('DetailsF')}
         />
         <Gap height={20} />
         <SearchJobF_content
           title={'UI UX Designer'}
           color={'#D1FBEA'}
           marginL={27}
+          onPress={() => navigation.navigate('DetailsF')}
         />
         <Gap height={14} />
         <SearchJobF_content
           title={'Mobile Apps'}
           color={'#D2F5FD'}
           marginL={27}
+          onPress={() => navigation.navigate('DetailsF')}
         />
         <Gap height={14} />
         <SearchJobF_content
           title={'Flutter Developer'}
           color={'#E2D4FE'}
           marginL={27}
+          onPress={() => navigation.navigate('DetailsF')}
         />
       </ScrollView>
       <Footer />

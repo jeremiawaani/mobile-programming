@@ -8,7 +8,7 @@ const HeaderUser = ({title, onPress}) => {
     <View style={{backgroundColor: '#FFFFFF'}}>
       <View style={styles.container}>
         <View style={{flex: 1}}>
-          <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
+          <TouchableOpacity onPress={onPress}>
             <IconBack style={styles.iconBack} />
           </TouchableOpacity>
         </View>

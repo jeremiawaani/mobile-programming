@@ -54,7 +54,12 @@ const ProjectF = ({navigation}) => {
         </View>
         <Gap height={25} />
       </View>
-      <Footer />
+      <Footer
+        onPressHome={() => navigation.navigate('HomeF')}
+        onPressSearch={() => navigation.navigate('SearchJob')}
+        onPressChat={() => navigation.navigate('SearchJob')}
+        onPressProfile={() => navigation.navigate('ProfileF')}
+      />
       {/* Footer ambe di github */}
     </View>
   );
