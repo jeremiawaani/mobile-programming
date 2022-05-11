@@ -36,7 +36,7 @@ const Routers = () => {
       />
       <Stack.Screen
         name="HomeF"
-        component={TabFooter}
+        component={HomeF}
         options={{headerShown: false}}
       />
       <Stack.Screen
