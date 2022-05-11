@@ -16,7 +16,7 @@ import {
   Profile,
 } from '../../../assets';
 
-const CompleteProjectF = () => {
+const CompleteProjectF = ({navigation}) => {
   return (
     <View>
       <PendingProjectF_Header
@@ -31,6 +31,7 @@ const CompleteProjectF = () => {
         fontFamilyTab1={'Segoe UI'}
         fontFamilyTab2={'Segoe UI Bold'}
         profile={<Profile />}
+        onPress={() => navigation.navigate('ProjectF')}
       />
       <Gap height={13} />
       <PendingProjectF_Content />

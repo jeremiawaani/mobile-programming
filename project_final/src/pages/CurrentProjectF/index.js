@@ -16,7 +16,7 @@ import {
   Remove,
 } from '../../../assets';
 
-const CurrentProjectF = () => {
+const CurrentProjectF = ({navigation}) => {
   return (
     <View>
       <PendingProjectF_Header
@@ -28,6 +28,7 @@ const CurrentProjectF = () => {
         widthBorder={107}
         mR={37}
         profile={<Profile />}
+        onPress={() => navigation.navigate('ProjectF')}
       />
       <Gap height={13} />
       <PendingProjectF_Content />

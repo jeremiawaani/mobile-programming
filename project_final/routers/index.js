@@ -20,6 +20,7 @@ import {
   ProfileC,
   CurrentProjectC,
   PendingProjectC,
+  DetailsF,
 } from '../src';
 
 const Stack = createNativeStackNavigator();
@@ -33,9 +34,57 @@ const Routers = () => {
         component={SplashScreen}
         options={{headerShown: false}}
       /> */}
-      <Stack.Screen
+      {/* <Stack.Screen
         name="ProjectF"
         component={ProjectF}
+        options={{headerShown: false}}
+      /> */}
+      {/* STACK SCREEN CLIENT */}
+      <Stack.Screen
+        name="AddJob"
+        component={AddJob}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomeC"
+        component={TabFooterC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LoginC"
+        component={LoginC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CurrentProjectC"
+        component={CurrentProjectC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PendingProjectC"
+        component={PendingProjectC}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SignUpC"
+        component={SignUpC}
+        options={{headerShown: false}}
+      />
+
+      {/* STACK SCREEN FREELANCER */}
+      <Stack.Screen
+        name="DetailsF"
+        component={DetailsF}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PendingProjectF"
+        component={PendingProjectF}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="CompleteProjectF"
+        component={CompleteProjectF}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -54,48 +103,18 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="SignUpC"
-        component={SignUpC}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
         name="LoginF"
         component={LoginF}
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="LoginC"
-        component={LoginC}
+        name="ProjectF"
+        component={ProjectF}
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="PendingProjectF"
-        component={PendingProjectF}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="CompleteProjectF"
-        component={CompleteProjectF}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="HomeC"
-        component={TabFooterC}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="CurrentProjectC"
-        component={CurrentProjectC}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="PendingProjectC"
-        component={PendingProjectC}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="AddJob"
-        component={AddJob}
+        name="SearchJob"
+        component={SearchJob}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

@@ -3,7 +3,7 @@ import React from 'react';
 import {IconBack, Profile} from '../../../assets';
 import Gap from '../Gap';
 
-const DetailsF_Header = () => {
+const DetailsF_Header = ({onPress}) => {
   return (
     <View>
       <Image
@@ -12,7 +12,7 @@ const DetailsF_Header = () => {
       />
       <View style={styles.header}>
         <Gap width={25} />
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
           <View style={styles.borderIconBack}>
             <IconBack />
           </View>

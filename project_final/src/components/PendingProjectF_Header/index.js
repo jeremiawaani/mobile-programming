@@ -15,12 +15,13 @@ const PendingProjectF_Header = ({
   fontFamilyTab1 = 'Segoe UI Bold',
   fontFamilyTab2 = 'Segoe UI',
   profile,
+  onPress,
 }) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Gap width={25} />
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
           <View style={styles.borderIconBack}>
             <IconBack />
           </View>

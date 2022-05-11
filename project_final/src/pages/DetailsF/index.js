@@ -2,10 +2,10 @@ import {StyleSheet, Text, View, Modal} from 'react-native';
 import React, {useState} from 'react';
 import {DetailsF_Content, DetailsF_Header, Footer, Gap} from '../../components';
 
-const DetailsF = () => {
+const DetailsF = ({navigation}) => {
   return (
-    <View>
-      <DetailsF_Header />
+    <View style={{backgroundColor: '#fff'}}>
+      <DetailsF_Header onPress={() => navigation.navigate('SearchJob')} />
       <Gap height={22} />
 
       <View style={styles.content}>

@@ -15,10 +15,13 @@ import {
   Profile,
 } from '../../../assets';
 
-const PendingProjectF = () => {
+const PendingProjectF = ({navigation}) => {
   return (
-    <View>
-      <PendingProjectF_Header profile={<Profile />} />
+    <View style={{backgroundColor: '#fff'}}>
+      <PendingProjectF_Header
+        profile={<Profile />}
+        onPress={() => navigation.navigate('ProjectF')}
+      />
       <Gap height={13} />
       <PendingProjectF_Content />
       <ScrollView style={{height: 238}}>
