@@ -7,12 +7,12 @@ import {
   ProfileF_Top,
 } from '../../components';
 
-const ProfileF = () => {
+const ProfileF = ({navigation}) => {
   return (
     <View>
       <HeaderUser title="My Profile" />
       <ProfileF_Top />
-      <ProfileF_Bottom />
+      <ProfileF_Bottom onPress={() => navigation.navigate('SelectUser')} />
       <Footer />
     </View>
   );

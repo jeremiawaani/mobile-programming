@@ -19,7 +19,7 @@ const SelectUser = ({navigation}) => {
           Title="Freelancer"
           SubTitle="Find Job"
           icons={<People />}
-          onPress={() => navigation.navigate('SignUpF')}
+          onPress={() => navigation.navigate('LoginF')}
         />
         <Gap height={18} />
         <BorderUser
@@ -27,7 +27,7 @@ const SelectUser = ({navigation}) => {
           Title="Client"
           SubTitle="Find Service"
           icons={<Male />}
-          onPress={() => navigation.navigate('SignUpC')}
+          onPress={() => navigation.navigate('LoginC')}
         />
       </View>
     </View>

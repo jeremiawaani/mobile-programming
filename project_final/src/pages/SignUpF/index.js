@@ -28,7 +28,7 @@ const SignUpF = ({navigation}) => {
         <SignUpF_Button />
       </View>
       <View style={styles.footer}>
-        <SignUpF_Footer />
+        <SignUpF_Footer onPress={() => navigation.navigate('LoginF')} />
       </View>
     </View>
   );
@@ -51,5 +51,6 @@ const styles = StyleSheet.create({
     borderColor: '#C0C0C0',
     marginRight: 66,
     marginTop: 46,
+    backgroundColor: '#fff',
   },
 });

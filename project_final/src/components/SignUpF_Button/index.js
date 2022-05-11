@@ -3,7 +3,10 @@ import React from 'react';
 
 const SignUpF_Button = ({onPress}) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={onPress}
+      activeOpacity={0.7}>
       <Text style={styles.txt}>Sign Up</Text>
     </TouchableOpacity>
   );

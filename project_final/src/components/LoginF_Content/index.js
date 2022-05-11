@@ -7,7 +7,7 @@ import LoginF_TextInput from '../LoginF_TextInput';
 import LoginF_Label from '../LoginF_Label';
 import LoginF_Button from '../LoginF_Button';
 
-const LoginF_Content = ({}) => {
+const LoginF_Content = ({onPress}) => {
   return (
     <View style={styles.container}>
       <LoginF_TextInput placeholder="Username" />
@@ -19,7 +19,7 @@ const LoginF_Content = ({}) => {
         <LoginF_Label title="Remember Me" labelColor="#808080" />
       </View>
       <Gap height={9} />
-      <LoginF_Button title="Login" />
+      <LoginF_Button title="Login" onPress={onPress} />
       <Gap height={20} />
       <LoginF_Label title="Forgot Password?" labelColor="#50DFFF" />
     </View>

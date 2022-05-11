@@ -11,7 +11,7 @@ import {
 import Gap from '../Gap';
 import Profile_Button from '../Profile_Button';
 
-const ProfileF_Bottom = () => {
+const ProfileF_Bottom = ({onPress}) => {
   return (
     <View style={styles.page}>
       <Text
@@ -112,7 +112,8 @@ const ProfileF_Bottom = () => {
         <Profile_Button
           width={270}
           title="Log Out"
-          color="#D1FBEA"></Profile_Button>
+          color="#D1FBEA"
+          onPress={onPress}></Profile_Button>
       </View>
     </View>
   );

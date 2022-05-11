@@ -3,12 +3,12 @@ import React from 'react';
 import {BackBlueIcon, Logo} from '../../../assets';
 import {Gap} from '../../components';
 
-const LoginF_Header = ({text}) => {
+const LoginF_Header = ({text, onPress}) => {
   return (
     <View style={styles.container}>
       {/*Icon Back*/}
       <View style={styles.iconBack}>
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
           <BackBlueIcon />
         </TouchableOpacity>
       </View>

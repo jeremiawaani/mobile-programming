@@ -1,22 +1,28 @@
-import { StyleSheet, Text, View, TouchableOpacity, TextInputRN } from 'react-native'
-import React from 'react'
-import { LoginF_Header, LoginF_Content, LoginF_Footer } from '../../components'
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  TextInputRN,
+} from 'react-native';
+import React from 'react';
+import {LoginF_Header, LoginF_Content, LoginF_Footer} from '../../components';
 
-
-
-const LoginF = () => {
+const LoginF = ({navigation}) => {
   return (
-    <View style={{marginRight: 7}}>
-    {/* Header */}
-      <LoginF_Header text="Sense" />
+    <View style={{marginRight: 7, backgroundColor: '#fff'}}>
+      {/* Header */}
+      <LoginF_Header
+        text="Sense"
+        onPress={() => navigation.navigate('SelectUser')}
+      />
       {/* <Text>Halo</Text> */}
       {/* Content */}
-      <LoginF_Content />
+      <LoginF_Content onPress={() => navigation.navigate('HomeF')} />
       {/* Footer */}
       <LoginF_Footer />
     </View>
+  );
+};
 
-  )
-}
-
-export default LoginF
+export default LoginF;
